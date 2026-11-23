@@ -1,0 +1,844 @@
+{
+  "date": "2026-11-22",
+  "entries": [
+    {
+      "source": "claude",
+      "type": "story",
+      "devopsId": 1624,
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "status": "Closed",
+      "notes": "Comment added: story will be closed; sticker template from the Report team is not ready yet, built-in template currently used",
+      "storyId": 1624,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T09:59:42+03:00",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1624",
+      "id": "e-20261122-001",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-14T11:13:11.197Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T05:54:07.457Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-22T06:02:52.25Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T07:21:24.573Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-29T06:36:57.377Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T05:37:37.46Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T12:11:43.58Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-05T08:11:21.56Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-08T12:22:39.233Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-12T06:28:08.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T12:33:22.16Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T06:06:19.533Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T11:59:21.61Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:59.203Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T16:39:40.007Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:59:31.277Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-22T07:00:57.937Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "refreshedAt": "2026-11-22T23:45:17+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "title": "Work Order Sync: one JSON per save (changed rows only), or one JSON with the full Work Order every time?",
+      "notes": "WO-TO_11000184: recovered JSON of the 09:46:21 save has header, service and discount deletes, but not the item saved at 09:46:10. Needs Investigation.",
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T10:06:34+03:00",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "Option 2 (answered by Mohammad): one JSON with the full Work Order on every save",
+        "answeredOn": "2026-11-22"
+      },
+      "id": "e-20261122-002"
+    },
+    {
+      "type": "story",
+      "devopsId": 1011,
+      "storyId": 1011,
+      "title": "myShop POS - Sales Return - Full Return",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-22T10:39:16+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1011",
+      "id": "e-20261122-003",
+      "assignedTo": "Rahaf Abudelleh",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-08-08T19:31:50.63Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-02T12:13:48.993Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "New",
+          "at": "2026-09-03T12:15:19.87Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-06T08:22:22.873Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-09T07:05:46.247Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-14T08:32:17.807Z",
+          "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-27T07:12:43.057Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T07:20:06.143Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T09:02:49.58Z",
+          "by": "Alaa Ashour"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "title": "MAC1 - Workorder | Saving a Work Order note syncs a JSON with the note only instead of the full Work Order",
+      "notes": "Build 1.2.498, WO-TO_11000185. Evidence: docs/workorder/evidence/sync-json-2026-11-22. No story given.",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Happy Scenario",
+        "severity": "",
+        "screen": "Workorder"
+      },
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T10:57:04+03:00",
+      "url": null,
+      "status": "draft",
+      "id": "e-20261122-004"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "title": "Work Order total: Car Wash 100.00 + Brake Check 25.00 shows 125.01 (tax 16.31, lines add up to 16.30). Which rounding rule applies?",
+      "notes": "Needs Investigation. Build 1.2.498, WO-TO_11000185. Also 202.49 after 10% on 225.00.",
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T10:57:04+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261122-005"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "title": "Sync JSON: should NextServiceDate and ServiceDate keep the +03:00 offset? It is sent on the first save and dropped on the next saves",
+      "notes": "Needs Investigation. Build 1.2.498, WO-TO_11000185, saves 03 and 04. Effect on server dates not checked.",
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T10:57:04+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261122-006"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "title": "Run 77: TC-010, TC-033 zero sales (Demo Company)",
+      "notes": "DevOps Run 77. Both Passed with UI and DB evidence (G3). Story total: 72 Pass, 4 Fail, 4 Needs Investigation, 1 Blocked, 2 Not Run, 4 N/A. 22/11, approved by the user: test cases 1895 and 1928 added to regression suite Full 2183 in plan 2115 (now 118 cases). Correction 22/11: totals not reconciled with DevOps. Task 2179 says 72 Pass, test points say 43 Passed (42 match); 29 have no outcome in Run 74, and 019, 032, 060, 006 differ.",
+      "run": {
+        "build": "1.2.498",
+        "pass": 2,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T13:36:15+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261122-007"
+    },
+    {
+      "source": "claude",
+      "type": "blocker",
+      "storyId": 214,
+      "title": "TC-082: needs a day with a return and no sale (23/11, Demo Company)",
+      "notes": "TC-009 is done: Passed in Run 79 on 22/11 in Demo Company. TC-082 on 23/11: Open Day in Demo Company, full return of invoice TO_1000001 (5.00 Cash), no sale that day before the evidence. Alshellah is no longer reserved for it.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T13:43:21+03:00",
+      "url": null,
+      "status": "resolved",
+      "resolvedOn": "2026-11-23",
+      "id": "e-20261122-008"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "title": "Run 78: zero data cases (Demo Company)",
+      "notes": "DevOps Run 78. TC-045, 047, 083 Passed. TC-073, 085 Needs Investigation (Inconclusive). TC-081 empty export checked only, no result recorded. DB check G11.",
+      "run": {
+        "build": "1.2.498",
+        "pass": 3,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T16:44:36+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261122-009"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 214,
+      "title": "Cash tab with no payments: should the Payment Methods Total row show 100% or 0%?",
+      "notes": "22/11, build 1.2.498, Demo Company: total 0.00 shows 100% while Cash Sales % and Other Payments % show 0% (TC-085).",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T16:44:36+03:00",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "0% (user 23/11).",
+        "answeredOn": "2026-11-23"
+      },
+      "id": "e-20261122-010"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "title": "Run 79: TC-009 New Sales (Demo Company)",
+      "notes": "DevOps Run 79. TC-009 Passed with UI, DB and stock chain evidence (G12). QA data: make KIA, model SPORTAGE, engine, customer Mohammad Al-Khatib, vehicle 5281DRB, day TO_1000001, invoice TO_1000001 5.00. Correction: 26 of the 29 test points without outcome were executed on 19-20/11; only their results are not recorded in a Test Run (11 have evidence, 2 need a query, 10 need one step, 3 need a decision).",
+      "run": {
+        "build": "1.2.498",
+        "pass": 1,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T20:30:00+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261122-011"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 214,
+      "title": "MAC1 - Dashboard | Negative Gross Margin is shown in green",
+      "bug": {
+        "issueType": "Cosmetic",
+        "qaBugType": "Other",
+        "severity": "4 - Low",
+        "screen": "Dashboard Overview"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T20:30:00+03:00",
+      "notes": "",
+      "url": null,
+      "status": "draft",
+      "id": "e-20261122-012"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "title": "Run 80: full execution from scratch, 87 cases",
+      "notes": "DevOps Run 80, started 22/11 21:05. All 87 cases from the start, nothing carried over. Task 2179 is rebuilt from this Run only. Approved changes: wrong TC-041 YTD image removed from Test Case 1937 (NOT from Run 75, server refuses the delete, 405); TC-069 expected updated; Run 74 closed (Aborted, its 37 results without outcome became Aborted, 50 outcomes unchanged). Data: WO-TO_11000189 (5282GZT, Car Wash 100.00) left pending on 22/11 for TC-071. TC-040 changed from Passed to Needs Investigation: the rejected range is applied after returning to Sales, being reproduced.",
+      "run": {
+        "build": "1.2.498",
+        "pass": 77,
+        "fail": 5,
+        "blocked": 2,
+        "notRun": 2
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T21:01:11+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261122-013"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 214,
+      "title": "MAC1 - Dashboard | Sales, WO info and Cash apply an invalid date range after closing the validation message and show zeros",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Invalid",
+        "severity": "3 - Medium",
+        "screen": "Dashboard Sales"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T21:14:45+03:00",
+      "notes": "",
+      "url": null,
+      "status": "logged as 2288",
+      "id": "e-20261122-014",
+      "loggedAs": 2288
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 214,
+      "title": "October in Alshellah: invoices 8,826.58 but receipts 1,301.36. Is it old test data or are invoices without a receipt valid?",
+      "notes": "Run 80, query H3. Sales QTD (81,269.74) and Cash QTD (73,744.52) differ by 7,525.22, all from October. November matches exactly. The Cash tab itself equals the receipts.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T21:19:24+03:00",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "Old test data (user 23/11).",
+        "answeredOn": "2026-11-23"
+      },
+      "id": "e-20261122-015"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 214,
+      "title": "Lists with no records (WO info, range without Work Orders): are column headers with no rows enough as the empty state, or is a message required? (TC-083, Run 80)",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T21:33:14+03:00",
+      "notes": "",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "Yes. Column headers with no rows are an acceptable empty state (user 23/11).",
+        "answeredOn": "2026-11-23"
+      },
+      "id": "e-20261122-016"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 214,
+      "title": "YTD with no financial-year start configured (QA - Company fiscal month is NULL): should it default to 1 January, as the app does now? (TC-038, Run 80)",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T21:42:33+03:00",
+      "notes": "",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "Yes. With no financial-year start, YTD starts on 1 January (user 23/11).",
+        "answeredOn": "2026-11-23"
+      },
+      "id": "e-20261122-017"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "title": "MAC1 - Purchase Return | Submit creates two Stock Out headers with the same number, one without lines",
+      "notes": "Build 1.2.498, 22/11 22:32, QA - Company, branch Alshellah. Return TO_11000002: two InvStockOut rows TO_11000205, same source and time, lines 1 and 0. Stock quantity is correct (-2 base). Evidence H24, H25. Related question e-20261120-009. Found while executing TC-035.",
+      "bug": {
+        "issueType": "Data Corruption",
+        "qaBugType": "Happy Scenario",
+        "severity": "",
+        "screen": ""
+      },
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:34:10+03:00",
+      "url": null,
+      "status": "draft",
+      "id": "e-20261122-018"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "title": "MAC1 - Purchase Return | Price field shows raw decimals (155.0600000000000227373675443)",
+      "notes": "Build 1.2.498, 22/11. Return Purchase Invoice, Item Details, Price. Evidence T7_ui_03_return_price_raw_decimals.png.",
+      "bug": {
+        "issueType": "Cosmetic",
+        "qaBugType": "Other",
+        "severity": "",
+        "screen": ""
+      },
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:34:10+03:00",
+      "url": null,
+      "status": "draft",
+      "id": "e-20261122-019"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "title": "Purchase return linked to an invoice: should it list only that invoice items at the purchase price? Now it lists the whole catalog with services, default price 155.06 for an item bought at 100.00",
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:34:10+03:00",
+      "notes": "",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261122-020"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "title": "MAC1 - Purchase Return | New return is missing from the list after Submit until the screen is reopened",
+      "notes": "Build 1.2.498, 22/11 22:32. TO_11000002 saved in the database, list showed 1 Voucher, reopened list shows 2. Evidence T7_ui_05 and T7_ui_06.",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Happy Scenario",
+        "severity": "",
+        "screen": ""
+      },
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:34:56+03:00",
+      "url": null,
+      "status": "draft",
+      "id": "e-20261122-021"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "title": "MAC1 - Stock Adjustment | A new adjustment is saved with a number that already exists",
+      "notes": "Build 1.2.498, 22/11 22:52, QA - Company, branch Alshellah. New Stock In adjustment saved as ST Adjustment - TO_11000005, the number of the Submitted adjustment of 13/11. Two documents (68F90B7B..., F2844371...) with one number, stock and links of both are correct. After that save, a new form still proposes TO_11000005 for Stock In and Stock Out (not submitted). Evidence T9_ui_03, T9_ui_04, H28 to H30. Root cause not investigated. Found while preparing data for TC-063.",
+      "bug": {
+        "issueType": "Data Corruption",
+        "qaBugType": "Happy Scenario",
+        "severity": "",
+        "screen": "Stock Adjustment"
+      },
+      "devopsId": null,
+      "storyId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:53:12+03:00",
+      "url": null,
+      "status": "logged as 2287",
+      "id": "e-20261122-022",
+      "loggedAs": 2287
+    },
+    {
+      "source": "claude",
+      "type": "blocker",
+      "storyId": 214,
+      "title": "TC-001: needs a fresh open of the dashboard (Run 80)",
+      "notes": "Needs: the user signs in to QA - Company / Alshellah after a restart, then the first screen is captured before any click. QA has no login for this company.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:55:56+03:00",
+      "url": null,
+      "status": "resolved",
+      "resolvedOn": "2026-11-23",
+      "id": "e-20261122-023"
+    },
+    {
+      "source": "claude",
+      "type": "blocker",
+      "storyId": 214,
+      "title": "TC-003: needs a restricted account and a permitted account (Run 80)",
+      "notes": "Needs: two QA - Company accounts with different dashboard or detail permissions, and the user to sign in or provide them.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:55:57+03:00",
+      "url": null,
+      "status": "open",
+      "resolvedOn": null,
+      "id": "e-20261122-024"
+    },
+    {
+      "source": "claude",
+      "type": "blocker",
+      "storyId": 214,
+      "title": "TC-004: needs a second branch, terminal and session (Run 80)",
+      "notes": "Needs: sign-in as a user of another branch on its own terminal. The Alshellah side is verified by H26.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-22T22:55:57+03:00",
+      "url": null,
+      "status": "open",
+      "resolvedOn": null,
+      "id": "e-20261122-025"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [
+        {
+          "id": 432,
+          "title": "myShop POS - Closing Day",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/432"
+        },
+        {
+          "id": 1726,
+          "title": "myShop POS - Document Sharing Options in POS",
+          "state": "Active",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1726"
+        },
+        {
+          "id": 1041,
+          "title": "myShop POS -  Share option Configurations & document assignment ",
+          "state": "Active",
+          "storyId": null,
+          "reason": "linked work",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [
+        {
+          "id": 2272,
+          "title": "MAC-ONE POS - Share Option Configuration - Can't remove document after add it",
+          "state": "New",
+          "storyId": 1041,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2272",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "Other",
+            "severity": "3 - Medium",
+            "screen": "Share Option Configuration"
+          }
+        },
+        {
+          "id": 2274,
+          "title": "MAC-ONE POS - Whatsapp share option redirect to web whatsapp and not auto send to the customer",
+          "state": "Resolved",
+          "storyId": 1726,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2274",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "",
+            "severity": "2 - High",
+            "screen": "Share option configuration"
+          }
+        },
+        {
+          "id": 2276,
+          "title": "MAC-ONE POS - Share Option Configuration - The same layout can be added more than once",
+          "state": "New",
+          "storyId": 1041,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2276",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "",
+            "severity": "2 - High",
+            "screen": "Share Option Configuration"
+          }
+        },
+        {
+          "id": 2277,
+          "title": "MAC-ONE POS - Share Option Configuration message is not correct",
+          "state": "New",
+          "storyId": 1041,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2277",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "",
+            "severity": "3 - Medium",
+            "screen": "Share Option Configuration"
+          }
+        },
+        {
+          "id": 2278,
+          "title": "MAC-ONE POS - Share Option Configuration - Printer is optional field in add document assignment",
+          "state": "New",
+          "storyId": 1041,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2278",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "",
+            "severity": "3 - Medium",
+            "screen": "Share Option Configuration"
+          }
+        },
+        {
+          "id": 2279,
+          "title": "MAC-ONE POS - WO - Share option screen should be display in payment screen",
+          "state": "New",
+          "storyId": 1041,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2279",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "",
+            "severity": "2 - High",
+            "screen": "Share option configuration"
+          }
+        },
+        {
+          "id": 2280,
+          "title": "MAC-ONE POS - Share Option Configuration - System should be display a message to clarify that printer disconnect ",
+          "state": "New",
+          "storyId": 1041,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2280",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "",
+            "severity": "3 - Medium",
+            "screen": "Share Option Configuration"
+          }
+        }
+      ],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [
+        {
+          "id": 450,
+          "title": "myShop POS - Add a customer",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/450"
+        },
+        {
+          "id": 1299,
+          "title": "myShop POS - Pemission Screen",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1299"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [
+        {
+          "id": 2275,
+          "title": "MAC ONE - POS Edit Customer – Adding/changing customer mobile number fails with \"Unable to send the verification code\"",
+          "state": "New",
+          "storyId": 450,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2275",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "Other",
+            "severity": "2 - High",
+            "screen": "Edit Customer"
+          }
+        }
+      ],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-22T23:45:17+03:00",
+  "mySyncedAt": "2026-11-22T23:45:17+03:00",
+  "storyRefs": {
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "Resolved"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "673": {
+      "title": "myShop POS - Bay Monitoring Dashboard KPI",
+      "state": "New"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "Resolved"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Active"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test App",
+      "state": "Active"
+    },
+    "1330": {
+      "title": "myShop POS - Portal - Delete Tracker & Cross-Platform Data Synchronization",
+      "state": "New"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "Resolved"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Active"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Closed"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "New"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Active"
+    },
+    "1874": {
+      "title": "myShop POS - Portal - my Details",
+      "state": "New"
+    },
+    "2172": {
+      "title": "myShop POS - Terminals Version Tracking Update ",
+      "state": "New"
+    },
+    "2259": {
+      "title": "myShop POS - Request developments",
+      "state": "New"
+    },
+    "2260": {
+      "title": "myShop POS - Report an Issue",
+      "state": "New"
+    },
+    "2261": {
+      "title": "myShop POS - Multi terminals feature",
+      "state": "New"
+    },
+    "2262": {
+      "title": "myShop POS - Assign technician(s) to WO ",
+      "state": "New"
+    },
+    "2273": {
+      "title": "myShop Portal - Support Remote control to POS ",
+      "state": "New"
+    }
+  }
+}

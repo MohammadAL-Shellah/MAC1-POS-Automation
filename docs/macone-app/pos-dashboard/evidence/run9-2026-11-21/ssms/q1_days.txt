@@ -1,0 +1,9 @@
+
+OpenDate               CloseDate              IsClosed OpenBalanceCashAmount OpenActualCashAmount CloseSystemCashAmount CloseDepositCashAmount CloseLeftCashAmount BankDepositNumber DepositStatus
+--------               ---------              -------- --------------------- -------------------- --------------------- ---------------------- ------------------- ----------------- -------------
+11/20/2026 3:34:49 PM  11/20/2026 10:43:50 PM     True            100.000000           100.000000           2060.000000            1960.000000          100.000000 TO_11000004                   2
+11/21/2026 12:09:12 AM 11/21/2026 12:09:12 AM    False            100.000000           100.000000              0.000000               0.000000            0.000000                                
+
+
+
+

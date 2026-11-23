@@ -1,0 +1,10 @@
+name: WinApp MCP
+version: 1.0.0
+schema: v1
+
+mcpServers:
+  - name: Windows Desktop Control
+    command: npx.cmd
+    args:
+      - -y
+      - winapp-mcp

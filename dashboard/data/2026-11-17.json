@@ -1,0 +1,1166 @@
+{
+  "date": "2026-11-17",
+  "entries": [
+    {
+      "type": "story",
+      "devopsId": 214,
+      "storyId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T09:08:55+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "id": "e-20261117-001",
+      "assignedTo": "Mohammad Al Shellah",
+      "refreshedAt": "2026-11-24T00:00:28+03:00",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "devopsId": 1726,
+      "storyId": 1726,
+      "title": "myShop POS - Document Sharing Options in POS",
+      "status": "Active",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T14:17:09+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1726",
+      "id": "e-20261117-002",
+      "assignedTo": "Rahaf Abudelleh",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-21T11:26:16.48Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-25T06:31:04.42Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T06:15:51.957Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T08:40:30.777Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T08:46:38.407Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T11:49:43.373Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-03T09:00:26.04Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-09T11:59:04.267Z",
+          "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-09T12:21:33.983Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-16T07:56:05.133Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T11:03:52.497Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T11:04:34.677Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-22T12:39:32.647Z",
+          "by": "Rahaf Abudelleh"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 431,
+      "storyId": 431,
+      "title": "myShop POS - Opening Day",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T15:17:09+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/431",
+      "id": "e-20261117-003",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-12-25T07:35:59.547Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-07-22T09:33:12.59Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-07-30T15:02:20.03Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-26T06:41:56.5Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-08-30T07:13:50.06Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-31T11:22:37.07Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-08-31T14:43:24.883Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-01T17:42:02.537Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-09-06T11:15:03.793Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-06T11:15:44.963Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-10T09:30:59.09Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-14T06:53:21.107Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-20T11:24:37.87Z",
+          "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-09-22T13:36:57.013Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T13:55:14.92Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-15T13:55:31.077Z",
+          "by": "Saif Aladwan"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 1624,
+      "storyId": 1624,
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T16:47:09+03:00",
+      "notes": "Test cases or bugs logged under it",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1624",
+      "id": "e-20261117-004",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-14T11:13:11.197Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T05:54:07.457Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-22T06:02:52.25Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T07:21:24.573Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-29T06:36:57.377Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T05:37:37.46Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T12:11:43.58Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-05T08:11:21.56Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-08T12:22:39.233Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-12T06:28:08.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T12:33:22.16Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T06:06:19.533Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T11:59:21.61Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:59.203Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T16:39:40.007Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:59:31.277Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-22T07:00:57.937Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "refreshedAt": "2026-11-22T10:01:10+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 2165,
+      "storyId": 1624,
+      "title": "MAC1 - Sticker print | When the user change the next date the system does not applies the change in the all open WO",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T16:46:57+03:00",
+      "notes": "Retest 18/11/2026 on 1.2.494: still fails, WO-TO_11000158 got 4,100 km but kept 18 Feb 2027 instead of 18 Nov 2027; reactivated by the user. Not retested on 1.2.495: the edit pencil is not shown (blocker logged).",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2165",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "Workorder"
+      },
+      "id": "e-20261117-005",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-17T13:46:57.67Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:39.937Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T07:27:13.913Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:10:39.263Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T08:36:34.657Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T11:47:15+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 1041,
+      "storyId": 1041,
+      "title": "myShop POS -  Share option Configurations & document assignment",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T17:02:09+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041",
+      "id": "e-20261117-006",
+      "assignedTo": "Rahaf Abudelleh",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-08-13T11:25:14.65Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-13T12:38:22.447Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-08-17T14:32:07.903Z",
+          "by": "Yahya Al Falah"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-21T17:02:39.79Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-26T11:38:09.563Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-03T09:00:15.07Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-04T09:18:49.823Z",
+          "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-05T09:59:04.687Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-09T11:20:52.067Z",
+          "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-10T06:13:08.733Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T06:29:33.96Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-15T12:34:07.853Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-16T07:19:50.64Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T06:10:36.523Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T13:57:08.957Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-22T12:39:17.303Z",
+          "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T12:01:09.41Z",
+          "by": "Alaa Ashour"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 2167,
+      "storyId": 1624,
+      "title": "MAC1 - Service Sticker | Wrong and cut texts on the sticker and sticker screen",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T20:02:35+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2167",
+      "bug": {
+        "issueType": "Cosmetic",
+        "qaBugType": "Other",
+        "severity": "4 - Low",
+        "screen": "Service Reminder Stickers"
+      },
+      "id": "e-20261117-007",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-17T17:02:35.6Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T05:42:29.493Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T06:24:30.547Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-18T08:17:13.26Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-18T11:19:38+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 2168,
+      "storyId": 1624,
+      "title": "MAC1 - Items | User without My Items Edit permission can open Edit Item Info and save changes",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-17T21:27:39+03:00",
+      "notes": "Retest 18/11/2026 on 1.2.495: Pass. Closed state and comment prepared in the browser, not saved yet.",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2168",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "2 - High",
+        "screen": "My Items / Permissions / Stickers printing"
+      },
+      "id": "e-20261117-009",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-17T18:27:39.637Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T05:31:54.567Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T08:26:10.693Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T11:32:16+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1624,
+      "title": "Package sticker: when the product interval is longer than the service interval, which rule wins? Story section 8 Priority Rules (product wins: 20 km/20 Day) vs Minimum Interval Rule (shortest wins: 10 km/10 Day). Blocks TC-SST-049, 050 and draft e-20261116-021",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-17T22:03:22+03:00",
+      "notes": "Still open: waiting for the business answer (reopened 18/11/2026 after a wrong cancel)",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "Business (19/11/2026): when the item has its own data, its data is always used. Product value wins even when longer than the service. Current behaviour is correct.",
+        "answeredOn": "2026-11-19"
+      },
+      "id": "e-20261117-010"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [
+        {
+          "id": 1717,
+          "title": "myShop Portal - Item Service Group",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1717"
+        },
+        {
+          "id": 1299,
+          "title": "myShop POS - Pemission Screen",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "linked work",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1299"
+        }
+      ],
+      "testcases": [
+        {
+          "id": 2121,
+          "title": "Open the Permissions screen from the POS menu",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2121"
+        },
+        {
+          "id": 2122,
+          "title": "Search for a screen in the Permissions list",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2122"
+        },
+        {
+          "id": 2123,
+          "title": "Screen list contains the valid POS screens",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2123"
+        },
+        {
+          "id": 2124,
+          "title": "Open a screen and view its permissions and roles",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2124"
+        },
+        {
+          "id": 2125,
+          "title": "Each screen shows only the permission types that apply to it",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2125"
+        },
+        {
+          "id": 2126,
+          "title": "Sales screen has the sensitive permission types",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2126"
+        },
+        {
+          "id": 2127,
+          "title": "Permission column titles are readable",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2127"
+        },
+        {
+          "id": 2128,
+          "title": "All permission columns are visible on screens with many permissions",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2128"
+        },
+        {
+          "id": 2129,
+          "title": "Matrix shows all roles with their current permissions",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2129"
+        },
+        {
+          "id": 2130,
+          "title": "Cell cycles between not allowed, allowed and Access card",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2130"
+        },
+        {
+          "id": 2131,
+          "title": "Assign a permission to a role and save",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2131"
+        },
+        {
+          "id": 2132,
+          "title": "Remove a permission from a role and save",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2132"
+        },
+        {
+          "id": 2133,
+          "title": "Assign the same permission to multiple roles",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2133"
+        },
+        {
+          "id": 2134,
+          "title": "Select All / Remove All roles for a permission",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2134"
+        },
+        {
+          "id": 2135,
+          "title": "Leaving the screen without saving shows a discard message",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2135"
+        },
+        {
+          "id": 2136,
+          "title": "User without permission to manage roles can't change permissions",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2136"
+        },
+        {
+          "id": 2137,
+          "title": "Changes made on the portal are shown on the POS after sync",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2137"
+        },
+        {
+          "id": 2138,
+          "title": "User with multiple roles gets the combined permissions",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2138"
+        },
+        {
+          "id": 2139,
+          "title": "Users screen shows all roles of the user",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2139"
+        },
+        {
+          "id": 2140,
+          "title": "Screen is hidden from the menu when the user has no View",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2140"
+        },
+        {
+          "id": 2141,
+          "title": "Screen can't be opened without View permission",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2141"
+        },
+        {
+          "id": 2142,
+          "title": "Create action is hidden or disabled without Create permission",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2142"
+        },
+        {
+          "id": 2143,
+          "title": "Print action is not available without Print permission",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2143"
+        },
+        {
+          "id": 2144,
+          "title": "Access card permission asks for authorization",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2144"
+        },
+        {
+          "id": 2145,
+          "title": "Administrator has full access to all screens and actions",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2145"
+        },
+        {
+          "id": 2146,
+          "title": "New role has no POS permissions by default",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2146"
+        },
+        {
+          "id": 2147,
+          "title": "Predefined roles show their default policy permissions",
+          "state": "Design",
+          "storyId": 1299,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2147"
+        },
+        {
+          "id": 2148,
+          "title": "Service Item Group list shows Group Name and Document Status",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2148"
+        },
+        {
+          "id": 2149,
+          "title": "Search for a group in the list",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2149"
+        },
+        {
+          "id": 2150,
+          "title": "New group form shows the required fields",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2150"
+        },
+        {
+          "id": 2151,
+          "title": "Item Kind is mandatory",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2151"
+        },
+        {
+          "id": 2152,
+          "title": "Group Name is mandatory",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2152"
+        },
+        {
+          "id": 2153,
+          "title": "Group Description is optional",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2153"
+        },
+        {
+          "id": 2154,
+          "title": "At least one item is required",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2154"
+        },
+        {
+          "id": 2155,
+          "title": "Items lookup shows products only",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2155"
+        },
+        {
+          "id": 2156,
+          "title": "Items lookup is filtered by the selected Item Kind",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2156"
+        },
+        {
+          "id": 2157,
+          "title": "Add multiple items to the group",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2157"
+        },
+        {
+          "id": 2158,
+          "title": "Remove an item from the group",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2158"
+        },
+        {
+          "id": 2159,
+          "title": "Changing Item Kind to one that doesn't match the items is blocked",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2159"
+        },
+        {
+          "id": 2160,
+          "title": "Editing a saved group to a mismatched Item Kind is blocked",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2160"
+        },
+        {
+          "id": 2161,
+          "title": "Save keeps the group New and Submit changes it to Submitted",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2161"
+        },
+        {
+          "id": 2162,
+          "title": "Edit a submitted group",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2162"
+        },
+        {
+          "id": 2163,
+          "title": "Group can be linked to a service in a Service Package",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2163"
+        },
+        {
+          "id": 2164,
+          "title": "Delete a group from the list",
+          "state": "Design",
+          "storyId": 1717,
+          "reason": "written",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2164"
+        }
+      ],
+      "bugsOpened": [
+        {
+          "id": 2120,
+          "title": "MAC ONE POS - Permissions – Sensitive permission types are missing (Void, Delete, Refund, Apply Discount, Change Price)",
+          "state": "New",
+          "storyId": 1299,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2120",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "Permissions"
+          }
+        }
+      ],
+      "bugsClosed": [
+        {
+          "id": 1977,
+          "title": "MAC ONE - Portal | Service Item Group – Changing Item Kind after adding items keeps items of the old Kind",
+          "state": "Closed",
+          "storyId": 1717,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1977",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Other",
+            "severity": "3 - Medium",
+            "screen": "Service Item Group"
+          }
+        },
+        {
+          "id": 2109,
+          "title": "MAC ONE POS - Permissions – Assign Roles table is cut, last permission columns can’t be reached",
+          "state": "Closed",
+          "storyId": 1299,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2109",
+          "bug": {
+            "issueType": "Cosmetic",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "Permissions"
+          }
+        },
+        {
+          "id": 2111,
+          "title": "MAC ONE POS - Permissions – Some permission columns show code names instead of titles",
+          "state": "Closed",
+          "storyId": 1299,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2111",
+          "bug": {
+            "issueType": "Cosmetic",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "Permissions"
+          }
+        }
+      ]
+    }
+  ],
+  "teamSyncedAt": "2026-11-17T23:47:13+03:00",
+  "mySyncedAt": "2026-11-17T23:47:13+03:00",
+  "storyRefs": {
+    "180": {
+      "title": "myShop POS - Purchase Invoice",
+      "state": "New"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "431": {
+      "title": "myShop POS - Opening Day",
+      "state": "Resolved"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "New"
+    },
+    "440": {
+      "title": "myShop Portal - User",
+      "state": "New"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "493": {
+      "title": "myShop POS - WO - Discount Screen",
+      "state": "New"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "830": {
+      "title": "MiCAM - Company Incident Types Configuration",
+      "state": "New"
+    },
+    "928": {
+      "title": "Master - Product Version Management and Update Distribution",
+      "state": "Resolved"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "New"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Active"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1337": {
+      "title": "MiCAM - AI - Fire/Smoke Incident",
+      "state": "New"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "Active"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Active"
+    },
+    "1621": {
+      "title": "myShop - Reports: \"WO\" - New Report to show work Orders Details",
+      "state": "Closed"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Resolved"
+    },
+    "1717": {
+      "title": "myShop Portal - Item Service Group",
+      "state": "Closed"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Active"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Resolved"
+    }
+  }
+}

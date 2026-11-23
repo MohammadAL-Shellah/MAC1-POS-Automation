@@ -1,0 +1,772 @@
+{
+  "date": "2026-10-01",
+  "entries": [],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [
+        {
+          "id": 213,
+          "title": "myShop POS - User List ",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "linked work",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/213"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [
+        {
+          "id": 1540,
+          "title": "MAC-ONE POS - Invite User - System not display validations to check the required fields",
+          "state": "Closed",
+          "storyId": 213,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1540",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "Other",
+            "severity": "3 - Medium",
+            "screen": "invite user"
+          }
+        },
+        {
+          "id": 1543,
+          "title": "MAC-ONE POS - Users - System invited unregistered users",
+          "state": "Closed",
+          "storyId": 213,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1543",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "Other",
+            "severity": "1 - Critical",
+            "screen": "Users"
+          }
+        },
+        {
+          "id": 1544,
+          "title": "MAC-ONE POS - Users - invitation request status should be display pending from inviter side",
+          "state": "Closed",
+          "storyId": 213,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1544",
+          "bug": {
+            "issueType": "Code",
+            "qaBugType": "Other",
+            "severity": "2 - High",
+            "screen": "Users"
+          }
+        },
+        {
+          "id": 1545,
+          "title": "MAC-ONE POS - Users - Missing Plus icon \"+\" in phone number",
+          "state": "Closed",
+          "storyId": 213,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1545",
+          "bug": {
+            "issueType": "Code",
+            "qaBugType": "Other",
+            "severity": "4 - Low",
+            "screen": "Users"
+          }
+        },
+        {
+          "id": 1546,
+          "title": "MAC-ONE POS - Users - uploaded image not display in users ",
+          "state": "Closed",
+          "storyId": 213,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1546",
+          "bug": {
+            "issueType": "Code",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "Users"
+          }
+        }
+      ],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-16T11:38:23+03:00",
+  "mySyncedAt": "2026-11-16T11:38:23+03:00",
+  "storyRefs": {
+    "137": {
+      "title": "myShop POS - Sign in Screen",
+      "state": "Closed"
+    },
+    "156": {
+      "title": "myShop POS - Planning and payment ",
+      "state": "New"
+    },
+    "159": {
+      "title": "myShop Portal - Company Branch",
+      "state": "New"
+    },
+    "163": {
+      "title": "myShop Portal -Service Provider ",
+      "state": "Resolved"
+    },
+    "167": {
+      "title": "myShop Portal - Item",
+      "state": "Resolved"
+    },
+    "170": {
+      "title": "myShop Portal - Term and Conditions",
+      "state": "Closed"
+    },
+    "171": {
+      "title": "myShop Portal - Customer ",
+      "state": "Closed"
+    },
+    "173": {
+      "title": "myShop Portal - Discount",
+      "state": "Resolved"
+    },
+    "175": {
+      "title": "myShop Portal - Payment Term",
+      "state": "Closed"
+    },
+    "180": {
+      "title": "myShop POS - Purchase Invoice",
+      "state": "New"
+    },
+    "181": {
+      "title": "myShop POS - Return Purchase Invoice",
+      "state": "Resolved"
+    },
+    "182": {
+      "title": " Inventory Weighted Average Cost",
+      "state": "New"
+    },
+    "186": {
+      "title": "myShop Portal - UOM Form",
+      "state": "Resolved"
+    },
+    "188": {
+      "title": "myShop Portal - Price list",
+      "state": "Resolved"
+    },
+    "190": {
+      "title": "myShop Portal -E invoice validation",
+      "state": "Resolved"
+    },
+    "197": {
+      "title": "myShop POS - Mobile Number Validations ",
+      "state": "Closed"
+    },
+    "209": {
+      "title": "Fleet Portal - Setup - Static WF (Default system Document WF)",
+      "state": "Resolved"
+    },
+    "213": {
+      "title": "myShop POS - User List ",
+      "state": "Resolved"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Active"
+    },
+    "217": {
+      "title": "myShop Portal - Workflow",
+      "state": "Resolved"
+    },
+    "218": {
+      "title": "myShop POS - Select Vehicle",
+      "state": "Closed"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "245": {
+      "title": "MiCAM - Manage Persons",
+      "state": "New"
+    },
+    "246": {
+      "title": "MiCAM - Manage DVR Devices",
+      "state": "New"
+    },
+    "249": {
+      "title": "MiCAM - Incident management & Correction",
+      "state": "New"
+    },
+    "261": {
+      "title": "MiCAM - Service ",
+      "state": "New"
+    },
+    "268": {
+      "title": "MiCAM - User Management ",
+      "state": "New"
+    },
+    "289": {
+      "title": "MiCAM - Notification Rule",
+      "state": "Resolved"
+    },
+    "304": {
+      "title": "Master - Profile management form",
+      "state": "Resolved"
+    },
+    "305": {
+      "title": "Master - Manage Cloud Configuration for Company Product",
+      "state": "Resolved"
+    },
+    "306": {
+      "title": "Master - Product Version ",
+      "state": "Resolved"
+    },
+    "307": {
+      "title": "Master - Define Product Features for Edition Management",
+      "state": "Resolved"
+    },
+    "318": {
+      "title": "Master - Backup & Restore Management",
+      "state": "New"
+    },
+    "326": {
+      "title": "MiCAM - AI - Missing PPE",
+      "state": "New"
+    },
+    "398": {
+      "title": "Master - Deployment Service",
+      "state": "New"
+    },
+    "408": {
+      "title": "myShop POS - WO - Oil Service",
+      "state": "New"
+    },
+    "431": {
+      "title": "myShop POS - Opening Day",
+      "state": "Resolved"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "New"
+    },
+    "435": {
+      "title": "myShop POS - WO - Service Package Selection",
+      "state": "New"
+    },
+    "437": {
+      "title": "myShop Portal - User Management",
+      "state": "New"
+    },
+    "440": {
+      "title": "myShop Portal - User",
+      "state": "Resolved"
+    },
+    "445": {
+      "title": "myShop POS - WO - Item Form (Add new Product with different Kinds)",
+      "state": "Closed"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "451": {
+      "title": "myShop POS - Add Supplier",
+      "state": "New"
+    },
+    "493": {
+      "title": "myShop POS - WO - Discount Screen",
+      "state": "Active"
+    },
+    "496": {
+      "title": "myShop POS - Define Bay",
+      "state": "Closed"
+    },
+    "497": {
+      "title": "myShop POS - WO - Item Details (Normal)",
+      "state": "New"
+    },
+    "527": {
+      "title": "myShop POS - WO - Payment Screen",
+      "state": "New"
+    },
+    "528": {
+      "title": "myShop POS - WO - Promotion screen",
+      "state": "New"
+    },
+    "613": {
+      "title": "AI Tool - Sign up",
+      "state": "New"
+    },
+    "617": {
+      "title": "myShop Portal - E invoice KSA Onboarding EGS units ",
+      "state": "New"
+    },
+    "647": {
+      "title": "MiCAM - AI - Human Smoking Incident ",
+      "state": "Active"
+    },
+    "648": {
+      "title": "MiCAM - AI - Using Mobile Phone During Service Work",
+      "state": "Active"
+    },
+    "658": {
+      "title": "myShop POS - Voucher List",
+      "state": "Resolved"
+    },
+    "659": {
+      "title": "Master - Sign in ",
+      "state": "New"
+    },
+    "660": {
+      "title": "Master - Sign up ",
+      "state": "New"
+    },
+    "664": {
+      "title": "myShop POS - KSA E invoice Vouchers",
+      "state": "Resolved"
+    },
+    "667": {
+      "title": "Master - Purchased Items (Plan, Package)",
+      "state": "New"
+    },
+    "693": {
+      "title": "myShop POS - Create Terminal",
+      "state": "Closed"
+    },
+    "775": {
+      "title": "myShop POS - Reason ",
+      "state": "New"
+    },
+    "812": {
+      "title": "MiCAM - App - General Dashboard",
+      "state": "New"
+    },
+    "816": {
+      "title": "MiCAM - App - Join a Company",
+      "state": "New"
+    },
+    "817": {
+      "title": "MiCAM - App - Generate a QR Code Screen",
+      "state": "New"
+    },
+    "818": {
+      "title": "MiCAM - App - Installation Configuration Wizard",
+      "state": "Closed"
+    },
+    "819": {
+      "title": "MiCAM - App - Dashboard",
+      "state": "New"
+    },
+    "822": {
+      "title": "MiCAM - App - Create Terminal ",
+      "state": "Resolved"
+    },
+    "830": {
+      "title": "MiCAM - Company Incident Types Configuration",
+      "state": "New"
+    },
+    "836": {
+      "title": "MiCAM - App - Menu screen",
+      "state": "New"
+    },
+    "860": {
+      "title": "myShop POS - my master items",
+      "state": "Resolved"
+    },
+    "928": {
+      "title": "Master - Product Version Management and Update Distribution",
+      "state": "Resolved"
+    },
+    "962": {
+      "title": "myShop - Built-in Roles",
+      "state": "New"
+    },
+    "963": {
+      "title": "myShop POS - WO - Item Form (Add new Service)",
+      "state": "Closed"
+    },
+    "964": {
+      "title": "myShop POS - WO - Item Form (Add new Service Package)",
+      "state": "Closed"
+    },
+    "969": {
+      "title": "myShop Portal - KSA E invoice Vouchers",
+      "state": "New"
+    },
+    "974": {
+      "title": "myShop Portal - Promotion ",
+      "state": "Closed"
+    },
+    "975": {
+      "title": "myShop Portal - Promotion - Optional Simple Promotion ",
+      "state": "Closed"
+    },
+    "990": {
+      "title": "myShop POS - Manual Stock Adjustment",
+      "state": "Resolved"
+    },
+    "996": {
+      "title": "myShop Portal - Store ",
+      "state": "Closed"
+    },
+    "1001": {
+      "title": "MiCAM - Workflow",
+      "state": "Resolved"
+    },
+    "1002": {
+      "title": "MiCAM - Cockpit Incident Control Center",
+      "state": "Closed"
+    },
+    "1007": {
+      "title": "MiCAM - App - User List",
+      "state": "New"
+    },
+    "1008": {
+      "title": "MiCAM - App - Setting ",
+      "state": "Active"
+    },
+    "1009": {
+      "title": "myShop POS - Cash Deposit",
+      "state": "New"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "New"
+    },
+    "1014": {
+      "title": "MiCAM - App - Invite New User with Role-Based Permissions",
+      "state": "Resolved"
+    },
+    "1021": {
+      "title": "myShop POS - Start/Opening Balance",
+      "state": "Closed"
+    },
+    "1029": {
+      "title": "myShop POS - Open Drawer ",
+      "state": "Closed"
+    },
+    "1032": {
+      "title": "myShop Portal - Bank",
+      "state": "Closed"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "New"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Active"
+    },
+    "1060": {
+      "title": "myShop Portal - Print Document Report ",
+      "state": "Closed"
+    },
+    "1065": {
+      "title": "myShop POS - Reports",
+      "state": "Active"
+    },
+    "1075": {
+      "title": "MiCAM - AI - Missing Face Mask",
+      "state": "Resolved"
+    },
+    "1076": {
+      "title": "MiCAM - AI - Missing Head Protection",
+      "state": "New"
+    },
+    "1101": {
+      "title": "myShop Portal - E-Invoice Rejected Document",
+      "state": "New"
+    },
+    "1109": {
+      "title": "myShop Portal - E-Invoice clearance and Reporting Document",
+      "state": "New"
+    },
+    "1138": {
+      "title": "myShop Portal - E invoice Setting form",
+      "state": "New"
+    },
+    "1281": {
+      "title": "Myshop-Portal B2B Invoice work flow",
+      "state": "New"
+    },
+    "1282": {
+      "title": "Myshop-POS B2B Invoice work flow",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Active"
+    },
+    "1301": {
+      "title": "myShop POS - Operational Setting screen",
+      "state": "New"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test Environments",
+      "state": "New"
+    },
+    "1321": {
+      "title": "MiCAM - App - Create a new Object ",
+      "state": "Closed"
+    },
+    "1326": {
+      "title": "MiCAM - AI - Food Dropped and Reused",
+      "state": "Resolved"
+    },
+    "1330": {
+      "title": "myShop POS - Portal - Delete Tracker & Cross-Platform Data Synchronization",
+      "state": "New"
+    },
+    "1337": {
+      "title": "MiCAM - AI - Fire/Smoke Incident",
+      "state": "New"
+    },
+    "1338": {
+      "title": "MiCAM - AI - Pest Detection",
+      "state": "New"
+    },
+    "1345": {
+      "title": "MiCAM - App - Transfer DVrs/Cameras to new Cloud",
+      "state": "New"
+    },
+    "1347": {
+      "title": "MiCAM - App - Support Help for installation Configuration",
+      "state": "New"
+    },
+    "1362": {
+      "title": "Android and Apple Publishing - Changes requested by Android Store and Apple store",
+      "state": "Closed"
+    },
+    "1454": {
+      "title": "myShop Portal - Share option",
+      "state": "New"
+    },
+    "1471": {
+      "title": "MiCAM - User ",
+      "state": "New"
+    },
+    "1482": {
+      "title": "myShop - Opening Day Permission",
+      "state": "New"
+    },
+    "1500": {
+      "title": "myShop - Reports: \"Purchase Invoices\" - New Report to show Supplier Invoice",
+      "state": "Resolved"
+    },
+    "1512": {
+      "title": "Master - Notification Rule",
+      "state": "Resolved"
+    },
+    "1514": {
+      "title": "Master - Default Notification Templet type",
+      "state": "Resolved"
+    },
+    "1547": {
+      "title": "myShop - Reports: \"Purchase Return\" - New Report to show Return from purchase invoice",
+      "state": "Resolved"
+    },
+    "1548": {
+      "title": "myShop - Reports: \"Sales Return\" - New Report to show Return from Sales Invoice",
+      "state": "Resolved"
+    },
+    "1549": {
+      "title": "myShop - Reports: \"Open Balance\" - New Report to show the items qty open balance",
+      "state": "Resolved"
+    },
+    "1550": {
+      "title": "myShop - Reports: \"Cash Deposit\" - New Report to show cash deposit transactions details",
+      "state": "Resolved"
+    },
+    "1551": {
+      "title": "myShop - Reports: \"Stock Adjustment\" - New Report to show the items Stock Adjustments qtys",
+      "state": "Resolved"
+    },
+    "1552": {
+      "title": "myShop - Reports: \"Sales Invoice\" - New Report to show Sales Invoices as a voucher",
+      "state": "Closed"
+    },
+    "1561": {
+      "title": "myShop POS - Default Workflow Initialization and Built-in Fallback",
+      "state": "Closed"
+    },
+    "1566": {
+      "title": "myShop Portal - Document Number Template",
+      "state": "New"
+    },
+    "1567": {
+      "title": "myShop POS - Add Vehicle Milage to WO ",
+      "state": "Closed"
+    },
+    "1578": {
+      "title": "Master - Backup Storage Form",
+      "state": "New"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "Active"
+    },
+    "1582": {
+      "title": "myShop POS - Service Package Pricing, Discount Distribution & Display Configuration",
+      "state": "New"
+    },
+    "1583": {
+      "title": "myShop POS - Manage Test environment ",
+      "state": "New"
+    },
+    "1584": {
+      "title": "myShop POS - Installation Wizard configurations ",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "New"
+    },
+    "1587": {
+      "title": "MiCAM - AI - Virtual DVR and Camera Test Environment",
+      "state": "New"
+    },
+    "1600": {
+      "title": "MiCAM – Petromin – Test Environment Preparation",
+      "state": "New"
+    },
+    "1601": {
+      "title": "MiCAM – Herfy – Test Environment Preparation",
+      "state": "Active"
+    },
+    "1603": {
+      "title": "MiCAM – Grandma Recipe – Test Environment Preparation",
+      "state": "Active"
+    },
+    "1604": {
+      "title": "MiCAM – Nader Group – Test Environment Preparation",
+      "state": "New"
+    },
+    "1605": {
+      "title": "MiCAM – Katakit – Test Environment Preparation",
+      "state": "New"
+    },
+    "1606": {
+      "title": "MiCAM – Utopia School  – Test Environment Preparation",
+      "state": "New"
+    },
+    "1607": {
+      "title": "MiCAM – Wild Meat – Test Environment Preparation",
+      "state": "New"
+    },
+    "1609": {
+      "title": "MiCAM - AI - Object Counting Incident ",
+      "state": "New"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Active"
+    },
+    "1621": {
+      "title": "myShop - Reports: \"WO\" - New Report to show work Orders Details",
+      "state": "Closed"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Resolved"
+    },
+    "1632": {
+      "title": "myShop Portal/POS - Business Rules Einvoice KSA",
+      "state": "Closed"
+    },
+    "1636": {
+      "title": "MiCAM - AI - Fridge Open",
+      "state": "New"
+    },
+    "1638": {
+      "title": "Change 'MiCAM' app name to 'Eagle Eye'",
+      "state": "New"
+    },
+    "1706": {
+      "title": "ParkSense - Sign in ",
+      "state": "New"
+    },
+    "1707": {
+      "title": "ParkSense - Sign Up",
+      "state": "New"
+    },
+    "1708": {
+      "title": "ParkSense - Vehicle Entry & Parking Assignment",
+      "state": "New"
+    },
+    "1709": {
+      "title": "ParkSense - Live Dashboard",
+      "state": "New"
+    },
+    "1710": {
+      "title": "ParkSense - Live Parking Map",
+      "state": "New"
+    },
+    "1711": {
+      "title": "ParkSense - Vehicle Search & Details",
+      "state": "New"
+    },
+    "1712": {
+      "title": "ParkSense - Camera Monitoring & Detection Events",
+      "state": "New"
+    },
+    "1713": {
+      "title": "ParkSense - Alerts & Exceptions",
+      "state": "New"
+    },
+    "1714": {
+      "title": "ParkSense - Garage & Camera Configuration",
+      "state": "New"
+    },
+    "1715": {
+      "title": "ParkSense - Menu",
+      "state": "New"
+    },
+    "1717": {
+      "title": "myShop Portal - Item Service Group",
+      "state": "Active"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "New"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "New"
+    },
+    "1737": {
+      "title": "Macone - Windows - Join company | White Screen Displayed When Clicking the Back Button from the Branch List",
+      "state": "Removed"
+    },
+    "1809": {
+      "title": "myShop POS - Demo Loyalty Screen ",
+      "state": "Closed"
+    },
+    "1842": {
+      "title": "MiCAM - AI - Sandwich Counting Incident",
+      "state": "New"
+    },
+    "1844": {
+      "title": "AI Tool - Capture Video Incident ",
+      "state": "New"
+    },
+    "1845": {
+      "title": "AI Tool - Camera",
+      "state": "New"
+    },
+    "1846": {
+      "title": "AI Tool - DVR ",
+      "state": "New"
+    },
+    "1872": {
+      "title": "myShop POS - Sales Return - Full return (other payment methods)",
+      "state": "New"
+    },
+    "1874": {
+      "title": "myShop POS - Portal - my Details",
+      "state": "New"
+    }
+  }
+}

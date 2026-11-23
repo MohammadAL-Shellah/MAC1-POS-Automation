@@ -1,0 +1,6 @@
+﻿Invoice #,Date,Customer,Customer Type,Plate Number,Items,Amount,Method,Status,ZATCA Status,ZATCA Status Time
+"RTN - TO_11000013","12/11/2026 14:35","Ammar","Individual","1111AAA",1,-100.00,"Cash","Refunded","",""
+"INV - TO_11000077","12/11/2026 14:28","Ammar","Individual","1111AAA",1,200.00,"Cash + Mada","Paid","",""
+"INV - TO_11000076","12/11/2026 14:19","Ammar","Individual","1111AAA",1,100.00,"Master","Paid","",""
+"INV - TO_11000075","12/11/2026 14:16","Mohammad Alshellah","Individual","1111AAA",2,542.50,"Cash","Paid","",""
+"INV - TO_11000074","12/11/2026 11:41","Mohammad Alshellah","Individual","1111AAA",3,2898.46,"Cash","Paid","",""

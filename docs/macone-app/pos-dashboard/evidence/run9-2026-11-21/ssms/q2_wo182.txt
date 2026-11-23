@@ -1,0 +1,8 @@
+
+WorkOrderNumber  WorkOrderDate          DocumentStatusID IsShiftedEOD WorkOrderTotalAmount WorkingDayOpen         ShiftedFromDayOpen InvoiceNumber     InvoiceDate            InvoiceTotalAmount
+---------------  -------------          ---------------- ------------ -------------------- --------------         ------------------ -------------     -----------            ------------------
+WO - TO_11000182 11/21/2026 12:10:46 AM                2                        100.000000 11/21/2026 12:09:12 AM                    INV - TO_11000137 11/21/2026 12:10:47 AM         100.000000
+
+
+
+

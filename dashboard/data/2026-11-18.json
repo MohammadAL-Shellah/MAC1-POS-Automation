@@ -1,0 +1,574 @@
+{
+  "date": "2026-11-18",
+  "entries": [
+    {
+      "source": "claude",
+      "type": "blocker",
+      "storyId": 1624,
+      "title": "TC-SST-039 Auto Print: found in Share Options (resolved)",
+      "notes": "Resolved 18/11/2026: Auto print is set per document in Administration > Share Option Configurations (Service Reminder Stickers, Hard Copy). The item field stays struck out in the story. TC-SST-039 Pass on 1.2.494 and again on 1.2.495.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-18T08:46:54+03:00",
+      "url": null,
+      "status": "resolved",
+      "resolvedOn": "2026-11-18",
+      "id": "e-20261118-001"
+    },
+    {
+      "type": "story",
+      "devopsId": 1046,
+      "storyId": 1046,
+      "title": "myShop POS - Company Profile",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-18T09:02:09+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1046",
+      "id": "e-20261118-002",
+      "assignedTo": "Motasem Al Fasatleh",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-08-14T14:50:31.137Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-18T06:25:21.283Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-10-26T06:07:24.047Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-26T12:54:37.9Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-15T13:49:17.943Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T08:21:43.203Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T06:00:06.01Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-22T13:44:33.887Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-22T14:09:55.67Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-23T12:44:01.97Z",
+          "by": "Motasem Al Fasatleh"
+        }
+      ],
+      "refreshedAt": "2026-11-23T15:45:18+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 440,
+      "storyId": 440,
+      "title": "myShop Portal - User",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-18T09:47:09+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/440",
+      "id": "e-20261118-003",
+      "assignedTo": "Motasem Al Fasatleh",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-12-26T18:58:21.01Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-13T08:51:02.063Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-10-13T09:52:54.25Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-14T14:37:02.267Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-15T06:18:53.16Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-09T06:19:32.19Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-11T07:55:46.55Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-16T11:53:07.23Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T06:36:24.81Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T07:41:59.773Z",
+          "by": "Motasem Al Fasatleh"
+        }
+      ],
+      "refreshedAt": "2026-11-19T10:47:15+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 1624,
+      "storyId": 1624,
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-18T09:47:09+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1624",
+      "id": "e-20261118-004",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-14T11:13:11.197Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T05:54:07.457Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-22T06:02:52.25Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T07:21:24.573Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-29T06:36:57.377Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T05:37:37.46Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T12:11:43.58Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-05T08:11:21.56Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-08T12:22:39.233Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-12T06:28:08.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T12:33:22.16Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T06:06:19.533Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T11:59:21.61Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:59.203Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T16:39:40.007Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:59:31.277Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-22T07:00:57.937Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "refreshedAt": "2026-11-22T10:01:10+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "bug_closed",
+      "devopsId": 1824,
+      "storyId": 1624,
+      "title": "MAC1 - Print Stickers | The system does not display the all information in the template in the same sticker",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-18T10:39:14+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1824",
+      "status": "Closed",
+      "id": "e-20261118-005",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "Print Stickers"
+      },
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-04T06:54:38.72Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-12T06:27:53.373Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-18T07:37:09.22Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-18T23:47:15+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "bug_closed",
+      "devopsId": 1830,
+      "storyId": 1624,
+      "title": "MAC1 - Print Stickers | Unclear prompt message when printing stickers after completing a  invoice",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-18T10:39:14+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1830",
+      "status": "Closed",
+      "id": "e-20261118-006",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "Print Stickers"
+      },
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-04T09:10:53.677Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-09T12:53:36.637Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-18T07:36:25.243Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-18T23:47:15+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 1624,
+      "notes": "Retest 18/11 on 1.2.495: bugs 2167 and 2168 fixed (TC-SST-052 Pass); TC-SST-040 (both steps) and 045 rerun with screenshots, Pass. Task 1812 rev 27",
+      "run": {
+        "build": "1.2.495",
+        "pass": 5,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-18T11:07:05+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261118-007"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 2167,
+      "storyId": 1624,
+      "title": "MAC1 - Service Sticker | Wrong and cut texts on the sticker and sticker screen",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-18T11:17:13+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2167",
+      "bug": {
+        "issueType": "Cosmetic",
+        "qaBugType": "Other",
+        "severity": "4 - Low",
+        "screen": "Service Reminder Stickers"
+      },
+      "id": "e-20261118-008",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-17T17:02:35.6Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T05:42:29.493Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T06:24:30.547Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-18T08:17:13.26Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-18T23:47:15+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 1624,
+      "notes": "Final risk-based round 18/11 night on 1.2.495, WO-TO_11000162 / INV-TO_11000123: 011, 012, 013, 016, 033, 037, 038, 039, 041 Pass. 2165 retest blocked: sticker pencil and Item Details edit pencil not shown for logged user m.alshellah (Administrators have Edit allowed) - to confirm",
+      "run": {
+        "build": "1.2.495",
+        "pass": 9,
+        "fail": 0,
+        "blocked": 1,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-18T21:59:11+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261118-009"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [
+        {
+          "id": 432,
+          "title": "myShop POS - Closing Day",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/432"
+        },
+        {
+          "id": 1011,
+          "title": "myShop POS - Sales Return - Full Return",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1011"
+        },
+        {
+          "id": 1041,
+          "title": "myShop POS -  Share option Configurations & document assignment ",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041"
+        },
+        {
+          "id": 1726,
+          "title": "myShop POS - Document Sharing Options in POS",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1726"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [
+        {
+          "id": 450,
+          "title": "myShop POS - Add a customer",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/450"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-18T23:47:15+03:00",
+  "mySyncedAt": "2026-11-18T23:47:15+03:00",
+  "storyRefs": {
+    "180": {
+      "title": "myShop POS - Purchase Invoice",
+      "state": "New"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "431": {
+      "title": "myShop POS - Opening Day",
+      "state": "Resolved"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "Resolved"
+    },
+    "440": {
+      "title": "myShop Portal - User",
+      "state": "Resolved"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "830": {
+      "title": "MiCAM - Company Incident Types Configuration",
+      "state": "New"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "Resolved"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "Active"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Active"
+    },
+    "1621": {
+      "title": "myShop - Reports: \"WO\" - New Report to show work Orders Details",
+      "state": "Closed"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Active"
+    },
+    "1717": {
+      "title": "myShop Portal - Item Service Group",
+      "state": "Closed"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Active"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Resolved"
+    },
+    "2169": {
+      "title": "myShop POS - Detected vehicles in check-in screen ",
+      "state": "New"
+    },
+    "2170": {
+      "title": "Master - Product Form",
+      "state": "New"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Msg 916, Level 14, State 2, Line 964
+The server principal "ReadUser" is not able to access the database "MacOne_165d415d66034069b7b0171a6c242a6e" under the current security context.
+
+Completion time: 2026-11-21T17:03:19.2978030+03:00

@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/dashboard/scripts/log.js\" sync --hook 2>/dev/null || true",
+            "timeout": 120,
+            "statusMessage": "Syncing QA dashboard with Azure DevOps..."
+          }
+        ]
+      }
+    ]
+  }
+}

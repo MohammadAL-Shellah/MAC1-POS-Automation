@@ -1,0 +1,800 @@
+{
+  "date": "2026-11-16",
+  "entries": [
+    {
+      "type": "bug_opened",
+      "devopsId": 2110,
+      "storyId": 214,
+      "title": "MAC1 - Dashboard | Dashboard doesn't refresh automatically while open, and keeps the previous day's data after midnight",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-16T10:58:20+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2110",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261116-006",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-16T07:58:20.203Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T08:45:25.64Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T11:58:17.737Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T15:02:17+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1976,
+      "storyId": null,
+      "title": "MAC1 - Portal - Invoice Report - Customer ENV | The Invoice layout is incorrectly displayed.",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-16T11:25:29+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1976",
+      "bug": {
+        "issueType": "Data Corruption",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "invoice report"
+      },
+      "id": "e-20261116-007",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-15T08:31:33.837Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T08:45:20.783Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-15T14:30:20.1Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-16T08:25:29.753Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-17T21:09:41+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 1624,
+      "notes": "Final on Task 1812 rev 31 (18/11/2026, 1.2.495): 47 Pass, 0 Fail, 6 N/A (019, 020 business dropped; 044 struck in story; 046, 054, 055 Print History not supported), 2 Pending BA (049, 050). Final round on WO-TO_11000162 / INV-TO_11000123.",
+      "run": {
+        "build": "1.2.495",
+        "pass": 47,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T12:39:54+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261116-009"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 1624,
+      "title": "MAC1 - Service Sticker | Wrong and cut texts on the sticker and sticker screen",
+      "bug": {
+        "issueType": "Cosmetic",
+        "qaBugType": "Happy Scenario",
+        "severity": "4 - Low",
+        "screen": "Service Reminder Stickers"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T12:39:56+03:00",
+      "notes": "",
+      "url": null,
+      "status": "logged as 2167",
+      "id": "e-20261116-017",
+      "loggedAs": 2167
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1624,
+      "title": "Sticker pencil edits the item definition (future WOs) instead of the current sticker only: is that the intended manual entry?",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T12:39:56+03:00",
+      "notes": "The unconfigured service card says 'Enter values for this sticker, or set them on the item', but the pencil only saves to the item.",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "Business confirmed 17/11: intended. The sticker pencil edits the item definition and applies to future WOs. TC-SST-023 and 024 Pass.",
+        "answeredOn": "2026-11-17"
+      },
+      "id": "e-20261116-018"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1624,
+      "title": "Item mileage unit Miles on a km vehicle is converted (5,000 mi = 8,047 km): is conversion accepted instead of a mismatch error?",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T12:39:56+03:00",
+      "notes": "",
+      "url": null,
+      "status": "answered",
+      "question": {
+        "answer": "Business confirmed 17/11: conversion is accepted (5,000 mi = 8,047 km), no mismatch error. TC-SST-036 Pass.",
+        "answeredOn": "2026-11-17"
+      },
+      "id": "e-20261116-019"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 1624,
+      "title": "MAC1 - Service Sticker | Service package doesn't use the shortest interval, product value always wins",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Happy Scenario",
+        "severity": "3 - Medium",
+        "screen": "Service Reminder Stickers"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T14:50:11+03:00",
+      "notes": "Not a bug: business answered 19/11/2026 that the item's own data always wins (question e-20261117-010). TC-SST-049, 050 Pass on 1.2.494.",
+      "url": null,
+      "status": "cancelled",
+      "id": "e-20261116-021"
+    },
+    {
+      "source": "claude",
+      "type": "blocker",
+      "storyId": 1624,
+      "title": "TC-SST-022 and 043 need a disconnected sticker printer",
+      "notes": "Cleared 16/11: temporary Windows printer QA_SST Sticker Test used, then removed from MAC1 and Windows. 022 and 043 passed.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T14:50:12+03:00",
+      "url": null,
+      "status": "resolved",
+      "resolvedOn": "2026-11-16",
+      "id": "e-20261116-025"
+    },
+    {
+      "type": "story",
+      "devopsId": 1624,
+      "storyId": 1624,
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-16T14:56:15+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1624",
+      "id": "e-20261116-026",
+      "assignedTo": "Mohammad Al Shellah",
+      "refreshedAt": "2026-11-22T10:01:10+03:00",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-14T11:13:11.197Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T05:54:07.457Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-22T06:02:52.25Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T07:21:24.573Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-29T06:36:57.377Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T05:37:37.46Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T12:11:43.58Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-05T08:11:21.56Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-08T12:22:39.233Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-12T06:28:08.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T12:33:22.16Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T06:06:19.533Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T11:59:21.61Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:59.203Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T16:39:40.007Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:59:31.277Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-22T07:00:57.937Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "devopsId": 214,
+      "storyId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-16T14:56:15+03:00",
+      "notes": "Test cases or bugs logged under it",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "id": "e-20261116-027",
+      "assignedTo": "Mohammad Al Shellah",
+      "refreshedAt": "2026-11-24T00:00:28+03:00",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        }
+      ]
+    },
+    {
+      "source": "claude",
+      "type": "story",
+      "devopsId": 1624,
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "notes": "QA Task 1812 rev 31 (18/11/2026): aligned with story rev 52, final result on 1.2.495 47 Pass / 0 Fail / 6 N/A / 2 Pending BA. Open: bug 2165, TC-SST-049 and 050 (business answer).",
+      "storyId": 1624,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T15:15:04+03:00",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1624",
+      "status": "Closed",
+      "id": "e-20261116-028",
+      "assignedTo": "Mohammad Al Shellah",
+      "refreshedAt": "2026-11-22T10:01:10+03:00",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-14T11:13:11.197Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T05:54:07.457Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-22T06:02:52.25Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T07:21:24.573Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-29T06:36:57.377Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T05:37:37.46Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T12:11:43.58Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-05T08:11:21.56Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-08T12:22:39.233Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-12T06:28:08.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T12:33:22.16Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T06:06:19.533Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T11:59:21.61Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:59.203Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T16:39:40.007Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:59:31.277Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-22T07:00:57.937Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ]
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 1624,
+      "title": "MAC1 - Items | User without My Items Edit permission can open Edit Item Info and save changes",
+      "notes": "Logged as 2168. Retest 18/11/2026 on 1.2.495: Pass, Role User gets read only Item Details (no pencil, Save disabled). Prepared as Closed, waiting for the user to save.",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Happy Scenario",
+        "severity": "2 - High",
+        "screen": "My Items / Service Reminder Stickers"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-16T21:34:44+03:00",
+      "url": null,
+      "status": "logged as 2168",
+      "id": "e-20261116-030",
+      "loggedAs": 2168
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [
+        {
+          "id": 450,
+          "title": "myShop POS - Add a customer",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "linked work",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/450"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": [
+        {
+          "id": 1748,
+          "title": "MAC ONE - POS Edit Customer – Changing the customer mobile number fails with “MOBILE_CHANGE_OTP_NOT_SENT”",
+          "state": "Closed",
+          "storyId": 450,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1748",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "2 - High",
+            "screen": "Edit Customer"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [
+        {
+          "id": 1299,
+          "title": "myShop POS - Pemission Screen",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1299"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [
+        {
+          "id": 2105,
+          "title": "MAC ONE - Portal | POS Permissions – No view of the roles assigned to each POS screen permission",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2105",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "System Role - Page Permissions"
+          }
+        },
+        {
+          "id": 2106,
+          "title": "MAC ONE - Portal | POS Permissions – Sales Invoice page has only Export permission",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2106",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "System Role - Page Permissions"
+          }
+        },
+        {
+          "id": 2107,
+          "title": "MAC ONE - Portal | POS Permissions – Permission types from the story are missing (Delete, Void, Refund, Apply Discount, Change Price ...)",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2107",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "System Role - Page Permissions"
+          }
+        },
+        {
+          "id": 2108,
+          "title": "MAC ONE POS - Permissions – User can open screens that his role has no View permission on",
+          "state": "Resolved",
+          "storyId": 1299,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2108",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "Permissions"
+          }
+        },
+        {
+          "id": 2109,
+          "title": "MAC ONE POS - Permissions – Assign Roles table is cut, last permission columns can’t be reached",
+          "state": "Closed",
+          "storyId": 1299,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2109",
+          "bug": {
+            "issueType": "Cosmetic",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "Permissions"
+          }
+        },
+        {
+          "id": 2111,
+          "title": "MAC ONE POS - Permissions – Some permission columns show code names instead of titles",
+          "state": "Closed",
+          "storyId": 1299,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2111",
+          "bug": {
+            "issueType": "Cosmetic",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "Permissions"
+          }
+        }
+      ],
+      "bugsClosed": [
+        {
+          "id": 2105,
+          "title": "MAC ONE - Portal | POS Permissions – No view of the roles assigned to each POS screen permission",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2105",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "System Role - Page Permissions"
+          }
+        },
+        {
+          "id": 2106,
+          "title": "MAC ONE - Portal | POS Permissions – Sales Invoice page has only Export permission",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2106",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "System Role - Page Permissions"
+          }
+        },
+        {
+          "id": 2107,
+          "title": "MAC ONE - Portal | POS Permissions – Permission types from the story are missing (Delete, Void, Refund, Apply Discount, Change Price ...)",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2107",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Happy Scenario",
+            "severity": "3 - Medium",
+            "screen": "System Role - Page Permissions"
+          }
+        }
+      ]
+    }
+  ],
+  "teamSyncedAt": "2026-11-17T21:09:41+03:00",
+  "mySyncedAt": "2026-11-17T21:09:41+03:00",
+  "storyRefs": {
+    "167": {
+      "title": "myShop Portal - Item",
+      "state": "Resolved"
+    },
+    "180": {
+      "title": "myShop POS - Purchase Invoice",
+      "state": "New"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "431": {
+      "title": "myShop POS - Opening Day",
+      "state": "Resolved"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "New"
+    },
+    "440": {
+      "title": "myShop Portal - User",
+      "state": "New"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "451": {
+      "title": "myShop POS - Add Supplier",
+      "state": "New"
+    },
+    "493": {
+      "title": "myShop POS - WO - Discount Screen",
+      "state": "New"
+    },
+    "647": {
+      "title": "MiCAM - AI - Human Smoking Incident ",
+      "state": "Active"
+    },
+    "648": {
+      "title": "MiCAM - AI - Using Mobile Phone During Service Work",
+      "state": "Active"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "830": {
+      "title": "MiCAM - Company Incident Types Configuration",
+      "state": "New"
+    },
+    "928": {
+      "title": "Master - Product Version Management and Update Distribution",
+      "state": "Resolved"
+    },
+    "990": {
+      "title": "myShop POS - Manual Stock Adjustment",
+      "state": "Resolved"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "New"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Active"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1337": {
+      "title": "MiCAM - AI - Fire/Smoke Incident",
+      "state": "New"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "Active"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Active"
+    },
+    "1621": {
+      "title": "myShop - Reports: \"WO\" - New Report to show work Orders Details",
+      "state": "Closed"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Resolved"
+    },
+    "1717": {
+      "title": "myShop Portal - Item Service Group",
+      "state": "Closed"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Active"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Resolved"
+    }
+  }
+}

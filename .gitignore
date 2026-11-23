@@ -1,0 +1,17 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/reports/
+
+# Local secrets (QA credentials)
+.env
+
+# Temp and logs
+.qa_tmp/
+dashboard/server.log
+.claude/settings.local.json

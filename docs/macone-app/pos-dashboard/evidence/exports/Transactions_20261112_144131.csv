@@ -1,0 +1,2 @@
+﻿Invoice #,Date,Customer,Customer Type,Plate Number,Items,Amount,Method,Status,ZATCA Status,ZATCA Status Time
+"RTN - TO_11000013","12/11/2026 14:35","Ammar","Individual","1111AAA",1,-100.00,"Cash","Refunded","",""

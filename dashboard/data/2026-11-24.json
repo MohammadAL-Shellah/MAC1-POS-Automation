@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-24",
+  "entries": [],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-24T00:00:28+03:00",
+  "mySyncedAt": "2026-11-24T00:00:28+03:00",
+  "storyRefs": {
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "408": {
+      "title": "myShop POS - WO - Oil Service",
+      "state": "New"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "New"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "New"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "990": {
+      "title": "myShop POS - Manual Stock Adjustment",
+      "state": "Resolved"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "Resolved"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Closed"
+    },
+    "1282": {
+      "title": "Myshop-POS B2B Invoice work flow",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1584": {
+      "title": "myShop POS - Installation Wizard configurations ",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "Resolved"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Resolved"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Active"
+    },
+    "2262": {
+      "title": "myShop POS - Assign technician(s) to WO ",
+      "state": "New"
+    },
+    "2273": {
+      "title": "myShop - Support Remote control to POS ",
+      "state": "New"
+    },
+    "2282": {
+      "title": "myShop Portal - Enhancement on terminal (Remote Popup)",
+      "state": "New"
+    }
+  }
+}

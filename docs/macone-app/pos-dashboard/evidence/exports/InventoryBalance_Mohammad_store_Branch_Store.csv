@@ -1,0 +1,366 @@
+QA - Company ,,,,,,,,,,,,,
+???? ???????? ??????? ,,,,,,,,,,,,,
+,,,,,,"Inventory Balance
+",,,,,,,
+To Date:,,13/11/2026,,,,Branch,,,,,,,
+Print Date:,,13/11/2026 11:48:38 PM,,,,Store,,Mohammad store - Branch Store,,,,,
+Item Number,Item Name,,Item Category,Unit,opening Balance,,Transaction Date ,,Item Cost,Total Cost,In Stock,Out Stock,Closing Balance
+45288851-T2G-A00YMC,45258886441-T2G-A00YMC - FRONT BRAKE ROTORS,,ECOBREX Brake Rotors,Each,97,,,,,,,,97
+ITM0010,Engine Oil 15W-40 4L,,Engine Group,Box,50,,,,,,,,50
+ITM0050,Service Reminder Tag,,Engine Group,Each,50,,,,,,,,50
+ITM0020,Funnel,,Engine Group,Each,50,,,,,,,,50
+ITM0075,Engine Degreaser 026,,Engine Group,Each,50,,,,,,,,50
+ITM0094,Oil Pan Sealant 045,,Engine Group,Each,50,,,,,,,,50
+ITM0117,Oil Funnel Set 068,,Engine Group,Each,50,,,,,,,,50
+ITM0092,Oil Filter Gasket 043,,Engine Group,Each,50,,,,,,,,50
+ITM0074,Oil Pan Sealant 025,,Engine Group,Each,50,,,,,,,,50
+ITM0055,Engine Degreaser 006,,Engine Group,Each,50,,,,,,,,50
+ITM0004,Engine Oil 5W-40 4L,,Engine Group,Box,50,,,,,,,,50
+ITM0016,Fuel Filter,,Engine Group,Each,50,,,,,,,,50
+ITM0064,Oil Pan Sealant 015,,Engine Group,Each,50,,,,,,,,50
+ITM0002,Engine Oil 5W-30 4L,,Engine Group,Box,50,,,,,,,,50
+ITM0036,Battery 60Ah,,Engine Group,Each,50,,,,,,,,50
+ITM0034,Battery Terminal Protector,,Engine Group,Each,50,,,,,,,,50
+ITM0058,Workshop Cleaning Spray 009,,Engine Group,Each,50,,,,,,,,50
+ITM0048,Waste Oil Container,,Engine Group,Each,50,,,,,,,,50
+ITM0073,Oil Filter Housing Cap 024,,Engine Group,Each,50,,,,,,,,50
+ITM0076,Rubber O-Ring Set 027,,Engine Group,Box,50,,,,,,,,50
+ITM0052,Oil Filter Gasket 003,,Engine Group,Each,50,,,,,,,,50
+ITM0121,Synthetic Engine Oil Additive 072,,Engine Group,Each,50,,,,,,,,50
+ITM0135,Engine Degreaser 086,,Engine Group,Each,50,,,,,,,,50
+ITM0046,Shop Towels Pack,,Engine Group,Box,50,,,,,,,,50
+ITM0087,Oil Funnel Set 038,,Engine Group,Each,50,,,,,,,,50
+ITM0105,Engine Degreaser 056,,Engine Group,Each,50,,,,,,,,50
+ITM0111,Synthetic Engine Oil Additive 062,,Engine Group,Each,50,,,,,,,,50
+ITM0141,Synthetic Engine Oil Additive 092,,Engine Group,Each,50,,,,,,,,50
+ITM0011,Oil Filter Standard,,Engine Group,Each,50,,,,,,,,50
+ITM0120,Protective Floor Mat Pack 071,,Engine Group,Box,50,,,,,,,,50
+ITM0119,Protective Seat Cover Roll 070,,Engine Group,Box,50,,,,,,,,50
+ITM0083,Oil Filter Housing Cap 034,,Engine Group,Each,50,,,,,,,,50
+ITM0131,Synthetic Engine Oil Additive 082,,Engine Group,Each,50,,,,,,,,50
+ITM0067,Oil Funnel Set 018,,Engine Group,Each,50,,,,,,,,50
+ITM0071,Synthetic Engine Oil Additive 022,,Engine Group,Each,50,,,,,,,,50
+ITM0106,Rubber O-Ring Set 057,,Engine Group,Box,50,,,,,,,,50
+ITM0110,Protective Floor Mat Pack 061,,Engine Group,Box,50,,,,,,,,50
+ITM0015,Cabin Air Filter,,Engine Group,Each,50,,,,,,,,50
+ITM0114,Oil Pan Sealant 065,,Engine Group,Each,50,,,,,,,,50
+ITM0080,Protective Floor Mat Pack 031,,Engine Group,Box,50,,,,,,,,50
+ITM0066,Rubber O-Ring Set 017,,Engine Group,Box,50,,,,,,,,50
+ITM0144,Oil Pan Sealant 095,,Engine Group,Each,50,,,,,,,,50
+ITM0054,Oil Pan Sealant 005,,Engine Group,Each,50,,,,,,,,50
+ITM0107,Oil Funnel Set 058,,Engine Group,Each,50,,,,,,,,50
+ITM0014,Air Filter Premium,,Engine Group,Each,50,,,,,,,,50
+ITM0082,Oil Filter Gasket 033,,Engine Group,Each,50,,,,,,,,50
+ITM0138,Workshop Cleaning Spray 089,,Engine Group,Each,50,,,,,,,,50
+ITM0009,Engine Oil 15W-40 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0079,Protective Seat Cover Roll 030,,Engine Group,Box,50,,,,,,,,50
+item - 000098,Item import - 02,,Engine Group,Each,149,,,,,,,,149
+ITM0123,Oil Filter Housing Cap 074,,Engine Group,Each,50,,,,,,,,50
+ITM0125,Engine Degreaser 076,,Engine Group,Each,50,,,,,,,,50
+ITM0022,Coolant 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0001,Engine Oil 5W-30 1L,,Engine Group,Liter,149,,,,,,,,149
+ITM0070,Protective Floor Mat Pack 021,,Engine Group,Box,50,,,,,,,,50
+ITM0086,Rubber O-Ring Set 037,,Engine Group,Box,50,,,,,,,,50
+ITM0147,Oil Funnel Set 098,,Engine Group,Each,50,,,,,,,,50
+ITM0127,Oil Funnel Set 078,,Engine Group,Each,50,,,,,,,,50
+ITM0033,Battery Terminal Cleaner,,Engine Group,Each,50,,,,,,,,50
+ITM0097,Oil Funnel Set 048,,Engine Group,Each,50,,,,,,,,50
+ITM0031,Fuel System Cleaner,,Engine Group,Each,50,,,,,,,,50
+ITM0136,Rubber O-Ring Set 087,,Engine Group,Box,50,,,,,,,,50
+ITM0113,Oil Filter Housing Cap 064,,Engine Group,Each,50,,,,,,,,50
+ITM0037,Battery 70Ah,,Engine Group,Each,50,,,,,,,,50
+ITM0043,Tyre Repair Kit,,Engine Group,Each,50,,,,,,,,50
+ITM0039,Tyre Pressure Gauge,,Engine Group,Each,50,,,,,,,,50
+ITM0078,Workshop Cleaning Spray 029,,Engine Group,Each,50,,,,,,,,50
+ITM0077,Oil Funnel Set 028,,Engine Group,Each,50,,,,,,,,50
+ITM0006,Engine Oil 10W-40 4L,,Engine Group,Box,50,,,,,,,,50
+ITM0072,Oil Filter Gasket 023,,Engine Group,Each,50,,,,,,,,50
+ITM0045,Disposable Gloves Box,,Engine Group,Box,50,,,,,,,,50
+ITM0149,Protective Seat Cover Roll 100,,Engine Group,Box,50,,,,,,,,50
+ITM0044,Microfiber Cloth,,Engine Group,Each,50,,,,,,,,50
+ITM0093,Oil Filter Housing Cap 044,,Engine Group,Each,50,,,,,,,,50
+ITM0134,Oil Pan Sealant 085,,Engine Group,Each,50,,,,,,,,50
+ITM0049,Oil Change Sticker Roll,,Engine Group,Box,50,,,,,,,,50
+ITM0053,Oil Filter Housing Cap 004,,Engine Group,Each,50,,,,,,,,50
+ITM0085,Engine Degreaser 036,,Engine Group,Each,50,,,,,,,,50
+ITM0103,Oil Filter Housing Cap 054,,Engine Group,Each,50,,,,,,,,50
+ITM0030,Engine Flush Additive,,Engine Group,Each,50,,,,,,,,50
+ITM0088,Workshop Cleaning Spray 039,,Engine Group,Each,50,,,,,,,,50
+ITM0008,Engine Oil 0W-20 4L,,Engine Group,Box,49,,,,,,,,49
+ITM0023,Coolant 4L,,Engine Group,Box,50,,,,,,,,50
+ITM0089,Protective Seat Cover Roll 040,,Engine Group,Box,50,,,,,,,,50
+ITM0129,Protective Seat Cover Roll 080,,Engine Group,Box,50,,,,,,,,50
+ITM0057,Oil Funnel Set 008,,Engine Group,Each,50,,,,,,,,50
+ITM0032,Oil Treatment Additive,,Engine Group,Each,50,,,,,,,,50
+ITM0137,Oil Funnel Set 088,,Engine Group,Each,50,,,,,,,,50
+ITM0145,Engine Degreaser 096,,Engine Group,Each,50,,,,,,,,50
+ITM0133,Oil Filter Housing Cap 084,,Engine Group,Each,50,,,,,,,,50
+ITM0029,Windshield Washer Fluid 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0069,Protective Seat Cover Roll 020,,Engine Group,Box,50,,,,,,,,50
+ITM0017,Drain Plug Washer,,Engine Group,Each,50,,,,,,,,50
+ITM0091,Synthetic Engine Oil Additive 042,,Engine Group,Each,50,,,,,,,,50
+ITM0012,Oil Filter Premium,,Engine Group,Each,50,,,,,,,,50
+ITM0035,Battery 45Ah,,Engine Group,Each,50,,,,,,,,50
+ITM0139,Protective Seat Cover Roll 090,,Engine Group,Box,50,,,,,,,,50
+ITM0062,Oil Filter Gasket 013,,Engine Group,Each,50,,,,,,,,50
+ITM0104,Oil Pan Sealant 055,,Engine Group,Each,50,,,,,,,,50
+ITM0122,Oil Filter Gasket 073,,Engine Group,Each,50,,,,,,,,50
+ITM0042,Wheel Nut,,Engine Group,Each,50,,,,,,,,50
+ITM0013,Air Filter Standard,,Engine Group,Each,50,,,,,,,,50
+0415238020,Protective Floor Mat Pack 041,,Engine Group,Box,50,,,,,,,,50
+9091901233,Synthetic Engine Oil Additive 002,,Engine Group,Each,50,,,,,,,,50
+ITM0143,Oil Filter Housing Cap 094,,Engine Group,Each,50,,,,,,,,50
+ITM0041,Tyre Valve Cap Set,,Engine Group,Box,50,,,,,,,,50
+ITM0005,Engine Oil 10W-40 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0060,Protective Floor Mat Pack 011,,Engine Group,Box,50,,,,,,,,50
+ITM0056,Rubber O-Ring Set 007,,Engine Group,Box,50,,,,,,,,50
+ITM0116,Rubber O-Ring Set 067,,Engine Group,Box,50,,,,,,,,50
+ITM0065,Engine Degreaser 016,,Engine Group,Each,50,,,,,,,,50
+ITM0038,Battery 90Ah,,Engine Group,Each,50,,,,,,,,50
+ITM0115,Engine Degreaser 066,,Engine Group,Each,50,,,,,,,,50
+ITM0024,Power Steering Fluid 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0019,Oil Filter Wrench,,Engine Group,Each,50,,,,,,,,50
+ITM0118,Workshop Cleaning Spray 069,,Engine Group,Each,50,,,,,,,,50
+ITM0124,Oil Pan Sealant 075,,Engine Group,Each,50,,,,,,,,50
+ITM0098,Workshop Cleaning Spray 049,,Engine Group,Each,50,,,,,,,,50
+ITM0126,Rubber O-Ring Set 077,,Engine Group,Box,50,,,,,,,,50
+ITM0102,Oil Filter Gasket 053,,Engine Group,Each,50,,,,,,,,50
+ITM0112,Oil Filter Gasket 063,,Engine Group,Each,50,,,,,,,,50
+ITM0132,Oil Filter Gasket 083,,Engine Group,Each,50,,,,,,,,50
+ITM0027,Gear Oil 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0130,Protective Floor Mat Pack 081,,Engine Group,Box,50,,,,,,,,50
+ITM0108,Workshop Cleaning Spray 059,,Engine Group,Each,50,,,,,,,,50
+ITM0003,Engine Oil 5W-40 1L,,Engine Group,Liter,155,,,,,,,,155
+ITM0142,Oil Filter Gasket 093,,Engine Group,Each,50,,,,,,,,50
+ITM0148,Workshop Cleaning Spray 099,,Engine Group,Each,50,,,,,,,,50
+ITM0021,Brake Fluid 500ml,,Engine Group,Each,50,,,,,,,,50
+ITM0084,Oil Pan Sealant 035,,Engine Group,Each,50,,,,,,,,50
+ITM0096,Rubber O-Ring Set 047,,Engine Group,Box,50,,,,,,,,50
+ITM0040,Tyre Valve,,Engine Group,Each,50,,,,,,,,50
+ITM0059,Protective Seat Cover Roll 010,,Engine Group,Box,50,,,,,,,,50
+ITM0061,Synthetic Engine Oil Additive 012,,Engine Group,Each,50,,,,,,,,50
+ITM0150,Protective Floor Mat Pack 101,,Engine Group,Box,50,,,,,,,,50
+ITM0100,Protective Floor Mat Pack 051,,Engine Group,Box,50,,,,,,,,50
+ITM0026,ATF Transmission Fluid 4L,,Engine Group,Box,50,,,,,,,,50
+ITM0109,Protective Seat Cover Roll 060,,Engine Group,Box,50,,,,,,,,50
+ITM0140,Protective Floor Mat Pack 091,,Engine Group,Box,50,,,,,,,,50
+ITM0146,Rubber O-Ring Set 097,,Engine Group,Box,50,,,,,,,,50
+ITM0128,Workshop Cleaning Spray 079,,Engine Group,Each,50,,,,,,,,50
+ITM0047,Oil Absorbent Granules,,Engine Group,Box,50,,,,,,,,50
+ITM0025,Transmission Fluid 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0099,Protective Seat Cover Roll 050,,Engine Group,Box,50,,,,,,,,50
+ITM0018,Oil Drain Plug,,Engine Group,Each,50,,,,,,,,50
+ITM0095,Engine Degreaser 046,,Engine Group,Each,50,,,,,,,,50
+ITM0101,Synthetic Engine Oil Additive 052,,Engine Group,Each,50,,,,,,,,50
+ITM0068,Workshop Cleaning Spray 019,,Engine Group,Each,50,,,,,,,,50
+ITM0081,Synthetic Engine Oil Additive 032,,Engine Group,Each,50,,,,,,,,50
+ITM0028,Grease Tube,,Engine Group,Each,50,,,,,,,,50
+ITM0007,Engine Oil 0W-20 1L,,Engine Group,Liter,50,,,,,,,,50
+ITM0063,Oil Filter Housing Cap 014,,Engine Group,Each,50,,,,,,,,50
+NEW-ITEM-0084,Air Filter 084,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0185,Coolant 185,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0159,Radiator Fluid 159,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0053,Fuel Filter 053,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0067,Grease 067,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0052,Synthetic Oil 052,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0012,Air Filter 012,,New Items,Box,20,,,,,,,,20
+NEW-ITEM-0016,Synthetic Oil 016,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0031,Hydraulic Oil 031,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0085,Brake Cleaner 085,,New Items,Box,600,,,,,,,,600
+NEW-ITEM-0156,Fuel Filter 156,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0086,Glass Cleaner 086,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0195,Glass Cleaner 195,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0107,Gear Oil 107,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0013,Oil Filter 013,,New Items,Each,24,,,,,,,,24
+NEW-ITEM-0196,Grease 196,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0130,Brake Cleaner 130,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0108,Synthetic Oil 108,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0076,Air Filter 076,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0198,Coolant 198,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0169,Glass Cleaner 169,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0004,Washer Fluid 004,,New Items,Each,21,,,,,,,,21
+NEW-ITEM-0116,Battery Fluid 116,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0008,Oil Filter 008,,New Items,Each,21,,,,,,,,21
+NEW-ITEM-0172,Car Shampoo 172,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0100,Engine Cleaner 100,,New Items,Each,98,,,,,,,,98
+NEW-ITEM-0121,Engine Oil 121,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0024,Battery Fluid 024,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0144,Hydraulic Oil 144,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0051,Fuel Filter 051,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0079,Lubricant 079,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0049,Lubricant 049,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0061,Radiator Fluid 061,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0182,Lubricant 182,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0166,Coolant 166,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0189,Engine Oil 189,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0158,Brake Fluid 158,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0135,Radiator Fluid 135,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0048,Engine Cleaner 048,,New Items,Each,42,,,,,,,,42
+NEW-ITEM-0015,Brake Fluid 015,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0055,Brake Cleaner 055,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0094,Engine Cleaner 094,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0101,Engine Cleaner 101,,New Items,Liter,294,,,,,,,,294
+NEW-ITEM-0110,Battery Fluid 110,,New Items,Box,600,,,,,,,,600
+NEW-ITEM-0001,Washer Fluid 001,,New Items,Each,90,,,,,,,,90
+NEW-ITEM-0183,Brake Cleaner 183,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0111,Oil Filter 111,,New Items,Box,300,,,,,,,,300
+NEW-ITEM-0197,Air Filter 197,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0142,Radiator Fluid 142,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0154,Power Steering Fluid 154,,New Items,Liter,100,,,,,,,,100
+1000001,???? ,,New Items,Each,98,,,,,,,,98
+NEW-ITEM-0038,Grease 038,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0091,Oil Filter 091,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0070,Glass Cleaner 070,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0060,Glass Cleaner 060,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0007,Battery Fluid 007,,New Items,Liter,44,,,,,,,,44
+NEW-ITEM-0114,Brake Cleaner 114,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0171,Grease 171,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0132,Fuel Filter 132,,New Items,Box,600,,,,,,,,600
+NEW-ITEM-0082,Air Filter 082,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0062,Transmission Oil 062,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0014,Hydraulic Oil 014,,New Items,Liter,5,,,,,,,,5
+NEW-ITEM-0027,Synthetic Oil 027,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0146,Lubricant 146,,New Items,Box,600,,,,,,,,600
+NEW-ITEM-0173,Engine Cleaner 173,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0029,Power Steering Fluid 029,,New Items,Box,300,,,,,,,,300
+45251-T2G-A00YMC,45251-T2G-A00YMC - FRONT BRAKE ROTORS,,New Items,Box,300,,,,,,,,300
+7425,Transmission Oil 127,,New Items,Liter,50,,,,,,,,50
+9091901191,Glass Cleaner 190,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0167,Battery Fluid 167,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0200,Engine Cleaner 200,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0148,Transmission Oil 148,,New Items,Box,600,,,,,,,,600
+NEW-ITEM-0040,Washer Fluid 040,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0161,Battery Fluid 161,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0064,Air Filter 064,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0065,Brake Cleaner 065,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0175,Transmission Oil 175,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0081,Coolant 081,,New Items,Box,300,,,,,,,,300
+NEW-ITEM-0141,Fuel Filter 141,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0044,Brake Fluid 044,,New Items,Box,600,,,,,,,,600
+NEW-ITEM-0002,Washer Fluid 002,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0078,Brake Cleaner 078,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0188,Battery Fluid 188,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0072,Coolant 072,,New Items,Box,200,,,,,,,,200
+NEW-ITEM-0006,Brake Cleaner 006,,New Items,Each,138,,,,,,,,138
+NEW-ITEM-0066,Air Filter 066,,New Items,Liter,576,,,,,,,,576
+NEW-ITEM-0093,Oil Filter 093,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0034,Washer Fluid 034,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0068,Glass Cleaner 068,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0097,Fuel Filter 097,,New Items,Each,50,,,,,,,,50
+0099991,New Item,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0151,Brake Fluid 151,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0119,Coolant 119,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0005,Fuel Filter 005,,New Items,Liter,92,,,,,,,,92
+NEW-ITEM-0045,Fuel Filter 045,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0131,Fuel Filter 131,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0059,Air Filter 059,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0071,Radiator Fluid 071,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0155,Synthetic Oil 155,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0026,Glass Cleaner 026,,New Items,Box,300,,,,,,,,300
+NEW-ITEM-0090,Car Shampoo 090,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0087,Fuel Filter 087,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0133,Transmission Oil 133,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0063,Coolant 063,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0139,Grease 139,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0022,Grease 022,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0050,Synthetic Oil 050,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0095,Air Filter 095,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0163,Air Filter 163,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0149,Radiator Fluid 149,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0096,Lubricant 096,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0080,Lubricant 080,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0020,Oil Filter 020,,New Items,Each,"1,040",,,,,,,,"1,040"
+NEW-ITEM-0077,Synthetic Oil 077,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0168,Power Steering Fluid 168,,New Items,Box,300,,,,,,,,300
+NEW-ITEM-0179,Transmission Oil 179,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0165,Oil Filter 165,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0105,Coolant 105,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0102,Engine Oil 102,,New Items,Box,98,,,,,,,,98
+NEW-ITEM-0103,Lubricant 103,,New Items,Liter,98,,,,,,,,98
+NEW-ITEM-0122,Hydraulic Oil 122,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0184,Lubricant 184,,New Items,Box,200,,,,,,,,200
+NEW-ITEM-0010,Hydraulic Oil 010,,New Items,Each,288,,,,,,,,288
+NEW-ITEM-0017,Lubricant 017,,New Items,Box,130,,,,,,,,130
+NEW-ITEM-0137,Engine Cleaner 137,,New Items,Each,49,,,,,,,,49
+NEW-ITEM-0074,Brake Fluid 074,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0035,Brake Cleaner 035,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0033,Engine Oil 033,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0124,Engine Cleaner 124,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0030,Radiator Fluid 030,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0117,Oil Filter 117,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0180,Oil Filter 180,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0191,Radiator Fluid 191,,New Items,Box,200,,,,,,,,200
+NEW-ITEM-0039,Air Filter 039,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0192,Synthetic Oil 192,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0112,Engine Cleaner 112,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0073,Grease 073,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0153,Car Shampoo 153,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0021,Synthetic Oil 021,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0147,Gear Oil 147,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0123,Coolant 123,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0152,Oil Filter 152,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0083,Car Shampoo 083,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0125,Glass Cleaner 125,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0092,Oil Filter 092,,New Items,Box,200,,,,,,,,200
+NEW-ITEM-0128,Brake Fluid 128,,New Items,Box,200,,,,,,,,200
+NEW-ITEM-0075,Coolant 075,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0099,Glass Cleaner 099,,New Items,Liter,294,,,,,,,,294
+TO_1000001,Tire - Item,,New Items,Each,34,,,,,,,,34
+NEW-ITEM-0134,Gear Oil 134,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0115,Coolant 115,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0028,Lubricant 028,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0138,Oil Filter 138,,New Items,Liter,300,,,,,,,,300
+TO_12000001,Fuel Filte,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0187,Battery Fluid 187,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0164,Washer Fluid 164,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0113,Brake Cleaner 113,,New Items,Box,300,,,,,,,,300
+NEW-ITEM-0140,Lubricant 140,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0177,Gear Oil 177,,New Items,Box,200,,,,,,,,200
+NEW-ITEM-0120,Car Shampoo 120,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0178,Glass Cleaner 178,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0043,Glass Cleaner 043,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0023,Brake Fluid 023,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0089,Lubricant 089,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0041,Air Filter 041,,New Items,Each,96,,,,,,,,96
+NEW-ITEM-0037,Engine Oil 037,,New Items,Box,294,,,,,,,,294
+TO_2000001,Back Break ,,New Items,Each,48,,,,,,,,48
+NEW-ITEM-0032,Lubricant 032,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0193,Fuel Filter 193,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0036,Car Shampoo 036,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0011,Glass Cleaner 011,,New Items,Liter,144,,,,,,,,144
+NEW-ITEM-0176,Hydraulic Oil 176,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0109,Power Steering Fluid 109,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0126,Lubricant 126,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0194,Fuel Filter 194,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0019,Battery Fluid 019,,New Items,Each,200,,,,,,,,200
+NEW-ITEM-0054,Oil Filter 054,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0009,Battery Fluid 009,,New Items,Liter,23,,,,,,,,23
+NEW-ITEM-0046,Air Filter 046,,New Items,Box,600,,,,,,,,600
+NEW-ITEM-0118,Coolant 118,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0003,Synthetic Oil 003,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0150,Fuel Filter 150,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0174,Air Filter 174,,New Items,Liter,600,,,,,,,,600
+NEW-ITEM-0018,Gear Oil 018,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0129,Gear Oil 129,,New Items,Liter,300,,,,,,,,300
+NEW-ITEM-0186,Air Filter 186,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0047,Air Filter 047,,New Items,Box,50,,,,,,,,50
+NEW-ITEM-0157,Oil Filter 157,,New Items,Each,600,,,,,,,,600
+NEW-ITEM-0058,Hydraulic Oil 058,,New Items,Each,50,,,,,,,,50
+NEW-ITEM-0199,Power Steering Fluid 199,,New Items,Liter,100,,,,,,,,100
+NEW-ITEM-0057,Oil Filter 057,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0181,Engine Cleaner 181,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0145,Engine Oil 145,,New Items,Box,100,,,,,,,,100
+NEW-ITEM-0160,Washer Fluid 160,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0136,Radiator Fluid 136,,New Items,Each,100,,,,,,,,100
+NEW-ITEM-0104,Grease 104,,New Items,Box,98,,,,,,,,98
+NEW-ITEM-0042,Glass Cleaner 042,,New Items,Box,200,,,,,,,,200
+NEW-ITEM-0143,Hydraulic Oil 143,,New Items,Each,300,,,,,,,,300
+NEW-ITEM-0098,Brake Cleaner 098,,New Items,Each,588,,,,,,,,588
+NEW-ITEM-0069,Synthetic Oil 069,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0162,Oil Filter 162,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0025,Coolant 025,,New Items,Liter,50,,,,,,,,50
+NEW-ITEM-0088,Grease 088,,New Items,Liter,200,,,,,,,,200
+NEW-ITEM-0106,Engine Cleaner 106,,New Items,Box,98,,,,,,,,98
+TO_12000002,RService,,Services Group,Each,1,,,,,,,,1
+TO_2000005,Car Wash ,,Services Group,Each,1,,,,,,,,1
+7847,Lubricant 056,,New Items,Box,372,,13/11/2026,,.00,.00,4,,376

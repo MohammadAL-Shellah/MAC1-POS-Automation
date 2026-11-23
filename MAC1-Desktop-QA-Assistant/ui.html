@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Gemini QA Agent</title>
+  <link rel="stylesheet" href="/ui.css">
+  <script src="/ui.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand-mark" href="/" aria-label="Gemini QA Agent home">Q</a>
+      <div>
+        <p class="eyebrow">MINERETS · QA WORKSPACE</p>
+        <h1>Gemini QA Agent</h1>
+      </div>
+      <span class="local-pill"><span></span> Local only</span>
+    </header>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow accent">FROM USER STORY TO TEST RUN</p>
+        <h2>Tell us what to test.</h2>
+        <p>Gemini drafts the test plan. Answer its questions, review the steps, then let Playwright run them.</p>
+      </div>
+      <div class="flow" aria-label="Workflow">
+        <span class="flow-active">1 <span>Story</span></span>
+        <i></i><span>2 <span>Clarify</span></span>
+        <i></i><span>3 <span>Review</span></span>
+        <i></i><span>4 <span>Run</span></span>
+      </div>
+    </section>
+
+    <section id="chat-card" class="card chat-card">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">CHAT</p>
+          <h3>احكي معه</h3>
+        </div>
+        <button id="chat-new" class="button button-secondary chat-new" type="button">محادثة جديدة</button>
+      </div>
+      <div id="chat-log" class="chat-log" aria-live="polite"></div>
+      <form id="chat-form" class="chat-form">
+        <textarea id="chat-input" dir="auto" rows="3" maxlength="20000" required
+          placeholder="اكتب شو بدك. مثال: افتح شاشة الشغل، اعمل أمر لسيارة 1111AAA، ضيف غسيل وادفع كاش"></textarea>
+        <div class="chat-actions">
+          <label class="chat-toggle"><input id="chat-autorun" type="checkbox" checked> نفّذ مباشرة</label>
+          <select id="chat-target" aria-label="Target">
+            <option value="desktop" selected>Minerets desktop app</option>
+            <option value="web">QA web portal</option>
+          </select>
+          <button id="chat-send" class="button button-primary" type="submit">إرسال</button>
+        </div>
+      </form>
+    </section>
+
+    <form id="story-form" class="card story-card">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">STEP 01</p>
+          <h3>Your user story</h3>
+        </div>
+        <span class="optional-note">Keep it specific</span>
+      </div>
+      <label class="field-label" for="story">What should the agent test? (Arabic or English)</label>
+      <textarea id="story" name="story" dir="auto" rows="5" maxlength="100000" required
+        placeholder="اكتب الطلب بالعربي أو بالإنجليزي. مثال: افحص شاشة المبيعات باللوحة وتأكد من الأعمدة وصوّر الشاشة"></textarea>
+      <span class="field-help">Long stories are supported, up to 100,000 characters.</span>
+      <div class="import-panel">
+        <div>
+          <label class="field-label" for="test-case-file">Or import existing test cases</label>
+          <input id="test-case-file" type="file" accept=".md,text/markdown">
+          <span class="field-help">Choose a .md file (up to 128 KB). Gemini converts it for review; it will not run until you confirm.</span>
+        </div>
+        <button id="import-test-cases" class="button button-secondary" type="button">Import Markdown</button>
+      </div>
+      <div class="form-footer">
+        <label class="target-field" for="target">
+          <span class="field-label">Portal</span>
+          <select id="target" name="target">
+            <option value="desktop" selected>Minerets desktop app</option>
+            <option value="web">QA web portal</option>
+          </select>
+          <span id="target-help" class="field-help">Drives the open MacOne app with Windows UI Automation. Sign in to the QA company first and keep the screen unlocked.</span>
+        </label>
+        <button id="generate" class="button button-primary" type="submit">
+          <span>Generate test plan</span><span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </form>
+
+    <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+
+    <section id="workspace" hidden>
+      <section id="questions-card" class="card questions-card" hidden>
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">GEMINI NEEDS YOUR INPUT</p>
+            <h3>Quick clarifications</h3>
+          </div>
+          <span class="round-pill"></span>
+        </div>
+        <p class="muted">Answer below so the agent knows exactly what behavior to test.</p>
+        <form id="answers-form">
+          <div id="questions"></div>
+          <button id="answer-button" class="button button-primary" type="submit">
+            <span>Send answers</span><span aria-hidden="true">→</span>
+          </button>
+        </form>
+      </section>
+
+      <section id="plan-card" class="card plan-card" hidden>
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">STEP 02 · REVIEW BEFORE RUNNING</p>
+            <h3 id="plan-title">Your test plan</h3>
+          </div>
+          <span id="target-pill" class="target-pill"></span>
+        </div>
+        <div id="criteria" class="criteria"></div>
+        <div class="case-heading">
+          <h4>Test cases</h4>
+          <span id="case-count" class="count-pill"></span>
+        </div>
+        <div id="test-cases" class="test-cases"></div>
+        <div id="plan-actions" class="plan-actions">
+          <p class="safety-note"><span aria-hidden="true">!</span> Runs against QA and may create or update test data.</p>
+          <button id="run-button" class="button button-run" type="button">
+            <span>Run tests</span><span aria-hidden="true">▶</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="results-card" class="card results-card" hidden>
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">STEP 03 · EXECUTION REPORT</p>
+            <h3>Run results</h3>
+          </div>
+          <span id="result-count" class="count-pill"></span>
+        </div>
+        <div id="results"></div>
+        <p class="report-path">The JSON plan and report are saved in <code>MAC1-Desktop-QA-Assistant/output/</code>.</p>
+      </section>
+    </section>
+
+    <footer>
+      <span>Gemini plans with team knowledge · UI Automation or Playwright executes</span>
+      <span>Story &amp; answers go to Gemini · API key stays local</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "devops": {
+    "collection": "https://devops2.minerets.com/DefaultCollection",
+    "project": "Shop"
+  },
+  "timezone": "Asia/Amman",
+  "windowsTimezone": "Jordan Standard Time",
+  "port": 4180,
+  "me": {
+    "name": "Mohammad Alshellah",
+    "devopsName": "Mohammad Al Shellah",
+    "account": "MINERETS\\m.alshellah"
+  },
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "devopsName": "Rahaf Abudelleh",
+      "account": "MINERETS\\r.abudelleh"
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "devopsName": "Ahmad Hayajneh",
+      "account": "MINERETS\\a.hayajneh"
+    }
+  ],
+  "autoSyncMinutes": 15
+}

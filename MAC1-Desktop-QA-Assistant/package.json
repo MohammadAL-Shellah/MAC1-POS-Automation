@@ -1,0 +1,20 @@
+{
+  "name": "mac1-desktop-qa-assistant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "qa-agent.js",
+  "scripts": {
+    "start": "node qa-agent.js",
+    "ui": "node ui-server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^3.0.0",
+    "@playwright/test": "^1.65.0",
+    "dotenv": "^18.0.10"
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "date": "2026-11-19",
+  "entries": [
+    {
+      "type": "story",
+      "devopsId": 1624,
+      "storyId": 1624,
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T10:02:11+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1624",
+      "id": "e-20261119-001",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-14T11:13:11.197Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T05:54:07.457Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-22T06:02:52.25Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-22T07:21:24.573Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-29T06:36:57.377Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-02T05:37:37.46Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-02T12:11:43.58Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-05T08:11:21.56Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-08T12:22:39.233Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-12T06:28:08.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-15T12:33:22.16Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T06:06:19.533Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T11:59:21.61Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:59.203Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T16:39:40.007Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:59:31.277Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-22T07:00:57.937Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "refreshedAt": "2026-11-22T10:01:10+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 2168,
+      "storyId": 1624,
+      "title": "MAC1 - Items | User without My Items Edit permission can open Edit Item Info and save changes",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T11:26:10+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2168",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "2 - High",
+        "screen": "My Items / Permissions / Stickers printing"
+      },
+      "id": "e-20261119-002",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-17T18:27:39.637Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T05:31:54.567Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T08:26:10.693Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T23:47:16+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 2165,
+      "storyId": 1624,
+      "title": "MAC1 - Sticker print | When the user change the next date the system does not applies the change in the all open WO",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T11:36:34+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2165",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "Workorder"
+      },
+      "id": "e-20261119-003",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-17T13:46:57.67Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-17T14:07:39.937Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T07:27:13.913Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-19T06:10:39.263Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T08:36:34.657Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T23:47:16+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "title": "Retest of Resolved bugs 1973, 1974, 2110",
+      "notes": "2110 PASS (clock + KPI auto refresh). 1973 PASS (business rule: counts invoices with a return made today). 1974 PASS as designed (System Info: tab counts and cards independent of search). Retest comments with screenshots posted on 1973, 1974 and 2110. Data: RTN-TO_11000017, RTN-TO_11000018.",
+      "run": {
+        "build": "",
+        "pass": 3,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-19T14:46:37+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261119-004"
+    },
+    {
+      "type": "story",
+      "devopsId": 214,
+      "storyId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T14:47:12+03:00",
+      "notes": "Test cases or bugs logged under it",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "id": "e-20261119-005",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1478,
+      "storyId": 214,
+      "title": "MAC ONE  POS - Wrong daily sales percentage when both today and yesterday sales are zero",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T14:43:15+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1478",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261119-006",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-09-24T14:00:04.327Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-27T09:01:46.363Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T11:35:48.517Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-09-28T14:40:17.117Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-06T11:01:48.423Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-07T08:58:53.04Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-08T08:51:06.93Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-10-08T08:51:13.703Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-10-08T08:51:42.36Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-10-11T10:01:19.227Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-10-12T13:43:22.643Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T11:43:15.507Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": true,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T23:47:16+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 1624,
+      "notes": "TC-SST-049, 050 moved from Pending BA to Pass after business answer 19/11/2026 (product data always wins)",
+      "run": {
+        "build": "1.2.494",
+        "pass": 2,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-19T14:57:02+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261119-007"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1973,
+      "storyId": 214,
+      "title": "MAC1 - Dashboard - Overview | The Fully Refunded list does not match the Fully Refunded count",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T14:57:16+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1973",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Happy Scenario",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261119-008",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-13T20:01:36.42Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T07:53:53.97Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T11:57:16.003Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T23:47:16+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 2110,
+      "storyId": 214,
+      "title": "MAC1 - Dashboard | Dashboard doesn't refresh automatically while open, and keeps the previous day's data after midnight",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T14:58:17+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2110",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261119-009",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-16T07:58:20.203Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T08:45:25.64Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T11:58:17.737Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T23:47:16+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1974,
+      "storyId": 214,
+      "title": "MAC1 - Dashboard - Sales | Tab counts and cards do not change when searching",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-19T15:02:58+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1974",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261119-010",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-13T20:23:42.977Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T09:38:00.23Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T12:02:58.42Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T23:47:16+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "notes": "Full retest + DB check; 047, 070, 083 added Pass; Task 2179 rev 8",
+      "run": {
+        "build": "",
+        "pass": 64,
+        "fail": 3,
+        "blocked": 0,
+        "notRun": 13
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-19T17:06:33+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261119-011"
+    },
+    {
+      "source": "claude",
+      "type": "story",
+      "devopsId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "notes": "Task 2179 rev 7: DB evidence replaced by real SSMS screenshots (15) + Dashboard vs DB tables",
+      "storyId": 214,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-19T17:06:33+03:00",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "status": "Resolved",
+      "id": "e-20261119-012",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-19T23:47:16+03:00",
+  "mySyncedAt": "2026-11-19T23:47:16+03:00",
+  "storyRefs": {
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "220": {
+      "title": "Master - Company Form",
+      "state": "New"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "Resolved"
+    },
+    "440": {
+      "title": "myShop Portal - User",
+      "state": "Closed"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "New"
+    },
+    "830": {
+      "title": "MiCAM - Company Incident Types Configuration",
+      "state": "New"
+    },
+    "928": {
+      "title": "Master - Product Version Management and Update Distribution",
+      "state": "Resolved"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "Resolved"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Resolved"
+    },
+    "1065": {
+      "title": "myShop POS - Reports",
+      "state": "Active"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "New"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test App",
+      "state": "New"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "Active"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Active"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Resolved"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Active"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Resolved"
+    },
+    "2169": {
+      "title": "myShop POS - Detected vehicles in check-in screen ",
+      "state": "New"
+    },
+    "2170": {
+      "title": "Master - Product Form",
+      "state": "New"
+    },
+    "2172": {
+      "title": "myShop POS - Terminals Version Tracking Update ",
+      "state": "New"
+    },
+    "2174": {
+      "title": "myShop POS - Test Environment",
+      "state": "New"
+    },
+    "2176": {
+      "title": "myShop Portal - Schedule ",
+      "state": "New"
+    }
+  }
+}

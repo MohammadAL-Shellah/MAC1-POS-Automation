@@ -1,0 +1,26 @@
+{
+  "name": "playwright-js-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:portal": "playwright test --project=portal",
+    "test:portal:smoke": "playwright test --project=portal tests/portal/smoke",
+    "test:portal:headed": "playwright test --project=portal --headed",
+    "test:portal:ui": "playwright test --project=portal --ui",
+    "test:portal:debug": "playwright test --project=portal --debug",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "dashboard": "node dashboard/server.js",
+    "dashboard:sync": "node dashboard/scripts/log.js sync"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  }
+}

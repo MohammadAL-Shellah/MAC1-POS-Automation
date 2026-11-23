@@ -1,0 +1,322 @@
+{
+  "date": "2026-11-21",
+  "entries": [
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 214,
+      "title": "Work Orders carried to the next day at Close Day: count them on the new day, or on their creation day?",
+      "notes": "TC-POS-071, 21/11, build 1.2.498: WO-182 created 20/11, Carry to Next Day at close. After Open Day 21/11 it counts as Total 1 / Pending 1 on 21/11 (WorkingDayID moved to the new day). Story says count by creation date.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T00:13:48+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261121-001"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 214,
+      "title": "Completing a carried-over Work Order overwrites its WorkOrderDate and clears ShiftedFromWorkingDayID. Is losing the original creation date intended?",
+      "notes": "WO-182: WorkOrderDate 20/11 7:09 PM became 21/11 12:10 AM on Complete; IsShiftedEOD stayed False while carried.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T00:13:48+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261121-002"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 214,
+      "title": "MAC1 closes by itself after Confirm Payment on a carried-over Work Order",
+      "notes": "21/11 00:10, build 1.2.498: WO-182 (carried from 20/11), Cash 100, Confirm Payment -> app process exited, no error. Invoice INV-TO_11000137 and WO completion were saved. Seen once; needs a repeat before opening.",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "2 - High",
+        "screen": "Workorder - Payment"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T00:13:49+03:00",
+      "url": null,
+      "status": "draft",
+      "id": "e-20261121-003"
+    },
+    {
+      "source": "claude",
+      "type": "story",
+      "devopsId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "notes": "Execution 96.4% (80 of 83 applicable). Pass 72, Fail 4 (029, 032, 062, 075), Needs Investigation 4 (046, 064, 071, 085: waiting for business answers, DevOps outcome Inconclusive, Run 76), Not Run 009, 082, Blocked 006. Build 1.2.498. 21/11: Task 2179 got 26 earlier-run screenshots; TC-041 and 078 re-executed with DB checks (Run 75). 22/11: TC-010 and 033 Passed (Run 77). Correction 22/11: totals not reconciled with DevOps. Task 2179 says 72 Pass, test points say 43 Passed (42 match); 29 have no outcome in Run 74, and 019, 032, 060, 006 differ.",
+      "storyId": 214,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T00:27:08+03:00",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "status": "Resolved",
+      "id": "e-20261121-004",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "notes": "Consolidated status of all 83 applicable cases (87 total, 4 N/A) from Task 2179, 20-21/11. Blocked 5 = 006 + Pending BA 046, 064, 071, 085. Not run: 009, 010, 033, 082. Execution 94.0% (78/83). DevOps Test Run 74 is still partial (e-20261120-074).",
+      "run": {
+        "build": "1.2.498",
+        "pass": 70,
+        "fail": 4,
+        "blocked": 5,
+        "notRun": 4
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T00:29:04+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261121-005"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "title": "Run 75: TC-041, TC-078 retest",
+      "notes": "21/11 Test Run 75: TC-041 (period buttons and manual date edit) and TC-078 (custom range boundaries) Passed, UI + DB evidence (Q4-Q6 in US-214-POS-Dashboard.sql) on Test Results, Test Cases 1937 and 1948 and QA Task 2179 (Figures 75-86).",
+      "run": {
+        "build": "1.2.498",
+        "pass": 2,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T15:39:43+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261121-006"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "title": "Run 76: 4 cases set to Needs Investigation",
+      "notes": "TC-046, 064, 071, 085 moved from Pending BA to Needs Investigation (Inconclusive on DevOps) until the business answers their open questions.",
+      "run": {
+        "build": "1.2.498",
+        "pass": 0,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T16:32:48+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261121-007"
+    },
+    {
+      "source": "claude",
+      "type": "blocker",
+      "storyId": 214,
+      "title": "TC-010 and TC-033: ReadUser has no SELECT on Demo Company tables",
+      "notes": "Cleared 22/11 13:34: ReadUser has SELECT on all 11 tables checked (G4). G3 at 13:35: Demo Company, 0 invoices, 0 returns. TC-010 and TC-033 Passed in Run 77.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-21T16:59:43+03:00",
+      "url": null,
+      "status": "resolved",
+      "resolvedOn": "2026-11-22",
+      "id": "e-20261121-008"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-21T23:46:53+03:00",
+  "mySyncedAt": "2026-11-21T23:46:53+03:00",
+  "storyRefs": {
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "431": {
+      "title": "myShop POS - Opening Day",
+      "state": "Resolved"
+    },
+    "451": {
+      "title": "myShop POS - Add Supplier",
+      "state": "New"
+    },
+    "528": {
+      "title": "myShop POS - WO - Promotion screen",
+      "state": "New"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test App",
+      "state": "New"
+    },
+    "1582": {
+      "title": "myShop POS - Service Package Pricing, Discount Distribution & Display Configuration",
+      "state": "New"
+    },
+    "1584": {
+      "title": "myShop POS - Installation Wizard configurations ",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "Active"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Active"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Resolved"
+    },
+    "1632": {
+      "title": "myShop Portal/POS - Business Rules Einvoice KSA",
+      "state": "Closed"
+    },
+    "2169": {
+      "title": "myShop POS - Detected vehicles in check-in screen ",
+      "state": "New"
+    },
+    "2172": {
+      "title": "myShop POS - Terminals Version Tracking Update ",
+      "state": "New"
+    },
+    "2174": {
+      "title": "myShop POS - Test Environment",
+      "state": "New"
+    },
+    "2176": {
+      "title": "myShop Portal - Schedule ",
+      "state": "New"
+    },
+    "2259": {
+      "title": "myShop POS - Request developments",
+      "state": "New"
+    },
+    "2260": {
+      "title": "myShop POS - Report an Issue",
+      "state": "New"
+    },
+    "2261": {
+      "title": "myShop POS - Multi terminals feature",
+      "state": "New"
+    },
+    "2262": {
+      "title": "myShop POS - Assign technician(s) to WO ",
+      "state": "New"
+    }
+  }
+}

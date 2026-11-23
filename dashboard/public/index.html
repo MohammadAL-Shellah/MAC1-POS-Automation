@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA Daily Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="diamond"></span>QA Daily<span id="who" hidden></span></div>
+      <nav class="tabs" id="tabs" role="tablist" aria-label="Sections">
+        <button role="tab" data-tab="work"><span class="nl">Today</span><span class="nc"></span></button>
+        <button role="tab" data-tab="bugs"><span class="nl">Bugs</span><span class="nc"></span></button>
+        <button role="tab" data-tab="resolved"><span class="nl">Resolved</span><span class="nc"></span></button>
+        <button role="tab" data-tab="questions"><span class="nl">Questions</span><span class="nc"></span></button>
+        <button role="tab" data-tab="stories"><span class="nl">Stories</span><span class="nc"></span></button>
+        <button role="tab" data-tab="team"><span class="nl">QA team</span><span class="nc"></span></button>
+      </nav>
+      <div class="topact">
+        <div class="bellwrap">
+          <button type="button" class="btn bell" id="bellBtn" aria-label="Resolved bugs to verify" title="Resolved bugs to verify"><span data-icon="bell"></span><span class="bell-count" id="bellCount" hidden>0</span></button>
+          <div class="bellpanel" id="bellPanel" hidden></div>
+        </div>
+        <button type="button" class="btn" id="syncBtn" title="Read this day's items from Azure DevOps"><span data-icon="sync"></span><span class="bl">Sync</span></button>
+        <button type="button" class="btn primary" id="addBtn"><span data-icon="plus"></span><span class="bl">Add new</span></button>
+      </div>
+    </header>
+
+    <main>
+      <div class="datehead">
+        <div class="dh-l">
+          <div class="eyebrow-gold" id="syncInfo"></div>
+          <h1 id="pageTitle"></h1>
+          <p class="sub" id="pageSub"></p>
+          <span id="pageIco" hidden></span>
+        </div>
+        <div class="dh-r">
+          <div class="searchbox"><span data-icon="search"></span><input type="search" id="search" placeholder="Search ID or text" aria-label="Search by ID or text"></div>
+          <label class="round" title="Pick a day"><span data-icon="calendar"></span><input type="date" id="datePick" aria-label="Selected day"><span id="dateLabel" hidden></span></label>
+          <button type="button" class="btn sm" id="todayBtn">Today</button>
+          <button type="button" class="round" id="prevDay" aria-label="Previous day" title="Previous day"><span data-icon="left"></span></button>
+          <button type="button" class="round" id="nextDay" aria-label="Next day" title="Next day"><span data-icon="right"></span></button>
+        </div>
+      </div>
+      <section class="kpis" id="tiles" aria-label="Summary for the selected day"></section>
+      <section id="searchOther" class="card other" hidden></section>
+      <section id="view" role="tabpanel"></section>
+    </main>
+  </div>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Details">
+    <div class="drawer-h"><span id="drawerType" class="eyebrow"></span><button class="ib" id="drawerClose" aria-label="Close"><span data-icon="x"></span></button></div>
+    <div class="drawer-b" id="drawerBody"></div>
+  </aside>
+
+  <dialog id="entryDialog">
+    <form id="entryForm" method="dialog">
+      <h2 id="formTitle">Add entry</h2>
+      <p class="muted small" id="formDate"></p>
+      <div class="grid2">
+        <label>Type
+          <select name="type" id="fType">
+            <option value="story">User story worked on</option>
+            <option value="testcase">Test case written</option>
+            <option value="test_run">Test run (execution)</option>
+            <option value="bug_opened">Bug opened</option>
+            <option value="bug_closed">Bug closed</option>
+            <option value="bug_draft">Bug draft (not on DevOps yet)</option>
+            <option value="question">Business question</option>
+            <option value="blocker">Blocker</option>
+          </select>
+        </label>
+        <label data-f="devopsId">Azure DevOps ID
+          <input name="devopsId" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+        </label>
+        <label data-f="storyId">User story ID
+          <input name="storyId" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+        </label>
+        <label data-f="owner">Owner
+          <input name="owner" autocomplete="off">
+        </label>
+      </div>
+      <label data-f="title"><span id="titleLabel">Title</span>
+        <input name="title" autocomplete="off">
+      </label>
+      <label data-f="status">Status
+        <input name="status" list="statusList" autocomplete="off">
+        <datalist id="statusList"></datalist>
+      </label>
+      <div class="grid5" data-f="run">
+        <label>Build <input name="build" autocomplete="off"></label>
+        <label>Pass <input name="pass" type="number" min="0"></label>
+        <label>Fail <input name="fail" type="number" min="0"></label>
+        <label>Blocked <input name="blocked" type="number" min="0"></label>
+        <label>Not run <input name="notRun" type="number" min="0"></label>
+      </div>
+      <div class="grid2" data-f="bug">
+        <label>Issue Type
+          <select name="issueType"><option value="">Not set</option><option>Business Issue</option><option>Code</option><option>Cosmetic</option><option>Data Corruption</option><option>Documentation</option><option>Feature Request</option><option>Incorrect Functionality</option><option>Performance</option><option>Usability</option></select>
+        </label>
+        <label>QA Bug Type
+          <select name="qaBugType"><option value="">Not set</option><option>Happy Scenario</option><option>Invalid</option><option>Other</option></select>
+        </label>
+        <label>Severity
+          <select name="severity"><option value="">Not set</option><option>1 - Critical</option><option>2 - High</option><option>3 - Medium</option><option>4 - Low</option></select>
+        </label>
+        <label>Screen
+          <input name="screen" autocomplete="off">
+        </label>
+      </div>
+      <label data-f="answer">Answer
+        <textarea name="answer" rows="2"></textarea>
+      </label>
+      <label>Notes
+        <textarea name="notes" rows="3"></textarea>
+      </label>
+      <p class="error" id="formError" role="alert"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="cancelForm">Cancel</button>
+        <button type="submit" class="btn primary" id="saveForm">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="promptDialog">
+    <form id="promptForm" method="dialog">
+      <h2 id="promptTitle"></h2>
+      <p class="muted small" id="promptHint"></p>
+      <label><span id="promptLabel"></span>
+        <textarea id="promptInput" rows="2"></textarea>
+      </label>
+      <p class="error" id="promptError" role="alert"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="promptCancel">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="tip" role="tooltip"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1469 @@
+{
+  "date": "2026-11-13",
+  "entries": [
+    {
+      "type": "story",
+      "devopsId": 214,
+      "storyId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-15T22:32:46+03:00",
+      "notes": "Test cases or bugs logged under it",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "id": "e-20261113-001",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-24T00:00:28+03:00"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1886,
+      "storyId": 214,
+      "title": "TC-POS-001 — Open Overview by default",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:00:37+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1886",
+      "id": "e-20261113-002"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1887,
+      "storyId": 214,
+      "title": "TC-POS-002 — Navigate among all dashboard tabs",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:30+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1887",
+      "id": "e-20261113-003"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1888,
+      "storyId": 214,
+      "title": "TC-POS-003 — Respect dashboard permissions",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:31+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1888",
+      "id": "e-20261113-004"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1889,
+      "storyId": 214,
+      "title": "TC-POS-004 — Scope dashboard data to assigned branch, terminal, and session",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:31+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1889",
+      "id": "e-20261113-005"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1890,
+      "storyId": 214,
+      "title": "TC-POS-005 — Calculate Overview Daily Sales with discount and returns",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:31+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1890",
+      "id": "e-20261113-006"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1891,
+      "storyId": 214,
+      "title": "TC-POS-006 — Include confirmed sales regardless of payment method or collection",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:31+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1891",
+      "id": "e-20261113-007"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1892,
+      "storyId": 214,
+      "title": "TC-POS-007 — Exclude ineligible documents from Overview Daily Sales",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:31+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1892",
+      "id": "e-20261113-008"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1893,
+      "storyId": 214,
+      "title": "TC-POS-008 — Calculate Overview sales growth for non-zero yesterday sales",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:32+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1893",
+      "id": "e-20261113-009"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1894,
+      "storyId": 214,
+      "title": "TC-POS-009 — Show New Sales when yesterday is zero and today is positive",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:32+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1894",
+      "id": "e-20261113-010"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1895,
+      "storyId": 214,
+      "title": "TC-POS-010 — Show zero growth when both days have zero sales",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:32+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1895",
+      "id": "e-20261113-011"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1896,
+      "storyId": 214,
+      "title": "TC-POS-011 — Open Daily Sales report filtered to the business date",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:32+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1896",
+      "id": "e-20261113-012"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1897,
+      "storyId": 214,
+      "title": "TC-POS-012 — Open Sales Return List filtered to the business date",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:32+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1897",
+      "id": "e-20261113-013"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1898,
+      "storyId": 214,
+      "title": "TC-POS-013 — Count today's confirmed invoices and fully paid invoices",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:33+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1898",
+      "id": "e-20261113-014"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1899,
+      "storyId": 214,
+      "title": "TC-POS-014 — Open the total invoice list from Overview",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:33+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1899",
+      "id": "e-20261113-015"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1900,
+      "storyId": 214,
+      "title": "TC-POS-015 — Open fully paid invoices from Overview",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:33+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1900",
+      "id": "e-20261113-016"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1901,
+      "storyId": null,
+      "title": "TC-POS-016 — Open fully refunded invoices from Overview",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:33+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1901",
+      "id": "e-20261113-017"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1902,
+      "storyId": 214,
+      "title": "TC-POS-017 — Count today's Work Orders by current status",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:33+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1902",
+      "id": "e-20261113-018"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1903,
+      "storyId": 214,
+      "title": "TC-POS-018 — Open each Overview Work Order status list",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:34+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1903",
+      "id": "e-20261113-019"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1904,
+      "storyId": 214,
+      "title": "TC-POS-019 — Classify Overview inventory stock states",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:34+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1904",
+      "id": "e-20261113-020"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1905,
+      "storyId": 214,
+      "title": "TC-POS-020 — Open Overview inventory detail lists",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:34+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1905",
+      "id": "e-20261113-021"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1906,
+      "storyId": 214,
+      "title": "TC-POS-021 — Display the current cash-register and session details on Overview",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:34+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1906",
+      "id": "e-20261113-022"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1907,
+      "storyId": 214,
+      "title": "TC-POS-022 — Calculate expected cash for opening cash, cash sales, and cash refund",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:34+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1907",
+      "id": "e-20261113-023"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1908,
+      "storyId": 214,
+      "title": "TC-POS-023 — Exclude electronic sales and electronic refunds from physical cash",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:35+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1908",
+      "id": "e-20261113-024"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1909,
+      "storyId": 214,
+      "title": "TC-POS-024 — Include only confirmed cash movements from the selected session",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:35+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1909",
+      "id": "e-20261113-025"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1910,
+      "storyId": 214,
+      "title": "TC-POS-025 — Show the five top-selling products/services for today",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:35+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1910",
+      "id": "e-20261113-026"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1911,
+      "storyId": 214,
+      "title": "TC-POS-026 — Open the Today Top Selling Report",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:35+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1911",
+      "id": "e-20261113-027"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1912,
+      "storyId": 214,
+      "title": "TC-POS-027 — Calculate payment-method distribution from actual confirmed collections",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:35+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1912",
+      "id": "e-20261113-028"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1913,
+      "storyId": 214,
+      "title": "TC-POS-028 — Exclude failed, cancelled, and inapplicable payment methods",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:36+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1913",
+      "id": "e-20261113-029"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1914,
+      "storyId": 214,
+      "title": "TC-POS-067 — Show negative sales growth and a full drop to zero",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:36+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1914",
+      "id": "e-20261113-030"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1915,
+      "storyId": 214,
+      "title": "TC-POS-068 — Calculate Daily Sales for the mixed-payment-method example",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:36+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1915",
+      "id": "e-20261113-031"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1916,
+      "storyId": null,
+      "title": "TC-POS-069 — Count Fully Refunded invoices on Overview",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:36+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1916",
+      "id": "e-20261113-032"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1917,
+      "storyId": 214,
+      "title": "TC-POS-070 — Hide invoice KPIs marked as not supported",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:37+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1917",
+      "id": "e-20261113-033"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1918,
+      "storyId": 214,
+      "title": "TC-POS-071 — Count Work Orders by creation date and current status",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:37+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1918",
+      "id": "e-20261113-034"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1919,
+      "storyId": 214,
+      "title": "TC-POS-072 — Keep Overview inventory counts consistent with the Inventory tab",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:37+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1919",
+      "id": "e-20261113-035"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1920,
+      "storyId": 214,
+      "title": "TC-POS-073 — Show Top Selling when fewer than five items, or no items, were sold",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:37+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1920",
+      "id": "e-20261113-036"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1921,
+      "storyId": 214,
+      "title": "TC-POS-074 — Calculate Cash Sales Balance and Cash Refunds Balance, including split payments",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:37+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1921",
+      "id": "e-20261113-037"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1922,
+      "storyId": 214,
+      "title": "TC-POS-075 — Reduce Expected Cash Balance by a confirmed cash deposit",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:38+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1922",
+      "id": "e-20261113-038"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1923,
+      "storyId": 214,
+      "title": "TC-POS-076 — Refresh dashboard figures after new transactions",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:38+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1923",
+      "id": "e-20261113-039"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1924,
+      "storyId": 214,
+      "title": "TC-POS-029 — Calculate current Inventory Value",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:38+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1924",
+      "id": "e-20261113-040"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1925,
+      "storyId": 214,
+      "title": "TC-POS-030 — Keep Inventory Value current rather than tied to the sales date",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:38+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1925",
+      "id": "e-20261113-041"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1926,
+      "storyId": 214,
+      "title": "TC-POS-031 — Calculate Gross Profit from net sales and COGS",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:38+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1926",
+      "id": "e-20261113-042"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1927,
+      "storyId": 214,
+      "title": "TC-POS-032 — Calculate Gross Margin excluding tax",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:39+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1927",
+      "id": "e-20261113-043"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1928,
+      "storyId": 214,
+      "title": "TC-POS-033 — Handle zero net sales in Gross Margin",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:39+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1928",
+      "id": "e-20261113-044"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1929,
+      "storyId": 214,
+      "title": "TC-POS-034 — Calculate Output VAT net of sales-return VAT",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:39+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1929",
+      "id": "e-20261113-045"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1930,
+      "storyId": 214,
+      "title": "TC-POS-035 — Calculate Input VAT net of purchase-return VAT",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:39+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1930",
+      "id": "e-20261113-046"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1931,
+      "storyId": 214,
+      "title": "TC-POS-036 — Calculate Net VAT Payable",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:39+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1931",
+      "id": "e-20261113-047"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1932,
+      "storyId": 214,
+      "title": "TC-POS-077 — Show Daily Sales including VAT and Daily Net Sales excluding VAT in the Executive Summary",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:40+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1932",
+      "id": "e-20261113-048"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1933,
+      "storyId": 214,
+      "title": "TC-POS-037 — Use Daily as the default Sales period",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:40+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1933",
+      "id": "e-20261113-049"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1934,
+      "storyId": 214,
+      "title": "TC-POS-038 — Populate MTD, QTD, and YTD date ranges",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:40+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1934",
+      "id": "e-20261113-050"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1935,
+      "storyId": 214,
+      "title": "TC-POS-039 — Apply a valid custom Sales date range",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:40+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1935",
+      "id": "e-20261113-051"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1936,
+      "storyId": 214,
+      "title": "TC-POS-040 — Reject an invalid custom Sales date range",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:41+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1936",
+      "id": "e-20261113-052"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1937,
+      "storyId": 214,
+      "title": "TC-POS-041 — Refresh date range when changing period or manually editing dates",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:41+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1937",
+      "id": "e-20261113-053"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1938,
+      "storyId": 214,
+      "title": "TC-POS-042 — Preserve Sales date range across All, Refunds, and Invoices",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:41+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1938",
+      "id": "e-20261113-054"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1939,
+      "storyId": 214,
+      "title": "TC-POS-043 — Calculate Sales Total Sales, Net Sales, and invoice count",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:41+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1939",
+      "id": "e-20261113-055"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1940,
+      "storyId": 214,
+      "title": "TC-POS-044 — Include eligible invoices once and exclude ineligible Sales documents",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:42+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1940",
+      "id": "e-20261113-056"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1941,
+      "storyId": 214,
+      "title": "TC-POS-045 — Calculate Average Invoice and handle zero invoices",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:42+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1941",
+      "id": "e-20261113-057"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1942,
+      "storyId": 214,
+      "title": "TC-POS-046 — Calculate Refund Amount and Return Rate using return date",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:42+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1942",
+      "id": "e-20261113-058"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1943,
+      "storyId": 214,
+      "title": "TC-POS-047 — Handle zero gross sales in Return Rate",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:42+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1943",
+      "id": "e-20261113-059"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1944,
+      "storyId": 214,
+      "title": "TC-POS-048 — Show Sales transaction categories and document counts",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:42+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1944",
+      "id": "e-20261113-060"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1945,
+      "storyId": 214,
+      "title": "TC-POS-049 — Verify Sales transaction table columns and values",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:43+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1945",
+      "id": "e-20261113-061"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1946,
+      "storyId": 214,
+      "title": "TC-POS-050 — Search Sales transactions using supported fields",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:43+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1946",
+      "id": "e-20261113-062"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1947,
+      "storyId": 214,
+      "title": "TC-POS-051 — Export the currently displayed Sales transaction list",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:43+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1947",
+      "id": "e-20261113-063"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1948,
+      "storyId": 214,
+      "title": "TC-POS-078 — Include documents on the boundary dates of a custom range",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:43+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1948",
+      "id": "e-20261113-064"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1949,
+      "storyId": 214,
+      "title": "TC-POS-079 — Verify Items and Method values for multi-quantity, multi-line, and split-paid documents",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:43+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1949",
+      "id": "e-20261113-065"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1950,
+      "storyId": 214,
+      "title": "TC-POS-080 — Keep Sales KPIs consistent with active search or filters",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:44+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1950",
+      "id": "e-20261113-066"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1951,
+      "storyId": 214,
+      "title": "TC-POS-081 — Verify export file format, columns, and empty-list export",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:44+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1951",
+      "id": "e-20261113-067"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1952,
+      "storyId": 214,
+      "title": "TC-POS-082 — Show a refunds-only period with zero gross sales",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:44+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1952",
+      "id": "e-20261113-068"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1953,
+      "storyId": 214,
+      "title": "TC-POS-052 — Apply WO Info period and custom date filters",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:44+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1953",
+      "id": "e-20261113-069"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1954,
+      "storyId": 214,
+      "title": "TC-POS-053 — Calculate Total WOs and distinct Total Customers Served",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:44+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1954",
+      "id": "e-20261113-070"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1955,
+      "storyId": 214,
+      "title": "TC-POS-054 — Calculate Pending, Completed, and Voided rates",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:45+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1955",
+      "id": "e-20261113-071"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1956,
+      "storyId": 214,
+      "title": "TC-POS-055 — Preserve WO Info range and category counts",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:45+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1956",
+      "id": "e-20261113-072"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1957,
+      "storyId": 214,
+      "title": "TC-POS-056 — Verify WO transaction table, status action, and search",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:45+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1957",
+      "id": "e-20261113-073"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1958,
+      "storyId": 214,
+      "title": "TC-POS-057 — Export the currently displayed WO list",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:45+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1958",
+      "id": "e-20261113-074"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1959,
+      "storyId": 214,
+      "title": "TC-POS-083 — Show WO Info for a range with no work orders",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:45+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1959",
+      "id": "e-20261113-075"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1960,
+      "storyId": 214,
+      "title": "TC-POS-084 — Complete a pending WO from the WO Info action",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:45+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1960",
+      "id": "e-20261113-076"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1961,
+      "storyId": 214,
+      "title": "TC-POS-058 — Calculate Total Payment Received and payment-method breakdown",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:46+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1961",
+      "id": "e-20261113-077"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1962,
+      "storyId": 214,
+      "title": "TC-POS-059 — Apply Cash tab selected day or date range",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:46+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1962",
+      "id": "e-20261113-078"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1963,
+      "storyId": 214,
+      "title": "TC-POS-060 — Open Cash Deposit screen from Current Cash Register",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:46+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1963",
+      "id": "e-20261113-079"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1964,
+      "storyId": 214,
+      "title": "TC-POS-061 — Keep Cash tab register details consistent with Overview",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:46+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1964",
+      "id": "e-20261113-080"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1965,
+      "storyId": 214,
+      "title": "TC-POS-085 — Calculate Cash Sales % and Other Payments %",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:46+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1965",
+      "id": "e-20261113-081"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1966,
+      "storyId": 214,
+      "title": "TC-POS-086 — Apply Cash tab period controls and reject an invalid range",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:47+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1966",
+      "id": "e-20261113-082"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1967,
+      "storyId": 214,
+      "title": "TC-POS-062 — Show Inventory Value and In Stock item count",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:48+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1967",
+      "id": "e-20261113-083"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1968,
+      "storyId": 214,
+      "title": "TC-POS-063 — Classify Inventory stock at minimum, zero, negative, and normal levels",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:48+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1968",
+      "id": "e-20261113-084"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1969,
+      "storyId": 214,
+      "title": "TC-POS-064 — Filter Inventory by All, In Stock, Low Stock, and Out of Stock",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:48+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1969",
+      "id": "e-20261113-085"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1970,
+      "storyId": 214,
+      "title": "TC-POS-065 — Verify Inventory grid columns and values",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:48+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1970",
+      "id": "e-20261113-086"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1971,
+      "storyId": 214,
+      "title": "TC-POS-066 — Search Inventory by Item Name and Item Number",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:49+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1971",
+      "id": "e-20261113-087"
+    },
+    {
+      "type": "testcase",
+      "devopsId": 1972,
+      "storyId": 214,
+      "title": "TC-POS-087 — Exclude inactive items from Inventory counts, value, and grid",
+      "status": "Design",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:04:49+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1972",
+      "id": "e-20261113-088"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 1973,
+      "storyId": 214,
+      "title": "MAC1 - Dashboard - Overview | The Fully Refunded list does not match the Fully Refunded count",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T23:01:36+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1973",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Happy Scenario",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261113-089",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-13T20:01:36.42Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T07:53:53.97Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T11:57:16.003Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T15:02:17+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 1974,
+      "storyId": 214,
+      "title": "MAC1 - Dashboard - Sales | Tab counts and cards do not change when searching",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T23:23:42+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1974",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261113-090",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-13T20:23:42.977Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T09:38:00.23Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-19T12:02:58.42Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-19T15:04:56+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1854,
+      "storyId": 214,
+      "title": "MAC1 - Dashboard - Return invoice | The system does not update the daily sales value if the user used a payment method another cash",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-13T22:19:17+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1854",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "Happy Scenario",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261113-091"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-15T22:32:46+03:00",
+  "mySyncedAt": "2026-11-15T22:32:46+03:00",
+  "storyRefs": {
+    "167": {
+      "title": "myShop Portal - Item",
+      "state": "Resolved"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "New"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "408": {
+      "title": "myShop POS - WO - Oil Service",
+      "state": "New"
+    },
+    "431": {
+      "title": "myShop POS - Opening Day",
+      "state": "Resolved"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "New"
+    },
+    "440": {
+      "title": "myShop Portal - User",
+      "state": "Resolved"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "451": {
+      "title": "myShop POS - Add Supplier",
+      "state": "New"
+    },
+    "493": {
+      "title": "myShop POS - WO - Discount Screen",
+      "state": "Active"
+    },
+    "497": {
+      "title": "myShop POS - WO - Item Details (Normal)",
+      "state": "New"
+    },
+    "527": {
+      "title": "myShop POS - WO - Payment Screen",
+      "state": "New"
+    },
+    "647": {
+      "title": "MiCAM - AI - Human Smoking Incident ",
+      "state": "Active"
+    },
+    "648": {
+      "title": "MiCAM - AI - Using Mobile Phone During Service Work",
+      "state": "Active"
+    },
+    "830": {
+      "title": "MiCAM - Company Incident Types Configuration",
+      "state": "New"
+    },
+    "990": {
+      "title": "myShop POS - Manual Stock Adjustment",
+      "state": "Resolved"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "New"
+    },
+    "1021": {
+      "title": "myShop POS - Start/Opening Balance",
+      "state": "Closed"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1301": {
+      "title": "myShop POS - Operational Setting screen",
+      "state": "New"
+    },
+    "1337": {
+      "title": "MiCAM - AI - Fire/Smoke Incident",
+      "state": "New"
+    },
+    "1552": {
+      "title": "myShop - Reports: \"Sales Invoice\" - New Report to show Sales Invoices as a voucher",
+      "state": "Closed"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "Active"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "New"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Resolved"
+    },
+    "1621": {
+      "title": "myShop - Reports: \"WO\" - New Report to show work Orders Details",
+      "state": "Closed"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Active"
+    },
+    "1717": {
+      "title": "myShop Portal - Item Service Group",
+      "state": "Active"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "New"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Resolved"
+    },
+    "1874": {
+      "title": "myShop POS - Portal - my Details",
+      "state": "New"
+    }
+  }
+}

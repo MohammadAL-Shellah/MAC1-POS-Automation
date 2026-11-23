@@ -1,0 +1,87 @@
+100000	1886	TC-POS-001 — Open Overview by default
+100001	1887	TC-POS-002 — Navigate among all dashboard tabs
+100002	1888	TC-POS-003 — Respect dashboard permissions
+100003	1889	TC-POS-004 — Scope dashboard data to assigned branch, terminal, and session
+100004	1890	TC-POS-005 — Calculate Overview Daily Sales with discount and returns
+100005	1891	TC-POS-006 — Include confirmed sales regardless of payment method or collection
+100006	1892	TC-POS-007 — Exclude ineligible documents from Overview Daily Sales
+100007	1893	TC-POS-008 — Calculate Overview sales growth for non-zero yesterday sales
+100008	1894	TC-POS-009 — Show New Sales when yesterday is zero and today is positive
+100009	1895	TC-POS-010 — Show zero growth when both days have zero sales
+100010	1896	TC-POS-011 — Open Daily Sales report filtered to the business date
+100011	1897	TC-POS-012 — Open Sales Return List filtered to the business date
+100012	1898	TC-POS-013 — Count today's confirmed invoices and fully paid invoices
+100013	1899	TC-POS-014 — Open the total invoice list from Overview
+100014	1900	TC-POS-015 — Open fully paid invoices from Overview
+100015	1901	TC-POS-016 — Open fully refunded invoices from Overview
+100016	1902	TC-POS-017 — Count today's Work Orders by current status
+100017	1903	TC-POS-018 — Open each Overview Work Order status list
+100018	1904	TC-POS-019 — Classify Overview inventory stock states
+100019	1905	TC-POS-020 — Open Overview inventory detail lists
+100020	1906	TC-POS-021 — Display the current cash-register and session details on Overview
+100021	1907	TC-POS-022 — Calculate expected cash for opening cash, cash sales, and cash refund
+100022	1908	TC-POS-023 — Exclude electronic sales and electronic refunds from physical cash
+100023	1909	TC-POS-024 — Include only confirmed cash movements from the selected session
+100024	1910	TC-POS-025 — Show the five top-selling products/services for today
+100025	1911	TC-POS-026 — Open the Today Top Selling Report
+100026	1912	TC-POS-027 — Calculate payment-method distribution from actual confirmed collections
+100027	1913	TC-POS-028 — Exclude failed, cancelled, and inapplicable payment methods
+100028	1914	TC-POS-067 — Show negative sales growth and a full drop to zero
+100029	1915	TC-POS-068 — Calculate Daily Sales for the mixed-payment-method example
+100030	1916	TC-POS-069 — Count Fully Refunded invoices on Overview
+100031	1917	TC-POS-070 — Hide invoice KPIs marked as not supported
+100032	1918	TC-POS-071 — Count Work Orders by creation date and current status
+100033	1919	TC-POS-072 — Keep Overview inventory counts consistent with the Inventory tab
+100034	1920	TC-POS-073 — Show Top Selling when fewer than five items, or no items, were sold
+100035	1921	TC-POS-074 — Calculate Cash Sales Balance and Cash Refunds Balance, including split payments
+100036	1922	TC-POS-075 — Reduce Expected Cash Balance by a confirmed cash deposit
+100037	1923	TC-POS-076 — Refresh dashboard figures after new transactions
+100038	1924	TC-POS-029 — Calculate current Inventory Value
+100039	1925	TC-POS-030 — Keep Inventory Value current rather than tied to the sales date
+100040	1926	TC-POS-031 — Calculate Gross Profit from net sales and COGS
+100041	1927	TC-POS-032 — Calculate Gross Margin excluding tax
+100042	1928	TC-POS-033 — Handle zero net sales in Gross Margin
+100043	1929	TC-POS-034 — Calculate Output VAT net of sales-return VAT
+100044	1930	TC-POS-035 — Calculate Input VAT net of purchase-return VAT
+100045	1931	TC-POS-036 — Calculate Net VAT Payable
+100046	1932	TC-POS-077 — Show Daily Sales including VAT and Daily Net Sales excluding VAT in the Executive Summary
+100047	1933	TC-POS-037 — Use Daily as the default Sales period
+100048	1934	TC-POS-038 — Populate MTD, QTD, and YTD date ranges
+100049	1935	TC-POS-039 — Apply a valid custom Sales date range
+100050	1936	TC-POS-040 — Reject an invalid custom Sales date range
+100051	1937	TC-POS-041 — Refresh date range when changing period or manually editing dates
+100052	1938	TC-POS-042 — Preserve Sales date range across All, Refunds, and Invoices
+100053	1939	TC-POS-043 — Calculate Sales Total Sales, Net Sales, and invoice count
+100054	1940	TC-POS-044 — Include eligible invoices once and exclude ineligible Sales documents
+100055	1941	TC-POS-045 — Calculate Average Invoice and handle zero invoices
+100056	1942	TC-POS-046 — Calculate Refund Amount and Return Rate using return date
+100057	1943	TC-POS-047 — Handle zero gross sales in Return Rate
+100058	1944	TC-POS-048 — Show Sales transaction categories and document counts
+100059	1945	TC-POS-049 — Verify Sales transaction table columns and values
+100060	1946	TC-POS-050 — Search Sales transactions using supported fields
+100061	1947	TC-POS-051 — Export the currently displayed Sales transaction list
+100062	1948	TC-POS-078 — Include documents on the boundary dates of a custom range
+100063	1949	TC-POS-079 — Verify Items and Method values for multi-quantity, multi-line, and split-paid documents
+100064	1950	TC-POS-080 — Keep Sales KPIs consistent with active search or filters
+100065	1951	TC-POS-081 — Verify export file format, columns, and empty-list export
+100066	1952	TC-POS-082 — Show a refunds-only period with zero gross sales
+100067	1953	TC-POS-052 — Apply WO Info period and custom date filters
+100068	1954	TC-POS-053 — Calculate Total WOs and distinct Total Customers Served
+100069	1955	TC-POS-054 — Calculate Pending, Completed, and Voided rates
+100070	1956	TC-POS-055 — Preserve WO Info range and category counts
+100071	1957	TC-POS-056 — Verify WO transaction table, status action, and search
+100072	1958	TC-POS-057 — Export the currently displayed WO list
+100073	1959	TC-POS-083 — Show WO Info for a range with no work orders
+100074	1960	TC-POS-084 — Complete a pending WO from the WO Info action
+100075	1961	TC-POS-058 — Calculate Total Payment Received and payment-method breakdown
+100076	1962	TC-POS-059 — Apply Cash tab selected day or date range
+100077	1963	TC-POS-060 — Open Cash Deposit screen from Current Cash Register
+100078	1964	TC-POS-061 — Keep Cash tab register details consistent with Overview
+100079	1965	TC-POS-085 — Calculate Cash Sales % and Other Payments %
+100080	1966	TC-POS-086 — Apply Cash tab period controls and reject an invalid range
+100081	1967	TC-POS-062 — Show Inventory Value and In Stock item count
+100082	1968	TC-POS-063 — Classify Inventory stock at minimum, zero, negative, and normal levels
+100083	1969	TC-POS-064 — Filter Inventory by All, In Stock, Low Stock, and Out of Stock
+100084	1970	TC-POS-065 — Verify Inventory grid columns and values
+100085	1971	TC-POS-066 — Search Inventory by Item Name and Item Number
+100086	1972	TC-POS-087 — Exclude inactive items from Inventory counts, value, and grid

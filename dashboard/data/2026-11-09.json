@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-09",
+  "entries": [
+    {
+      "type": "bug_opened",
+      "devopsId": 1858,
+      "storyId": null,
+      "title": "MAC1 - Print Return Invoice | When the user try print an invoice an error message sppear",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-09T12:36:29+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1858",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "",
+        "severity": "2 - High",
+        "screen": "Return invoice"
+      },
+      "id": "e-20261109-001"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1781,
+      "storyId": null,
+      "title": "Macone | UI design and layout discrepancies in MAC One POS interface across screen resolutions",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-09T12:37:32+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1781",
+      "bug": {
+        "issueType": "Cosmetic",
+        "qaBugType": "",
+        "severity": "1 - Critical",
+        "screen": "General"
+      },
+      "id": "e-20261109-002"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1796,
+      "storyId": null,
+      "title": "Macone - Dashboard | The text size is small when used the resolution = 1920*1080",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-09T12:37:28+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1796",
+      "bug": {
+        "issueType": "Cosmetic",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "Dashboard"
+      },
+      "id": "e-20261109-003"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1850,
+      "storyId": null,
+      "title": "MAC1 - Portal - Report | The end of day report is not working",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-09T11:19:48+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1850",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "",
+        "severity": "2 - High",
+        "screen": "Portal - Report - End Of Day"
+      },
+      "id": "e-20261109-004"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [
+        {
+          "id": 974,
+          "title": "myShop Portal - Promotion ",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/974"
+        },
+        {
+          "id": 1726,
+          "title": "myShop POS - Document Sharing Options in POS",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "linked work",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1726"
+        },
+        {
+          "id": 1041,
+          "title": "myShop POS -  Share option Configurations & document assignment ",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "linked work",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [
+        {
+          "id": 1857,
+          "title": "MAC-ONE - Portal- Invoice report - Scan QR code is not working",
+          "state": "Closed",
+          "storyId": null,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1857",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Other",
+            "severity": "1 - Critical",
+            "screen": "invoice report"
+          }
+        },
+        {
+          "id": 1860,
+          "title": "MAC-ONE POS - Sharing Options -  The system not check whether a valid mobile number is available for the related customer",
+          "state": "Resolved",
+          "storyId": 1726,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1860",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Other",
+            "severity": "1 - Critical",
+            "screen": "Sharing options"
+          }
+        }
+      ],
+      "bugsClosed": [
+        {
+          "id": 1102,
+          "title": "MAC-ONE Portal - Promotions - Validation messages display incorrect",
+          "state": "Closed",
+          "storyId": 974,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1102",
+          "bug": {
+            "issueType": "",
+            "qaBugType": "Happy Scenario",
+            "severity": "2 - High",
+            "screen": ""
+          }
+        },
+        {
+          "id": 1831,
+          "title": "MAC-ONE POS - Share Option Configuration -  Export types not auto selected when add the documents from add new printer",
+          "state": "Closed",
+          "storyId": 1041,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1831",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "",
+            "severity": "3 - Medium",
+            "screen": "Share option configuration"
+          }
+        },
+        {
+          "id": 1836,
+          "title": "MAC-ONE POS - Share Option Configuration - Layout display as read only and can't select",
+          "state": "Closed",
+          "storyId": 1041,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1836",
+          "bug": {
+            "issueType": "Incorrect Functionality",
+            "qaBugType": "Other",
+            "severity": "2 - High",
+            "screen": "Share option configuration"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-15T22:35:48+03:00",
+  "mySyncedAt": "2026-11-15T22:35:48+03:00",
+  "storyRefs": {
+    "167": {
+      "title": "myShop Portal - Item",
+      "state": "Resolved"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "New"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "408": {
+      "title": "myShop POS - WO - Oil Service",
+      "state": "New"
+    },
+    "431": {
+      "title": "myShop POS - Opening Day",
+      "state": "Resolved"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "New"
+    },
+    "440": {
+      "title": "myShop Portal - User",
+      "state": "Resolved"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "451": {
+      "title": "myShop POS - Add Supplier",
+      "state": "New"
+    },
+    "493": {
+      "title": "myShop POS - WO - Discount Screen",
+      "state": "Active"
+    },
+    "497": {
+      "title": "myShop POS - WO - Item Details (Normal)",
+      "state": "New"
+    },
+    "527": {
+      "title": "myShop POS - WO - Payment Screen",
+      "state": "New"
+    },
+    "613": {
+      "title": "AI Tool - Sign up",
+      "state": "New"
+    },
+    "647": {
+      "title": "MiCAM - AI - Human Smoking Incident ",
+      "state": "Active"
+    },
+    "648": {
+      "title": "MiCAM - AI - Using Mobile Phone During Service Work",
+      "state": "Active"
+    },
+    "830": {
+      "title": "MiCAM - Company Incident Types Configuration",
+      "state": "New"
+    },
+    "928": {
+      "title": "Master - Product Version Management and Update Distribution",
+      "state": "Resolved"
+    },
+    "974": {
+      "title": "myShop Portal - Promotion ",
+      "state": "Closed"
+    },
+    "990": {
+      "title": "myShop POS - Manual Stock Adjustment",
+      "state": "Resolved"
+    },
+    "1011": {
+      "title": "myShop POS - Sales Return - Full Return",
+      "state": "New"
+    },
+    "1021": {
+      "title": "myShop POS - Start/Opening Balance",
+      "state": "Closed"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1046": {
+      "title": "myShop POS - Company Profile",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1301": {
+      "title": "myShop POS - Operational Setting screen",
+      "state": "New"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test Environments",
+      "state": "New"
+    },
+    "1330": {
+      "title": "myShop POS - Portal - Delete Tracker & Cross-Platform Data Synchronization",
+      "state": "New"
+    },
+    "1337": {
+      "title": "MiCAM - AI - Fire/Smoke Incident",
+      "state": "New"
+    },
+    "1552": {
+      "title": "myShop - Reports: \"Sales Invoice\" - New Report to show Sales Invoices as a voucher",
+      "state": "Closed"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "Active"
+    },
+    "1582": {
+      "title": "myShop POS - Service Package Pricing, Discount Distribution & Display Configuration",
+      "state": "New"
+    },
+    "1586": {
+      "title": "myShop POS - About Screen",
+      "state": "New"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Resolved"
+    },
+    "1621": {
+      "title": "myShop - Reports: \"WO\" - New Report to show work Orders Details",
+      "state": "Closed"
+    },
+    "1624": {
+      "title": "myShop POS - Vehicle Service Reminder (Sticker Printing)",
+      "state": "Active"
+    },
+    "1717": {
+      "title": "myShop Portal - Item Service Group",
+      "state": "Active"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "New"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Resolved"
+    },
+    "1809": {
+      "title": "myShop POS - Demo Loyalty Screen ",
+      "state": "Closed"
+    },
+    "1872": {
+      "title": "myShop POS - Sales Return - Full return (other payment methods)",
+      "state": "New"
+    },
+    "1874": {
+      "title": "myShop POS - Portal - my Details",
+      "state": "New"
+    }
+  }
+}

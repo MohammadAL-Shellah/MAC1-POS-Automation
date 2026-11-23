@@ -1,0 +1,2 @@
+﻿Invoice #,Date,Customer,Customer Type,Plate Number,Items,Amount,Method,Status,ZATCA Status,ZATCA Status Time
+"INV - TO_11000080","13/11/2026 20:30","Ammar","Individual","1111AAA",1,42.50,"Master","Paid","",""
