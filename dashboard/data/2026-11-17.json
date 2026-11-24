@@ -14,7 +14,7 @@
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
       "id": "e-20261117-001",
       "assignedTo": "Mohammad Al Shellah",
-      "refreshedAt": "2026-11-24T00:00:28+03:00",
+      "refreshedAt": "2026-11-24T08:30:16+03:00",
       "statusLog": [
         {
           "state": "New",
@@ -163,7 +163,7 @@
           "by": "Rahaf Abudelleh"
         }
       ],
-      "refreshedAt": "2026-11-24T00:00:28+03:00"
+      "refreshedAt": "2026-11-24T08:30:16+03:00"
     },
     {
       "type": "story",
@@ -260,7 +260,7 @@
           "by": "Saif Aladwan"
         }
       ],
-      "refreshedAt": "2026-11-24T00:00:28+03:00"
+      "refreshedAt": "2026-11-24T08:30:16+03:00"
     },
     {
       "type": "story",
@@ -514,7 +514,7 @@
           "by": "Alaa Ashour"
         }
       ],
-      "refreshedAt": "2026-11-24T00:00:28+03:00"
+      "refreshedAt": "2026-11-24T08:30:16+03:00"
     },
     {
       "type": "bug_opened",

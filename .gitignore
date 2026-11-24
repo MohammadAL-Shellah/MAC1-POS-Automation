@@ -15,3 +15,4 @@ node_modules/
 .qa_tmp/
 dashboard/server.log
 .claude/settings.local.json
+scripts/auto-push.log
