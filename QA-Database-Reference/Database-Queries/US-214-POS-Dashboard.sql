@@ -2052,3 +2052,97 @@ FROM   INFORMATION_SCHEMA.COLUMNS
 WHERE  (COLUMN_NAME LIKE '%WorkOrder%' AND TABLE_NAME NOT LIKE 'SalWorkOrder%')
    OR  (TABLE_NAME LIKE 'SalReturnReceipt%' AND COLUMN_NAME LIKE '%ID')
 ORDER BY Table_Name, Column_Name;
+
+-- =====================================================================
+-- Section H: Run 80, Demo Company   |   2026-11-24   |   Build 1.2.498
+-- Demo Company has its own database: choose it in the SSMS list (USE line below).
+-- =====================================================================
+
+-- Test case: TC-010 Show zero growth when both days have zero sales
+-- Purpose  : H40: Demo Company invoices, returns and Work Orders of yesterday (23/11) and today (24/11), each table on its own, then the day totals.
+-- Expected : No invoice, return or Work Order on 23/11 and 24/11, so both days are 0 and growth shows 0%.
+-- Status   : Written, Executed, Verified 24/11 (0 and 0, matched UI)
+USE MacOne_165d415d66034069b7b0171a6c242a6e;
+SELECT * FROM SalInvoice   WHERE InvoiceDate   >= '2026-11-23' AND InvoiceDate   < '2026-11-25';
+SELECT * FROM SalReturn    WHERE ReturnDate    >= '2026-11-23' AND ReturnDate    < '2026-11-25';
+SELECT * FROM SalWorkOrder WHERE WorkOrderDate >= '2026-11-23' AND WorkOrderDate < '2026-11-25';
+SELECT Days.Day,
+       (SELECT COUNT(*) FROM SalInvoice WHERE CAST(InvoiceDate AS date) = Days.Day) AS Invoices,
+       ISNULL((SELECT SUM(InvoiceTotalAmount) FROM SalInvoice WHERE CAST(InvoiceDate AS date) = Days.Day), 0)
+     - ISNULL((SELECT SUM(ReturnTotalAmount)  FROM SalReturn  WHERE CAST(ReturnDate  AS date) = Days.Day), 0) AS Net_Sales
+FROM  (SELECT CAST('2026-11-23' AS date) AS Day UNION ALL SELECT CAST('2026-11-24' AS date)) AS Days;
+
+-- Test case: TC-009 Show New Sales when yesterday is zero and today is positive
+-- Purpose  : H41: Demo Company after the 24/11 sale (WO TO_1000005 carried from 22/11, paid 39.50 Cash): sales of 23/11 and 24/11, then the invoice and its chain, each table on its own and linked by ID.
+-- Expected : 23/11 net 0, 24/11 one invoice 39.50 paid Cash. Invoice linked to the WO by SalWorkOrderInvoice, a Stock Out with lines and store movements at the item cost.
+-- Status   : Written, Executed, Verified 24/11 (MATCH with UI)
+USE MacOne_165d415d66034069b7b0171a6c242a6e;
+SELECT Days.Day,
+       (SELECT COUNT(*) FROM SalInvoice WHERE CAST(InvoiceDate AS date) = Days.Day) AS Invoices,
+       ISNULL((SELECT SUM(InvoiceTotalAmount) FROM SalInvoice WHERE CAST(InvoiceDate AS date) = Days.Day), 0)
+     - ISNULL((SELECT SUM(ReturnTotalAmount)  FROM SalReturn  WHERE CAST(ReturnDate  AS date) = Days.Day), 0) AS Net_Sales
+FROM  (SELECT CAST('2026-11-23' AS date) AS Day UNION ALL SELECT CAST('2026-11-24' AS date)) AS Days;
+SELECT * FROM SalInvoice WHERE InvoiceDate >= '2026-11-24';
+SELECT * FROM SalWorkOrderInvoice WHERE InvoiceID IN (SELECT ID FROM SalInvoice WHERE InvoiceDate >= '2026-11-24');
+SELECT * FROM SalWorkOrder WHERE ID IN (SELECT WorkOrderID FROM SalWorkOrderInvoice WHERE InvoiceID IN (SELECT ID FROM SalInvoice WHERE InvoiceDate >= '2026-11-24'));
+SELECT * FROM SalInvoiceReceiptPayment WHERE InvoiceReceiptID IN (SELECT InvoiceReceiptID FROM SalInvoiceReceiptInvoice WHERE InvoiceID IN (SELECT ID FROM SalInvoice WHERE InvoiceDate >= '2026-11-24'));
+SELECT * FROM InvStockOut WHERE RefDocumentID IN (SELECT ID FROM SalInvoice WHERE InvoiceDate >= '2026-11-24') OR RefDocumentID IN (SELECT WorkOrderID FROM SalWorkOrderInvoice WHERE InvoiceID IN (SELECT ID FROM SalInvoice WHERE InvoiceDate >= '2026-11-24'));
+SELECT * FROM InvStoreTransaction WHERE DocumentID IN (SELECT ID FROM SalInvoice WHERE InvoiceDate >= '2026-11-24');
+
+-- ============================================================================
+-- Section I: Bug retests on build 1.2.504, QA - Company | 2026-11-24
+-- ============================================================================
+
+-- Test case: TC-019 Bug 2286 retest, Inventory counts after the Store filter fix
+-- Purpose  : H42: Same rules as G-T12 (General-Queries): submitted Product and ProductPackage items of branch Alshellah, every item x branch store pair (InvStoreBranch), items with no pair count as Out of Stock. First result: each category as distinct items and as item x store rows. Second result: the same per store, to compare with the search for one store.
+-- Expected : UI on 24/11 12:54: All 363, In Stock 353, Low Stock 1, Out of Stock 12, Negative 21; search "Mohammad Store Branch - 2" shows 27/390 results.
+-- Status   : Written, Executed, Verified 24/11. All stores matches UI (363, 353, 1, 12, 21; 390 rows). Branch - 2: 27 rows = 3 In, 1 Low, 2 Out, 21 Negative; UI cards unchanged by the search
+WITH BranchStores AS (
+    SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+),
+Items AS (
+    SELECT Item.ID AS ItemID
+    FROM   InvItem AS Item
+    WHERE  Item.DocumentStatusID = 2
+      AND  Item.ItemTypeID IN (1, 3)
+      AND (Item.IsApplyToAllBranch = 1
+           OR EXISTS (SELECT 1 FROM InvItemBranch AS IB WHERE IB.ItemID = Item.ID AND IB.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'))
+),
+Pairs AS (
+    SELECT Trx.ItemID, Trx.StoreID
+    FROM   InvStoreTransaction AS Trx
+    WHERE  Trx.StoreID IN (SELECT StoreID FROM BranchStores) AND Trx.ItemID IN (SELECT ItemID FROM Items)
+    UNION
+    SELECT Setup.ItemID, Setup.StoreID
+    FROM   InvStoreItem AS Setup
+    WHERE  Setup.StoreID IN (SELECT StoreID FROM BranchStores) AND Setup.ItemID IN (SELECT ItemID FROM Items)
+),
+Rows AS (
+    SELECT Items.ItemID, Pairs.StoreID,
+           ISNULL((SELECT SUM(Trx.BaseItemQuantity) FROM InvStoreTransaction AS Trx
+                   WHERE Trx.ItemID = Items.ItemID AND Trx.StoreID = Pairs.StoreID), 0) AS Quantity,
+           ISNULL((SELECT MAX(Setup.ItemMinQuantity) FROM InvStoreItem AS Setup
+                   WHERE Setup.ItemID = Items.ItemID AND Setup.StoreID = Pairs.StoreID), 0) AS Min_Quantity
+    FROM   Items
+    LEFT JOIN Pairs ON Pairs.ItemID = Items.ItemID
+),
+Classified AS (
+    SELECT Rows.ItemID, ISNULL(Store.StoreName, '(no store)') AS Store_Name,
+           CASE WHEN Quantity < 0 THEN '4 Negative'
+                WHEN Quantity = 0 THEN '3 Out of Stock'
+                WHEN Min_Quantity > 0 AND Quantity <= Min_Quantity THEN '2 Low Stock'
+                ELSE '1 In Stock' END AS Category
+    FROM   Rows
+    LEFT JOIN InvStore AS Store ON Store.ID = Rows.StoreID
+)
+SELECT 'All stores' AS Scope, Category, COUNT(DISTINCT ItemID) AS Items, COUNT(*) AS Item_Store_Rows
+FROM   Classified GROUP BY Category
+UNION ALL
+SELECT 'All stores', '0 All', COUNT(DISTINCT ItemID), COUNT(*) FROM Classified
+UNION ALL
+SELECT Store_Name, Category, COUNT(DISTINCT ItemID), COUNT(*)
+FROM   Classified GROUP BY Store_Name, Category
+UNION ALL
+SELECT Store_Name, '0 All', COUNT(DISTINCT ItemID), COUNT(*)
+FROM   Classified GROUP BY Store_Name
+ORDER BY Scope, Category;

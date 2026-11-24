@@ -14,7 +14,7 @@
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/431",
       "id": "e-20261115-001",
       "assignedTo": "Mohammad Al Shellah",
-      "refreshedAt": "2026-11-24T08:30:16+03:00",
+      "refreshedAt": "2026-11-24T16:45:19+03:00",
       "statusLog": [
         {
           "state": "New",
@@ -2689,7 +2689,7 @@
       ],
       "reopened": true,
       "closedNow": false,
-      "refreshedAt": "2026-11-24T08:30:16+03:00"
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
     },
     {
       "type": "story",
@@ -2798,15 +2798,15 @@
       "devopsId": 1041,
       "storyId": 1041,
       "title": "myShop POS -  Share option Configurations & document assignment",
-      "status": "Resolved",
+      "status": "Active",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-16T14:56:10+03:00",
       "notes": "Test cases or bugs logged under it",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041",
       "id": "e-20261115-163",
-      "assignedTo": "Rahaf Abudelleh",
-      "refreshedAt": "2026-11-24T08:30:16+03:00",
+      "assignedTo": "Alaa Ashour",
+      "refreshedAt": "2026-11-24T16:45:19+03:00",
       "statusLog": [
         {
           "state": "New",
@@ -2892,6 +2892,11 @@
           "state": "Resolved",
           "at": "2026-11-23T12:01:09.41Z",
           "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T12:12:52.657Z",
+          "by": "Rahaf Abudelleh"
         }
       ]
     }

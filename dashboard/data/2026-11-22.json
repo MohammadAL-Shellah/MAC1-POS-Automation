@@ -180,7 +180,7 @@
           "by": "Alaa Ashour"
         }
       ],
-      "refreshedAt": "2026-11-24T08:30:16+03:00"
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
     },
     {
       "source": "claude",
@@ -350,19 +350,19 @@
       "type": "test_run",
       "storyId": 214,
       "title": "Run 80: full execution from scratch, 87 cases",
-      "notes": "DevOps Run 80, started 22/11 21:05. All 87 cases from the start, nothing carried over. Task 2179 is rebuilt from this Run only. Approved changes: wrong TC-041 YTD image removed from Test Case 1937 (NOT from Run 75, server refuses the delete, 405); TC-069 expected updated; Run 74 closed (Aborted, its 37 results without outcome became Aborted, 50 outcomes unchanged). Data: WO-TO_11000189 (5282GZT, Car Wash 100.00) left pending on 22/11 for TC-071. TC-040 changed from Passed to Needs Investigation: the rejected range is applied after returning to Sales, being reproduced.",
+      "notes": "Run 80 Completed on DevOps 24/11 09:14: 79 pass, 5 fail, 2 blocked, 1 N/A, 0 not run. TC-009 and TC-010 passed in Demo Company on 24/11.",
       "run": {
         "build": "1.2.498",
-        "pass": 77,
+        "pass": 79,
         "fail": 5,
         "blocked": 2,
-        "notRun": 2
+        "notRun": 0
       },
       "devopsId": null,
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-22T21:01:11+03:00",
       "url": null,
-      "status": "",
+      "status": "completed",
       "id": "e-20261122-013"
     },
     {

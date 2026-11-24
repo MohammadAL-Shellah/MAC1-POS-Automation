@@ -1,28 +1,410 @@
 {
   "date": "2026-11-24",
-  "entries": [],
+  "entries": [
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 214,
+      "title": "Demo Company: oil products sold on 24/11 show cost 0, so Gross Profit equals Net Sales (34.35) and Gross Margin is 100%. Is item cost missing in Demo, or is this the expected cost rule?",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-24T09:14:48+03:00",
+      "notes": "",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261124-001"
+    },
+    {
+      "source": "claude",
+      "type": "story",
+      "devopsId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "notes": "Task 2179 rev 24: final QA report summary added (Failed: 79 pass, 5 fail, 2 blocked, 1 N/A). Report file US-214_POS_Dashboard_Final_QA_Report_2026-11-24.md",
+      "storyId": 214,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-24T09:31:29+03:00",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "status": "Active",
+      "id": "e-20261124-002",
+      "assignedTo": "Haitham Tarakhan",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T11:17:58.93Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 408,
+      "storyId": 408,
+      "title": "myShop POS - WO - Oil Service",
+      "status": "New",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-24T11:45:12+03:00",
+      "notes": "Test cases or bugs logged under it",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/408",
+      "id": "e-20261124-003",
+      "assignedTo": "Haitham Tarakhan",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-12-23T20:48:21.81Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-07-22T06:41:11.4Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-08-05T05:28:26.143Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 2294,
+      "storyId": 408,
+      "title": "MAC1 - Workorder | Completing a Work Order created on an earlier day overwrites its creation date, so it is counted on the completion day",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-24T11:43:47+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2294",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "Workorder"
+      },
+      "id": "e-20261124-004",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-24T08:43:47.363Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T08:45:08.547Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "reopened": false,
+      "closedNow": false,
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 1299,
+      "storyId": 1299,
+      "title": "myShop POS - Pemission Screen",
+      "status": "Active",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-24T12:11:40+03:00",
+      "notes": "Test cases or bugs logged under it",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1299",
+      "id": "e-20261124-005",
+      "assignedTo": "Alaa Ashour",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-09-09T08:05:46.823Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-17T07:10:16.9Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "New",
+          "at": "2026-09-23T12:40:47.783Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T08:55:44.047Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-11T06:46:08.6Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-08T08:23:04.517Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-10T13:14:43.183Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T07:49:58.86Z",
+          "by": "Ahmad Hayajneh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:59:11.18Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-19T07:43:09.753Z",
+          "by": "Ahmad Hayajneh"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-19T09:14:51.313Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-22T06:02:23.733Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-22T07:21:25.603Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T07:40:10.507Z",
+          "by": "Ahmad Hayajneh"
+        }
+      ],
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 2295,
+      "storyId": 1299,
+      "title": "MAC1 - Permission screen | The System Allows Users to Print Work Orders from the Voucher List Screen Despite Having Printing Permission Disabled",
+      "status": "New",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-24T12:05:46+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2295",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "",
+        "severity": "2 - High",
+        "screen": "Permission"
+      },
+      "id": "e-20261124-006",
+      "assignedTo": "Alaa Ashour",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-24T09:05:46.443Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": false,
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 2288,
+      "storyId": 214,
+      "title": "MAC1 - POS Dashboard | Sales, WO info and Cash apply an invalid date range (From after To) after the message is closed and show zeros",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-24T14:15:38+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2288",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "POS Dashboard"
+      },
+      "id": "e-20261124-007",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-23T11:32:58.513Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T12:11:08.14Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T12:36:15.073Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-24T11:15:38.377Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
+    }
+  ],
   "team": [
     {
       "name": "Rahaf Abdullah",
-      "stories": [],
+      "stories": [
+        {
+          "id": 1041,
+          "title": "myShop POS -  Share option Configurations & document assignment ",
+          "state": "Active",
+          "storyId": null,
+          "reason": "linked work",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041"
+        }
+      ],
       "testcases": [],
-      "bugsOpened": [],
+      "bugsOpened": [
+        {
+          "id": 2296,
+          "title": "MAC-ONE - Share option - hard copy text label is display as print",
+          "state": "New",
+          "storyId": 1041,
+          "reason": "opened",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2296",
+          "bug": {
+            "issueType": "Cosmetic",
+            "qaBugType": "Other",
+            "severity": "3 - Medium",
+            "screen": "Share options"
+          }
+        }
+      ],
       "bugsClosed": []
     },
     {
       "name": "Ahmad Hayajneh",
-      "stories": [],
+      "stories": [
+        {
+          "id": 450,
+          "title": "myShop POS - Add a customer",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/450"
+        }
+      ],
       "testcases": [],
       "bugsOpened": [],
-      "bugsClosed": []
+      "bugsClosed": [
+        {
+          "id": 2275,
+          "title": "MAC ONE - POS Edit Customer – Adding/changing customer mobile number fails with \"Unable to send the verification code\"",
+          "state": "Closed",
+          "storyId": 450,
+          "reason": "closed",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2275",
+          "bug": {
+            "issueType": "Feature Request",
+            "qaBugType": "Other",
+            "severity": "2 - High",
+            "screen": "Edit Customer"
+          }
+        }
+      ]
     }
   ],
-  "teamSyncedAt": "2026-11-24T08:30:16+03:00",
-  "mySyncedAt": "2026-11-24T08:30:16+03:00",
+  "teamSyncedAt": "2026-11-24T16:45:19+03:00",
+  "mySyncedAt": "2026-11-24T16:45:19+03:00",
   "storyRefs": {
     "214": {
       "title": "myShop POS - Company Dashboard",
-      "state": "Resolved"
+      "state": "Active"
     },
     "408": {
       "title": "myShop POS - WO - Oil Service",
@@ -34,7 +416,7 @@
     },
     "450": {
       "title": "myShop POS - Add a customer",
-      "state": "New"
+      "state": "Resolved"
     },
     "758": {
       "title": "myShop POS - WO integrated with Camera System",
@@ -50,7 +432,7 @@
     },
     "1041": {
       "title": "myShop POS -  Share option Configurations & document assignment ",
-      "state": "Resolved"
+      "state": "Active"
     },
     "1046": {
       "title": "myShop POS - Company Profile",
@@ -62,7 +444,11 @@
     },
     "1299": {
       "title": "myShop POS - Pemission Screen",
-      "state": "Resolved"
+      "state": "Active"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test App",
+      "state": "Active"
     },
     "1584": {
       "title": "myShop POS - Installation Wizard configurations ",
@@ -79,6 +465,14 @@
     "1718": {
       "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
       "state": "Active"
+    },
+    "2170": {
+      "title": "Master - Product Form",
+      "state": "Active"
+    },
+    "2176": {
+      "title": "myShop Portal - Schedule ",
+      "state": "New"
     },
     "2262": {
       "title": "myShop POS - Assign technician(s) to WO ",

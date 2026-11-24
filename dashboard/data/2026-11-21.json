@@ -64,9 +64,9 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-21T00:27:08+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Resolved",
+      "status": "Active",
       "id": "e-20261121-004",
-      "assignedTo": "Mohammad Al Shellah",
+      "assignedTo": "Haitham Tarakhan",
       "statusLog": [
         {
           "state": "New",
@@ -132,9 +132,14 @@
           "state": "Resolved",
           "at": "2026-11-23T13:46:23.243Z",
           "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T11:17:58.93Z",
+          "by": "Mohammad Al Shellah"
         }
       ],
-      "refreshedAt": "2026-11-24T08:30:16+03:00"
+      "refreshedAt": "2026-11-24T16:45:19+03:00"
     },
     {
       "source": "claude",

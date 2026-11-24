@@ -98,6 +98,9 @@ Database: `MacOne_255b989cce714d828b70d1f9e4367412` on `qadb.minerets.com,55009`
 | 90 | H37: November documents in the first or last hour of a day (Run 80) | SalInvoice, SalReturn | SELECT | TC-078 | W E (Run 80) | 2026-11-23 |
 | 91 | H38: Sales range counts 14/11 and 14-20/11 with boundary documents (Run 80) | SalInvoice, SalReturn | SELECT | TC-078 | W E V (Run 80) | 2026-11-23 |
 | 92 | H39: Close Day 23/11 and cash deposit TO_11000005 (Run 80) | SalWorkingDay, SalBankDepositWorkingDay, SalBankDeposit, GenLkpDocumentStatus | SELECT | TC-075 | W E V (Run 80) | 2026-11-23 |
+| 93 | H40: Demo Company documents and totals of 23-24/11 (Run 80) | SalInvoice, SalReturn, SalWorkOrder | SELECT | TC-010 | W E V (Run 80, Demo) | 2026-11-24 |
+| 94 | H41: Demo Company new sale of 24/11 with WO, receipt and stock chain (Run 80) | SalInvoice, SalWorkOrderInvoice, SalWorkOrder, SalInvoiceReceiptPayment, InvStockOut, InvStoreTransaction | SELECT | TC-009 | W E V (Run 80, Demo) | 2026-11-24 |
+| 95 | H42: Inventory counts per category and per branch store, Bug 2286 retest (build 1.2.504) | InvStoreBranch, InvItem, InvItemBranch, InvStoreTransaction, InvStoreItem, InvStore | SELECT | TC-019 | W E V (retest) | 2026-11-24 |
 
 ## General: MAC1 local Sync storage, SQLite copy ([file](Database-Queries/General-Queries.sql))
 
