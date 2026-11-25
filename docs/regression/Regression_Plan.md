@@ -63,10 +63,10 @@ The current QA values are in [WO_Smoke_Regression.md](WO_Smoke_Regression.md), s
 | 5.4 | Reports and Vouchers | 1618 | 1 | 4 | 0 | 0 |
 | 5.5 | Share Options and Printers | 1041 | 2 | 12 | 29 | 15 |
 | 5.6 | Service Reminder Sticker | 1624 | 3 | 26 | 20 | 6 |
-| 5.7 | POS Dashboard | 214 | 5 | 20 | 55 | 8 |
+| 5.7 | POS Dashboard | 214 | 5 | 25 | 55 | 3 |
 | 5.8 | Portal | 1632 and others | 3 | 4 | 0 | 0 |
 | 5.9 | Portal and MacOne Integration | none | 3 | 6 | 0 | 0 |
-| | Total | | 39 | 102 | 116 | 36 |
+| | Total | | 39 | 107 | 116 | 31 |
 
 For 5.7, after Run 80 (22 and 23/11/2026, build 1.2.498) the 87 TC-POS cases split as in the DevOps suites: 5 Smoke, 19 Core, 55 Full and 8 Excluded (TC-009 added to Full on 24/11/2026). The Core column adds 1 for the stock tables DB check. Changed on 23/11/2026 with the user's approval: 13 cases added (Core 1922, 1927, 1968; Full 1891, 1914, 1952, 1924, 1925, 1967, 1969, 1942, 1965, 1950) and 3 removed from Full (1936, 1953, 1966, Bug 2288).
 
@@ -139,8 +139,9 @@ Since the review of 20/11/2026 the DevOps suites are the source. Updated after R
 |---|---|---|
 | Smoke | 005 (1890), 022 (1907), 031 (1926), 034 (1929), 036 (1931) | Daily Sales, expected cash, Executive Summary: Gross Profit, Output VAT, Net VAT Payable (moved from Core on 23/11/2026) |
 | Core | 002 (1887), 007 (1892), 013 (1898), 017 (1902), 023 (1908), 027 (1912), 028 (1913), 068 (1915), 072 (1919), 074 (1921), 075 (1922), 076 (1923), 032 (1927), 035 (1930), 077 (1932), 043 (1939), 084 (1960), 058 (1961), 063 (1968) | Tabs, voided WO excluded, invoice and WO counts, electronic payments outside cash, payment methods, removed payment line, split payment, Overview and Inventory counts equal, cash sales and refunds, cash deposit reduces Expected Cash (075), refresh, Gross Margin, Input VAT, Daily Sales and Net Sales in the Executive Summary, Sales totals, Complete a WO from WO Info, Cash tab totals, Low Stock levels (063) |
+| Core (bug retests) | 019 (1904) Bug 2286, 040 (1936), 052 (1953), 086 (1966) Bug 2288, 071 (1918) Bug 2294 | Store filter and stock categories per branch store; invalid From/To range cannot be chosen on Sales, WO Info, Cash; completing an earlier-day WO keeps its creation date. Passed in Run 82 (25/11/2026) |
 | Core (DB check) | Stock tables chain, queries H11 to H14, H22, H24, H27, H30, H32 of [US-214-POS-Dashboard.sql](../../QA-Database-Reference/Database-Queries/US-214-POS-Dashboard.sql) | Every sale of a product writes a Stock Out with its line and store transaction at the item cost; returns, purchases, purchase returns and adjustments write the matching Stock In or Stock Out. Checked in Run 80 |
-| Full | 1886, 1891, 1893, 1894, 1895, 1896, 1897, 1899, 1900, 1901, 1903, 1905, 1906, 1909, 1910, 1911, 1914, 1916, 1917, 1920, 1924, 1925, 1928, 1933, 1934, 1935, 1937, 1938, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1954, 1955, 1956, 1957, 1958, 1959, 1962, 1964, 1965, 1967, 1969, 1970, 1971, 1972 | Date periods and custom ranges, report links, growth cases, export, search, boundary dates, empty states, Inventory Value (feature not finished), Return Rate and Cash Sales % (questions 157 and 158 open) |
+| Full | 1886, 1891, 1893, 1894, 1895, 1896, 1897, 1899, 1900, 1901, 1903, 1905, 1906, 1909, 1910, 1911, 1914, 1916, 1917, 1920, 1924, 1925, 1928, 1933, 1934, 1935, 1937, 1938, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1954, 1955, 1956, 1957, 1958, 1959, 1962, 1964, 1965, 1967, 1969, 1970, 1971, 1972 | Date periods and custom ranges, report links, growth cases, export, search, boundary dates, empty states, Inventory Value (feature not finished), Return Rate and Cash Sales % (questions 157 and 158 answered 25/11/2026: current behaviour is correct) |
 
 
 ## 7. Portal
@@ -190,11 +191,8 @@ These join the plan when the bug is fixed, the feature is complete, or the busin
 | 8.8 | Service Sticker | TC-SST 019, 020 | Not needed: the business dropped the template Active flag and Branch link (18/11/2026) |
 | 8.9 | Service Sticker | TC-SST 044 | Out of scope: "Mark the sticker as printed" struck out in the story (revision of 17/11/2026) |
 | 8.10 | Service Sticker | TC-SST 046, 054, 055 | Print History not supported yet |
-| 8.11 | POS Dashboard | TC-POS 003 (1888), 004 (1889) | Blocked in Run 80: a second account with other permissions and a second branch, terminal and session are needed |
+| 8.11 | POS Dashboard | TC-POS 003 (1888), 004 (1889) | Blocked in Run 80: a second account with other permissions and a second branch, terminal and session are needed. Checked by the tester on 25/11/2026 (OK), kept here until evidence is attached |
 | 8.11a | POS Dashboard | TC-POS 060 (1963) | Not applicable: the Cash Deposit button was removed from the story |
-| 8.12a | POS Dashboard | TC-POS 019 (1904) | Fail: Bug 2286, Store filter for the inventory counts (Feature Request) |
-| 8.12b | POS Dashboard | TC-POS 040 (1936), 052 (1953), 086 (1966) | Fail: Bug 2288, an invalid custom date range is applied. Removed from Full on 23/11/2026 |
-| 8.12c | POS Dashboard | TC-POS 071 (1918) | Fail: Work Order count across the day change, Bug 2294 |
 | 8.12d | Stock tables | Sales Return of a service item; duplicate Stock Out header (H25); duplicate Stock Adjustment number | Bug draft e-20261120-007, bug draft for H25, Bug 2287 (Story 990) |
 | 8.13 | Version update | Update environment | Bug 1861 open (Story 928) |
 | 8.14 | Company Profile | Story 1046 | Story still active, no cases yet |
@@ -248,6 +246,7 @@ The plan is also updated when:
 | 12.7 | TC-POS-010 (1895) and TC-POS-033 (1928) added to Full 2183 after their pass in Run 77, approved by the user | 22/11/2026 |
 | 12.8 | After Run 80 of Story 214: 13 TC-POS cases added (Core 1922, 1927, 1968; Full 1891, 1914, 1952, 1924, 1925, 1967, 1969, 1942, 1965, 1950), 3 removed from Full (1936, 1953, 1966, Bug 2288). On hold now only 1904 (Bug 2286) and 2014. Approved by the user | 23/11/2026 |
 | 12.10 | TC-POS-009 (1894) added to Full 2183 after its pass in Demo Company on 24/11/2026 (Run 80). Approved by the user | 24/11/2026 |
+| 12.11 | Bugs 2286, 2288 and 2294 Closed: retest cases 1904, 1936, 1953, 1966, 1918 added to Core and removed from Excluded (8.12a, b, c). Passed in Run 82. Added to Core suite 2182 on DevOps with the user's approval (Core 78 cases) | 25/11/2026 |
 | 12.9 | Executive Summary in Smoke: TC-POS 031 (1926), 034 (1929), 036 (1931) moved from Core to Smoke, Priority set to 1. Approved by the user | 23/11/2026 |
 
 ## 13. Release day runbook

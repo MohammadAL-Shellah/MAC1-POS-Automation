@@ -1,0 +1,501 @@
+{
+  "date": "2026-11-25",
+  "entries": [
+    {
+      "type": "story",
+      "devopsId": 214,
+      "storyId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-25T09:00:13+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "id": "e-20261125-001",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T11:17:58.93Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 2286,
+      "storyId": 214,
+      "title": "MAC1 - POS Dashboard | Add a Store filter to the Inventory tab and the Overview inventory card",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-25T09:42:46+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2286",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "POS Dashboard - Inventory"
+      },
+      "id": "e-20261125-002",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-23T09:25:58.573Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T13:07:35.92Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:28:44.383Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T12:40:43.84Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:21.86Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-25T06:42:46.807Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1870,
+      "storyId": 214,
+      "title": "MAC-ONE POS - Company dashboard (inventory) - Update dose not reflect to inventory list",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-25T09:50:05+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1870",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "inventory"
+      },
+      "id": "e-20261125-003",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-11T08:27:44.85Z",
+          "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T11:29:49.487Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T08:52:38.48Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:12.997Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-25T06:50:05.297Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 214,
+      "title": "MAC1 - POS Dashboard | Inventory tab drops 23 item rows of Mohammad Store Branch - 2 after the Store filter fix (Negative shows 0, DB has 21 negative items)",
+      "notes": "Post-QA Quick Validation 25/11, build 1.2.508. UI: All 367, In 355, Low 1, Out 11, Negative 0; filter shows Branch - 2 with 4 items. DB L2 (H42 rules): Branch - 2 has 27 pairs (4 In, 1 Low, 1 Out, 21 Negative). On 1.2.504 the UI showed Negative 21. Evidence: postqa-2026-11-25/hp_ui_05_inventory.png, b2286_ui_01_filters.png, ssms/L2. Bug 2286 is Closed.",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Happy Scenario",
+        "severity": "2 - High",
+        "screen": "Dashboard - Inventory"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-25T10:46:50+03:00",
+      "url": null,
+      "status": "logged as 2300",
+      "id": "e-20261125-004",
+      "loggedAs": 2300
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "notes": "Post-QA Quick Validation (not full QA): Overview, Sales, WO Info, Cash Passed; Inventory Failed (Negative rows missing); Bug 2294 retest Passed. No DevOps Test Run created.",
+      "run": {
+        "build": "1.2.508",
+        "pass": 5,
+        "fail": 1,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-25T10:46:50+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261125-005"
+    },
+    {
+      "type": "story",
+      "devopsId": 408,
+      "storyId": 408,
+      "title": "myShop POS - WO - Oil Service",
+      "status": "New",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-25T11:43:21+03:00",
+      "notes": "Test cases or bugs logged under it",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/408",
+      "id": "e-20261125-006",
+      "assignedTo": "Haitham Tarakhan",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-12-23T20:48:21.81Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-07-22T06:41:11.4Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-08-05T05:28:26.143Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 2300,
+      "storyId": null,
+      "title": "MAC1 - Portal - Store Form | The system should prevent the user from delete any item from the store if the item have a transaction",
+      "status": "New",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-25T11:36:10+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2300",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "Store"
+      },
+      "id": "e-20261125-007",
+      "assignedTo": "Mohammad Zaini",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-25T08:36:10.607Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": false,
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 2294,
+      "storyId": 408,
+      "title": "MAC1 - Workorder | Completing a Work Order created on an earlier day overwrites its creation date, so it is counted on the completion day",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-25T11:35:37+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2294",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "3 - Medium",
+        "screen": "Workorder"
+      },
+      "id": "e-20261125-008",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-24T08:43:47.363Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T08:45:08.547Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-25T08:35:37.507Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "test_run",
+      "storyId": 214,
+      "notes": "DevOps Run 82 (Completed): bug retests TC-019 (2286), TC-071 (2294), TC-040, 052, 086 (2288) all Passed, 12 screenshots attached; Test Case reference images replaced. TC-003, 004 not in the run (no evidence).",
+      "run": {
+        "build": "1.2.508",
+        "pass": 5,
+        "fail": 0,
+        "blocked": 0,
+        "notRun": 0
+      },
+      "devopsId": null,
+      "title": "",
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-25T13:54:08+03:00",
+      "url": null,
+      "status": "",
+      "id": "e-20261125-009"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [
+        {
+          "id": 1041,
+          "title": "myShop POS -  Share option Configurations & document assignment ",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-25T16:45:19+03:00",
+  "mySyncedAt": "2026-11-25T16:45:19+03:00",
+  "storyRefs": {
+    "180": {
+      "title": "myShop POS - Purchase Invoice",
+      "state": "Resolved"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Resolved"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "408": {
+      "title": "myShop POS - WO - Oil Service",
+      "state": "New"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "New"
+    },
+    "435": {
+      "title": "myShop POS - WO - Service Package Selection",
+      "state": "Resolved"
+    },
+    "450": {
+      "title": "myShop POS - Add a customer",
+      "state": "Resolved"
+    },
+    "493": {
+      "title": "myShop POS - WO - Discount Screen",
+      "state": "New"
+    },
+    "497": {
+      "title": "myShop POS - WO - Item Details (Normal)",
+      "state": "New"
+    },
+    "673": {
+      "title": "myShop POS - Bay Monitoring Dashboard KPI",
+      "state": "New"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Active"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test App",
+      "state": "Active"
+    },
+    "1582": {
+      "title": "myShop POS - Service Package Pricing, Discount Distribution & Display Configuration",
+      "state": "New"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Resolved"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Resolved"
+    },
+    "2170": {
+      "title": "Master - Product Form",
+      "state": "Active"
+    },
+    "2176": {
+      "title": "myShop Portal - Schedule ",
+      "state": "Active"
+    },
+    "2259": {
+      "title": "myShop POS - Request developments",
+      "state": "New"
+    },
+    "2260": {
+      "title": "myShop POS - Report an Issue",
+      "state": "New"
+    },
+    "2261": {
+      "title": "myShop POS - Multi terminals feature",
+      "state": "New"
+    },
+    "2262": {
+      "title": "myShop POS - Assign technician(s) to WO ",
+      "state": "New"
+    },
+    "2273": {
+      "title": "myShop - Support Remote control to POS (Hub)",
+      "state": "New"
+    },
+    "2282": {
+      "title": "myShop Portal - Enhancement on terminal (Remote Popup)",
+      "state": "New"
+    },
+    "2298": {
+      "title": "myShop POS - Add permission on system & documnet levels",
+      "state": "New"
+    },
+    "2299": {
+      "title": "myShop Portal - Support System & document permission ",
+      "state": "New"
+    }
+  }
+}

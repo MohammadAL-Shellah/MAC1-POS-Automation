@@ -11,10 +11,10 @@
       "timestamp": "2026-11-24T09:14:48+03:00",
       "notes": "",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "Expected: Demo item cost is 0, so a 100% margin is correct (business answer 25/11)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261124-001"
     },
@@ -28,9 +28,9 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-24T09:31:29+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Active",
+      "status": "Resolved",
       "id": "e-20261124-002",
-      "assignedTo": "Haitham Tarakhan",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -101,9 +101,14 @@
           "state": "Active",
           "at": "2026-11-24T11:17:58.93Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "story",
@@ -135,14 +140,14 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "bug_opened",
       "devopsId": 2294,
       "storyId": 408,
       "title": "MAC1 - Workorder | Completing a Work Order created on an earlier day overwrites its creation date, so it is counted on the completion day",
-      "status": "Resolved",
+      "status": "Closed",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-24T11:43:47+03:00",
@@ -166,11 +171,16 @@
           "state": "Resolved",
           "at": "2026-11-24T08:45:08.547Z",
           "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-25T08:35:37.507Z",
+          "by": "Mohammad Al Shellah"
         }
       ],
       "reopened": false,
-      "closedNow": false,
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "closedNow": true,
+      "refreshedAt": "2026-11-25T11:43:26+03:00"
     },
     {
       "type": "story",
@@ -257,14 +267,14 @@
           "by": "Ahmad Hayajneh"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "bug_opened",
       "devopsId": 2295,
       "storyId": 1299,
       "title": "MAC1 - Permission screen | The System Allows Users to Print Work Orders from the Voucher List Screen Despite Having Printing Permission Disabled",
-      "status": "New",
+      "status": "Active",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-24T12:05:46+03:00",
@@ -283,11 +293,16 @@
           "state": "New",
           "at": "2026-11-24T09:05:46.443Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-25T06:03:01.137Z",
+          "by": "Alaa Ashour"
         }
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "bug_closed",
@@ -332,7 +347,52 @@
       ],
       "reopened": false,
       "closedNow": true,
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-24T23:45:18+03:00"
+    },
+    {
+      "type": "bug_closed",
+      "devopsId": 1739,
+      "storyId": null,
+      "title": "Macone - company profile | The system does not update the branch status in the list",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-24T21:05:40+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1739",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "branch list"
+      },
+      "id": "e-20261124-008",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-25T08:25:50.13Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-18T07:38:12.657Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-18T08:20:23.793Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-24T18:05:40.51Z",
+          "by": "Mohammad Al Shellah"
+        }
+      ],
+      "reopened": false,
+      "closedNow": true,
+      "refreshedAt": "2026-11-24T23:45:18+03:00"
     }
   ],
   "team": [
@@ -399,12 +459,12 @@
       ]
     }
   ],
-  "teamSyncedAt": "2026-11-24T16:45:19+03:00",
-  "mySyncedAt": "2026-11-24T16:45:19+03:00",
+  "teamSyncedAt": "2026-11-24T23:45:18+03:00",
+  "mySyncedAt": "2026-11-24T23:45:18+03:00",
   "storyRefs": {
     "214": {
       "title": "myShop POS - Company Dashboard",
-      "state": "Active"
+      "state": "Resolved"
     },
     "408": {
       "title": "myShop POS - WO - Oil Service",
@@ -460,7 +520,7 @@
     },
     "1618": {
       "title": "myShop POS - Enhancements on Reports",
-      "state": "Resolved"
+      "state": "Active"
     },
     "1718": {
       "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",

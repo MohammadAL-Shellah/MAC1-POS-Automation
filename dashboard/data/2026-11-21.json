@@ -11,10 +11,10 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-21T00:13:48+03:00",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "Count them on the new day (business answer 25/11)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261121-001"
     },
@@ -28,10 +28,10 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-21T00:13:48+03:00",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "No, the creation date must stay. Fixed by Bug 2294, retest Passed on 1.2.508 (25/11, query L3)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261121-002"
     },
@@ -40,7 +40,7 @@
       "type": "bug_draft",
       "storyId": 214,
       "title": "MAC1 closes by itself after Confirm Payment on a carried-over Work Order",
-      "notes": "21/11 00:10, build 1.2.498: WO-182 (carried from 20/11), Cash 100, Confirm Payment -> app process exited, no error. Invoice INV-TO_11000137 and WO completion were saved. Seen once; needs a repeat before opening.",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "bug": {
         "issueType": "Incorrect Functionality",
         "qaBugType": "Other",
@@ -51,7 +51,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-21T00:13:49+03:00",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261121-003"
     },
     {
@@ -64,9 +64,9 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-21T00:27:08+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Active",
+      "status": "Resolved",
       "id": "e-20261121-004",
-      "assignedTo": "Haitham Tarakhan",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -137,9 +137,14 @@
           "state": "Active",
           "at": "2026-11-24T11:17:58.93Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "source": "claude",

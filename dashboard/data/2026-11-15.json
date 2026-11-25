@@ -14,7 +14,7 @@
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/431",
       "id": "e-20261115-001",
       "assignedTo": "Mohammad Al Shellah",
-      "refreshedAt": "2026-11-24T16:45:19+03:00",
+      "refreshedAt": "2026-11-25T16:45:19+03:00",
       "statusLog": [
         {
           "state": "New",
@@ -2219,12 +2219,12 @@
       "type": "bug_draft",
       "storyId": 214,
       "title": "MAC1 - Dashboard | Inventory Value jumps when stock changes in one store",
-      "notes": "POS-D06. Severity High. TC-POS-029, 062. Found 2026-11-13. Partly depends on the open question about negative stock and unit cost. POS Dashboard run, MAC1. Draft text in US-214_POS_Dashboard_Bug_Drafts.md.",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "devopsId": null,
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-15T19:33:14+03:00",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261115-131"
     },
     {
@@ -2232,12 +2232,12 @@
       "type": "bug_draft",
       "storyId": 214,
       "title": "MAC1 - Dashboard | Date is cleared when clicked again and Apply gives no message",
-      "notes": "POS-D08. Severity Low. TC-POS-041, 078. Product confirmed on 2026-11-14 that this is not acceptable. POS Dashboard run, MAC1. Draft text in US-214_POS_Dashboard_Bug_Drafts.md.",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "devopsId": null,
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-15T19:33:14+03:00",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261115-132"
     },
     {
@@ -2549,10 +2549,10 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-15T19:33:14+03:00",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "0.00 is accepted, current behaviour is correct (business answer 25/11)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261115-155"
     },
@@ -2583,10 +2583,10 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-15T19:33:14+03:00",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "Yes, gross sales before discount, current behaviour is correct (business answer 25/11)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261115-157"
     },
@@ -2600,10 +2600,10 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-15T19:33:14+03:00",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "Yes, on net amounts after refunds, current behaviour is correct (business answer 25/11)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261115-158"
     },
@@ -2689,7 +2689,7 @@
       ],
       "reopened": true,
       "closedNow": false,
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "story",
@@ -2798,15 +2798,15 @@
       "devopsId": 1041,
       "storyId": 1041,
       "title": "myShop POS -  Share option Configurations & document assignment",
-      "status": "Active",
+      "status": "Resolved",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-16T14:56:10+03:00",
       "notes": "Test cases or bugs logged under it",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041",
       "id": "e-20261115-163",
-      "assignedTo": "Alaa Ashour",
-      "refreshedAt": "2026-11-24T16:45:19+03:00",
+      "assignedTo": "Rahaf Abudelleh",
+      "refreshedAt": "2026-11-25T16:45:19+03:00",
       "statusLog": [
         {
           "state": "New",
@@ -2897,6 +2897,11 @@
           "state": "Active",
           "at": "2026-11-24T12:12:52.657Z",
           "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-25T07:43:29.05Z",
+          "by": "Alaa Ashour"
         }
       ]
     }

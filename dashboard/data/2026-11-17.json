@@ -6,15 +6,15 @@
       "devopsId": 214,
       "storyId": 214,
       "title": "myShop POS - Company Dashboard",
-      "status": "Active",
+      "status": "Resolved",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-17T09:08:55+03:00",
       "notes": "Assigned to me",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
       "id": "e-20261117-001",
-      "assignedTo": "Haitham Tarakhan",
-      "refreshedAt": "2026-11-24T16:45:19+03:00",
+      "assignedTo": "Mohammad Al Shellah",
+      "refreshedAt": "2026-11-25T16:45:19+03:00",
       "statusLog": [
         {
           "state": "New",
@@ -85,6 +85,11 @@
           "state": "Active",
           "at": "2026-11-24T11:17:58.93Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
         }
       ]
     },
@@ -168,7 +173,7 @@
           "by": "Rahaf Abudelleh"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "story",
@@ -265,7 +270,7 @@
           "by": "Saif Aladwan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "story",
@@ -424,14 +429,14 @@
       "devopsId": 1041,
       "storyId": 1041,
       "title": "myShop POS -  Share option Configurations & document assignment",
-      "status": "Active",
+      "status": "Resolved",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-17T17:02:09+03:00",
       "notes": "Assigned to me",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1041",
       "id": "e-20261117-006",
-      "assignedTo": "Alaa Ashour",
+      "assignedTo": "Rahaf Abudelleh",
       "statusLog": [
         {
           "state": "New",
@@ -522,9 +527,14 @@
           "state": "Active",
           "at": "2026-11-24T12:12:52.657Z",
           "by": "Rahaf Abudelleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-25T07:43:29.05Z",
+          "by": "Alaa Ashour"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "bug_opened",

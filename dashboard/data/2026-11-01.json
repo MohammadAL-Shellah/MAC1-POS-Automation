@@ -92,9 +92,44 @@
           "state": "Resolved",
           "at": "2026-11-23T13:31:33.4Z",
           "by": "Raneen Al Abdalah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T14:18:16.127Z",
+          "by": "Qusai Al Barahmeh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-25T04:54:44.28Z",
+          "by": "Raneen Al Abdalah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-25T07:08:57.027Z",
+          "by": "Qusai Al Barahmeh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-25T07:10:36.74Z",
+          "by": "Raneen Al Abdalah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-25T07:13:33.307Z",
+          "by": "Qusai Al Barahmeh"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-25T07:39:27.463Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-25T08:06:47.313Z",
+          "by": "Mohammad Zaini"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "bug_opened",

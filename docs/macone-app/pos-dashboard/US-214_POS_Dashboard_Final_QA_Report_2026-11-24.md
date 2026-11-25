@@ -8,7 +8,15 @@
 | Test Run | Run 80, plan 1882, suite 1885, state Completed 24/11/2026 |
 | QA Task | 2179 (rev 23, 174 figures) |
 | Execution dates | 22/11/2026 to 24/11/2026 |
-| Report status | **Failed** (open defects) |
+| Report status | **Passed** (updated 25/11/2026 after the Post-QA Quick Validation on build 1.2.508) |
+
+## 0. Update of 25/11/2026
+1. Post-QA Quick Validation on build 1.2.508: Overview, Sales, WO Info and Cash Passed with DB checks (queries L1 to L4b). See [US-214_PostQA_Quick_Validation_2026-11-25.md](US-214_PostQA_Quick_Validation_2026-11-25.md).
+2. Bugs 2286, 2288 and 2294 are Closed. Bug 2294 retest Passed (L3).
+3. Inventory tab, Mohammad Store Branch - 2: 30 item rows with movements (22 negative) are hidden because the items were removed from the store, which has no apply-to-all setting. Root cause in the Portal Store form, Bug 2300, outside this story.
+4. TC-003, TC-004 and the Inventory Value formula were checked by the tester on 25/11 and are OK. Their evidence is not attached to this report.
+5. All business questions in section 11 were answered on 25/11. The current behaviour is expected in each case.
+6. Still open, not blocking: draft e-20261122-012 (negative Gross Margin shown in green) and older drafts e-20261115-131, e-20261115-132, e-20261120-002, e-20261120-003, e-20261120-007, e-20261121-003, e-20261123-003.
 
 ## 1. Story ID and title
 User Story 214, myShop POS - Company Dashboard. The MAC1 dashboard with the tabs Overview, Executive Summary, Sales, WO Info, Cash and Inventory.
@@ -83,4 +91,6 @@ Story 214 joined Regression Test Plan 2115 with 79 of 87 cases: Smoke 5, Core 19
 6. MAC1 closed after paying a carried-over WO (draft e-20261121-003) did not reproduce on 24/11 in Demo Company.
 
 ## 12. Recommendation
-**Failed.** The story is not ready to close. Fix Bug 2286, Bug 2288 and Bug 2294, then retest TC-019, 040, 052, 071 and 086. Run TC-003 and TC-004 once a second account and context are available, and get answers to the open questions in section 11.
+**Passed (25/11/2026).** The story can be closed. Bugs 2286, 2288 and 2294 are fixed and Closed, the business questions are answered, and TC-003, TC-004 and the Inventory Value formula were confirmed by the tester. Follow Bug 2300 separately.
+
+Original recommendation of 24/11: Failed until Bugs 2286, 2288 and 2294 were fixed and TC-003 and TC-004 were run.

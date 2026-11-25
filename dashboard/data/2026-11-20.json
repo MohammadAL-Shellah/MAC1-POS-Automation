@@ -35,9 +35,9 @@
       "devopsId": null,
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-20T16:15:33+03:00",
-      "notes": "",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261120-002"
     },
     {
@@ -54,9 +54,9 @@
       "devopsId": null,
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-20T16:15:33+03:00",
-      "notes": "",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261120-003"
     },
     {
@@ -112,7 +112,7 @@
       "type": "bug_draft",
       "storyId": 214,
       "title": "MAC1 - Sales Return | Returning a service item adds stock to the store (service gets positive quantity)",
-      "notes": "RTN-TO_11000019 (Brake Check) wrote +1 to InvStoreTransaction; the sale never moved stock. 6 service rows now hold stock (Car Wash 4, RService 2...). Seen again 23/11 08:37 on build 1.2.498: RTN-TO_11000021 of INV-TO_11000143 (QA_SST AC Check, service, sale had no stock movement) created Stock In TO_11000043 with +1 (H20, H32).",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "bug": {
         "issueType": "Data Corruption",
         "qaBugType": "Happy Scenario",
@@ -123,7 +123,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-20T16:29:49+03:00",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261120-007"
     },
     {
@@ -136,10 +136,10 @@
       "timestamp": "2026-11-20T16:29:49+03:00",
       "notes": "",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "Current behaviour accepted: link to the original invoice ID is fine (business answer 25/11)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261120-008"
     },
@@ -153,10 +153,10 @@
       "timestamp": "2026-11-20T16:29:49+03:00",
       "notes": "",
       "url": null,
-      "status": "open",
+      "status": "answered",
       "question": {
-        "answer": "",
-        "answeredOn": null
+        "answer": "Yes, expected (business answer 25/11)",
+        "answeredOn": "2026-11-25"
       },
       "id": "e-20261120-009"
     },

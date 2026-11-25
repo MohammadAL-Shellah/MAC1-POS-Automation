@@ -180,7 +180,7 @@
           "by": "Alaa Ashour"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "source": "claude",
@@ -340,9 +340,9 @@
       "devopsId": null,
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-22T20:30:00+03:00",
-      "notes": "",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261122-012"
     },
     {
@@ -554,8 +554,8 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-22T22:55:57+03:00",
       "url": null,
-      "status": "open",
-      "resolvedOn": null,
+      "status": "resolved",
+      "resolvedOn": "2026-11-25",
       "id": "e-20261122-024"
     },
     {
@@ -568,8 +568,8 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-22T22:55:57+03:00",
       "url": null,
-      "status": "open",
-      "resolvedOn": null,
+      "status": "resolved",
+      "resolvedOn": "2026-11-25",
       "id": "e-20261122-025"
     }
   ],

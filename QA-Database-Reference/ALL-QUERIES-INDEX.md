@@ -101,6 +101,12 @@ Database: `MacOne_255b989cce714d828b70d1f9e4367412` on `qadb.minerets.com,55009`
 | 93 | H40: Demo Company documents and totals of 23-24/11 (Run 80) | SalInvoice, SalReturn, SalWorkOrder | SELECT | TC-010 | W E V (Run 80, Demo) | 2026-11-24 |
 | 94 | H41: Demo Company new sale of 24/11 with WO, receipt and stock chain (Run 80) | SalInvoice, SalWorkOrderInvoice, SalWorkOrder, SalInvoiceReceiptPayment, InvStockOut, InvStoreTransaction | SELECT | TC-009 | W E V (Run 80, Demo) | 2026-11-24 |
 | 95 | H42: Inventory counts per category and per branch store, Bug 2286 retest (build 1.2.504) | InvStoreBranch, InvItem, InvItemBranch, InvStoreTransaction, InvStoreItem, InvStore | SELECT | TC-019 | W E V (retest) | 2026-11-24 |
+| 96 | J1-J12: Executive Summary, each table behind each line on its own (branch, working day, invoices, returns, document types, store movements, branch stores, stores, items, purchase invoices, purchase return lookup) | GenBranch, SalWorkingDay, SalInvoice, SalReturn, GenLkpDocumentType, InvStoreTransaction, InvStoreBranch, InvStore, InvItem, ProInvoice, sys.tables | SELECT | TC-029 to 036, 077 | W | 2026-11-24 |
+| 97 | K1-K7: Executive Summary, one query per calculation (sales, net sales and Output VAT per document and totals, COGS line by line, Gross Profit and Margin, Input VAT columns, Inventory Value candidate) | SalInvoice, SalReturn, InvStoreTransaction, InvItem, InvStore, GenLkpDocumentType, InvStoreBranch, INFORMATION_SCHEMA | SELECT | TC-029 to 036, 077 | W | 2026-11-24 |
+| 98 | L1: Post-QA Quick Validation, invoices, returns and Work Orders of 25/11 (build 1.2.508) | SalInvoice, SalReturn, SalWorkOrder, GenLkpDocumentStatus | SELECT | Post-QA happy path | W E V | 2026-11-25 |
+| 99 | L2: Post-QA Quick Validation, inventory categories per branch store (H42 rules) after Bug 2286 closed | InvStoreBranch, InvItem, InvItemBranch, InvStoreTransaction, InvStoreItem, InvStore | SELECT | Post-QA happy path | W E V (mismatch) | 2026-11-25 |
+| 100 | L3: Bug 2294 retest, WO-TO_11000197 date and its invoice after completion | SalWorkOrder, GenLkpDocumentStatus, SalWorkOrderInvoice, SalInvoice | SELECT | Bug 2294 | W E V | 2026-11-25 |
+| 101 | L4, L4b: per branch store, item rows with stock movements split by store setup (InvStoreItem) and quantity sign (L4 failed Msg 144, L4b corrected) | InvStoreTransaction, InvStoreBranch, InvStoreItem, InvStore | SELECT | Post-QA Inventory | W E V (L4b) | 2026-11-25 |
 
 ## General: MAC1 local Sync storage, SQLite copy ([file](Database-Queries/General-Queries.sql))
 

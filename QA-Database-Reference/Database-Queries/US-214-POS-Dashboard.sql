@@ -2146,3 +2146,746 @@ UNION ALL
 SELECT Store_Name, '0 All', COUNT(DISTINCT ItemID), COUNT(*)
 FROM   Classified GROUP BY Store_Name
 ORDER BY Scope, Category;
+
+-- ============================================================================
+-- Section J: Executive Summary, the tables behind each line | 2026-11-24
+-- Company : QA - Company (pick its database in SSMS, no prefix in the queries)
+-- Branch  : Alshellah  = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+-- Day     : 24/11/2026 (change the two dates to check another day)
+-- Each table is queried on its own. Run one query at a time (select it, F5).
+-- Status  : Written 24/11
+-- ============================================================================
+
+
+-- ----------------------------------------------------------------------------
+-- J1. GenBranch: the branch itself
+-- Used by : every line (all figures are for this branch only)
+-- Returns : one row, the branch name and ID that SalInvoice.BranchID and SalReturn.BranchID point to.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   GenBranch
+WHERE  ID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817';
+
+
+-- ----------------------------------------------------------------------------
+-- J2. SalWorkingDay: the working days of the branch
+-- Used by : every daily figure (an invoice belongs to one working day through SalInvoice.WorkingDayID)
+-- Returns : the days opened on or after 23/11, with open and close time and opening cash.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   SalWorkingDay
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  OpenDate >= '2026-11-23'
+ORDER BY OpenDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J3. SalInvoice: sales invoices of the day
+-- Used by : Daily Sales (InvoiceTotalAmount), Daily Net Sales (InvoiceBeforeTaxAmount),
+--           Output VAT (InvoiceTaxAmount), and the Net Sales part of Gross Profit and Gross Margin
+-- Returns : one row per invoice of the branch on that day.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   SalInvoice
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'
+ORDER BY InvoiceDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J4. SalReturn: sales returns of the day
+-- Used by : subtracted from Daily Sales (ReturnTotalAmount), Daily Net Sales (ReturnBeforeTaxAmount)
+--           and Output VAT (ReturnTaxAmount)
+-- Returns : one row per return of the branch on that day. InvoiceID is the original invoice
+--           (logical link, no FK).
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   SalReturn
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  ReturnDate >= '2026-11-24' AND ReturnDate < '2026-11-25'
+ORDER BY ReturnDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J5. GenLkpDocumentType: the document types
+-- Used by : Gross Profit (to know which store movements are sales and which are returns)
+-- Returns : every document type with its ID, to read InvStoreTransaction.DocumentTypeID.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   GenLkpDocumentType;
+
+
+-- ----------------------------------------------------------------------------
+-- J6. InvStoreTransaction: stock movements of the day
+-- Used by : Gross Profit, the COGS part = BaseItemQuantity x ItemCost of sale and return movements
+-- Returns : one row per item per document that moved stock on that day (sales, returns, purchases,
+--           adjustments). DocumentID points to the document, DocumentTypeID to J5.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStoreTransaction
+WHERE  DocumentDate >= '2026-11-24' AND DocumentDate < '2026-11-25'
+ORDER BY DocumentDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J7. InvStoreBranch: which stores belong to the branch
+-- Used by : Inventory Value (only these stores are counted, KB item 14)
+-- Returns : one row per store linked to the branch.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStoreBranch
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817';
+
+
+-- ----------------------------------------------------------------------------
+-- J8. InvStore: the stores
+-- Used by : Inventory Value (store names behind J7)
+-- Returns : the stores of the branch, with name and settings such as IsApplyToAllBranch.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStore
+WHERE  ID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817');
+
+
+-- ----------------------------------------------------------------------------
+-- J9. InvItem: the items
+-- Used by : Inventory Value (which items are stock items: ItemTypeID 1 Product, 3 Product Package;
+--           services have no stock)
+-- Returns : every submitted item (DocumentStatusID = 2) with its type.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvItem
+WHERE  DocumentStatusID = 2
+ORDER BY ItemName;
+
+
+-- ----------------------------------------------------------------------------
+-- J10. InvStoreTransaction: all stock movements of the branch stores
+-- Used by : Inventory Value. Current quantity = SUM(BaseItemQuantity) per item and store,
+--           cost = ItemCost. The exact formula is still unknown (KB item 6), so compare with care.
+-- Returns : every movement ever made in the branch stores (large result).
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStoreTransaction
+WHERE  StoreID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817')
+ORDER BY ItemID, StoreID, DocumentDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J11. ProInvoice: purchase invoices
+-- Used by : Input VAT (tax of purchase invoices)
+-- Returns : the purchase invoices. The date and tax column names are not verified yet, so the
+--           query lists all rows; read the columns and filter by the day afterwards.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   ProInvoice;
+
+
+-- ----------------------------------------------------------------------------
+-- J12. Purchase return table: name not verified yet
+-- Used by : Input VAT (tax of purchase returns, subtracted)
+-- Returns : the tables whose name looks like a purchase return, to find the right one.
+--           This is a lookup only; the table is not confirmed.
+-- ----------------------------------------------------------------------------
+SELECT name AS Table_Name
+FROM   sys.tables
+WHERE  name LIKE 'Pro%Return%'
+ORDER BY name;
+
+-- ============================================================================
+-- Section K: Executive Summary, one query per calculation | 2026-11-24
+-- Company : QA - Company   Branch: Alshellah   Day: 24/11/2026
+-- To check another day, change the dates '2026-11-24' and '2026-11-25' in each query.
+-- Run one query at a time (select it, F5).
+-- Status  : Written 24/11
+-- ============================================================================
+
+
+-- ----------------------------------------------------------------------------
+-- K1. Daily Sales, Daily Net Sales, Output VAT: invoice by invoice
+-- Shows   : every invoice and every return of the day with its three amounts.
+--           Returns are shown negative so the column totals in K2 are simple sums.
+-- ----------------------------------------------------------------------------
+SELECT 'Invoice'                  AS Document_Kind,
+       InvoiceNumber              AS Document_No,
+       InvoiceDate                AS Document_Date,
+       InvoiceTotalAmount         AS Incl_VAT,
+       InvoiceBeforeTaxAmount     AS Excl_VAT,
+       InvoiceTaxAmount           AS VAT
+FROM   SalInvoice
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'
+UNION ALL
+SELECT 'Return',
+       ReturnNumber,
+       ReturnDate,
+       -ReturnTotalAmount,
+       -ReturnBeforeTaxAmount,
+       -ReturnTaxAmount
+FROM   SalReturn
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  ReturnDate >= '2026-11-24' AND ReturnDate < '2026-11-25'
+ORDER BY Document_Date;
+
+
+-- ----------------------------------------------------------------------------
+-- K2. Daily Sales, Daily Net Sales, Output VAT: totals
+-- Formula : Daily Sales     = invoices Incl. VAT  - returns Incl. VAT
+--           Daily Net Sales = invoices Excl. VAT  - returns Excl. VAT
+--           Output VAT      = invoices VAT        - returns VAT
+-- Compare : Daily Sales (Incl. VAT), Daily Net Sales (Excl. VAT), Output VAT on the screen.
+-- ----------------------------------------------------------------------------
+SELECT ISNULL((SELECT SUM(InvoiceTotalAmount)     FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+     - ISNULL((SELECT SUM(ReturnTotalAmount)      FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Daily_Sales_Incl_VAT,
+       ISNULL((SELECT SUM(InvoiceBeforeTaxAmount) FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+     - ISNULL((SELECT SUM(ReturnBeforeTaxAmount)  FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Daily_Net_Sales_Excl_VAT,
+       ISNULL((SELECT SUM(InvoiceTaxAmount)       FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+     - ISNULL((SELECT SUM(ReturnTaxAmount)        FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Output_VAT;
+
+
+-- ----------------------------------------------------------------------------
+-- K3. COGS: line by line
+-- Shows   : every stock movement of today's invoices, with its document type, item, store,
+--           base quantity, unit cost and line cost (base quantity x cost).
+--           Return movements also carry the original invoice ID (KB section 5 item 3),
+--           so they appear here with their own document type.
+--           Service items have no stock movement, so they add no cost.
+-- ----------------------------------------------------------------------------
+SELECT Inv.InvoiceNumber                     AS Invoice_No,
+       DocType.DocumentTypeName              AS Movement_Type,
+       Item.ItemName                         AS Item_Name,
+       Store.StoreName                       AS Store_Name,
+       Trx.BaseItemQuantity                  AS Base_Qty,
+       Trx.ItemCost                          AS Unit_Cost,
+       Trx.BaseItemQuantity * Trx.ItemCost   AS Line_Cost
+FROM   InvStoreTransaction AS Trx
+JOIN   SalInvoice          AS Inv     ON Inv.ID     = Trx.DocumentID
+JOIN   InvItem             AS Item    ON Item.ID    = Trx.ItemID
+JOIN   InvStore            AS Store   ON Store.ID   = Trx.StoreID
+JOIN   GenLkpDocumentType  AS DocType ON DocType.ID = Trx.DocumentTypeID
+WHERE  Inv.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  Inv.InvoiceDate >= '2026-11-24' AND Inv.InvoiceDate < '2026-11-25'
+ORDER BY Inv.InvoiceNumber, Item.ItemName;
+
+
+-- ----------------------------------------------------------------------------
+-- K4. Gross Profit and Gross Margin
+-- Formula : COGS          = SUM(base quantity x unit cost) of K3   (same rule as H4, verified 22/11)
+--           Gross Profit  = Daily Net Sales (K2) - COGS
+--           Gross Margin  = Gross Profit / Daily Net Sales x 100   (0 when Net Sales is 0)
+-- Compare : screen on 24/11: Net Sales 434.78, Gross Profit 379.78, Gross Margin 87.35% (so COGS 55.00).
+-- ----------------------------------------------------------------------------
+WITH NetSales AS (
+    SELECT ISNULL((SELECT SUM(InvoiceBeforeTaxAmount) FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+         - ISNULL((SELECT SUM(ReturnBeforeTaxAmount)  FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Amount
+),
+Cogs AS (
+    SELECT ISNULL(SUM(Trx.BaseItemQuantity * Trx.ItemCost), 0) AS Amount
+    FROM   InvStoreTransaction AS Trx
+    JOIN   SalInvoice          AS Inv ON Inv.ID = Trx.DocumentID
+    WHERE  Inv.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+      AND  Inv.InvoiceDate >= '2026-11-24' AND Inv.InvoiceDate < '2026-11-25'
+)
+SELECT NetSales.Amount                                   AS Daily_Net_Sales,
+       Cogs.Amount                                       AS COGS,
+       NetSales.Amount - Cogs.Amount                     AS Gross_Profit,
+       CASE WHEN NetSales.Amount = 0 THEN 0
+            ELSE ROUND((NetSales.Amount - Cogs.Amount) * 100.0 / NetSales.Amount, 2) END AS Gross_Margin_Pct
+FROM   NetSales, Cogs;
+
+
+-- ----------------------------------------------------------------------------
+-- K5. Input VAT: columns of the purchase tables first
+-- Formula : Input VAT = VAT of purchase invoices - VAT of purchase returns (story rule).
+-- Shows   : the column names of every Pro... table, so the date and tax columns can be chosen.
+--           The final Input VAT query is written after these names are read (no guessed names).
+-- ----------------------------------------------------------------------------
+SELECT TABLE_NAME  AS Table_Name,
+       COLUMN_NAME AS Column_Name,
+       DATA_TYPE   AS Data_Type
+FROM   INFORMATION_SCHEMA.COLUMNS
+WHERE  TABLE_NAME LIKE 'Pro%'
+  AND (COLUMN_NAME LIKE '%Date%' OR COLUMN_NAME LIKE '%Tax%' OR COLUMN_NAME LIKE '%Branch%' OR COLUMN_NAME LIKE '%Number%')
+ORDER BY TABLE_NAME, COLUMN_NAME;
+
+
+-- ----------------------------------------------------------------------------
+-- K6. Net VAT Payable
+-- Formula : Output VAT (K2) - Input VAT (K5).
+--           Today Input VAT is 0.00 on the screen, so Net VAT Payable = Output VAT.
+--           Not repeated as its own query until the Input VAT query exists.
+-- ----------------------------------------------------------------------------
+
+
+-- ----------------------------------------------------------------------------
+-- K7. Inventory Value: candidate formula, NOT confirmed
+-- Formula : SUM over branch stores of (current base quantity x item cost of its latest movement).
+--           The real formula is unknown (KB section 5 item 6). Use this to compare only; a
+--           mismatch is expected until development gives the rule.
+-- Compare : screen on 24/11: 95,410.00.
+-- ----------------------------------------------------------------------------
+WITH Balance AS (
+    SELECT Trx.ItemID, Trx.StoreID, SUM(Trx.BaseItemQuantity) AS Qty
+    FROM   InvStoreTransaction AS Trx
+    WHERE  Trx.StoreID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817')
+    GROUP BY Trx.ItemID, Trx.StoreID
+),
+LastCost AS (
+    SELECT Balance.ItemID, Balance.StoreID, Balance.Qty,
+           (SELECT TOP 1 Trx.ItemCost FROM InvStoreTransaction AS Trx
+            WHERE  Trx.ItemID = Balance.ItemID AND Trx.StoreID = Balance.StoreID
+            ORDER BY Trx.DocumentDate DESC) AS Unit_Cost
+    FROM   Balance
+)
+SELECT SUM(Qty * Unit_Cost)                              AS Value_All_Rows,
+       SUM(CASE WHEN Qty > 0 THEN Qty * Unit_Cost END)   AS Value_Positive_Qty_Only
+FROM   LastCost;
+
+
+-- ============================================================================
+-- Section L: Post-QA Quick Validation, QA - Company | 2026-11-25 | Build 1.2.508
+-- ============================================================================
+
+-- Test case: Post-QA happy path, Overview, Sales, WO Info and Cash of 25/11
+-- Purpose  : L1: Today's invoices and returns (count, incl. VAT, excl. VAT, VAT) and every Work Order the WO Info tab lists today, with status and date.
+-- Expected : UI 25/11 10:40: Invoices 1 (500.00), Refunds 500.00, Daily Sales 0.00, Net Sales 0.00; WO 202 Completed 25/11, WO 199 Pending 24/11, WO 197 Pending 23/11.
+-- Status   : Written, Executed, Verified 25/11. Matches UI: invoice INV-TO_11000150 500.00 and return RTN-TO_11000025 500.00 (net 0.00, VAT 65.22 both ways); WO 202 Submitted 25/11, WO 199 New 24/11, WO 197 New 23/11
+SELECT 'Invoice' AS Kind, InvoiceNumber AS Doc_No, InvoiceDate AS Doc_Date,
+       InvoiceTotalAmount AS Incl_VAT, InvoiceBeforeTaxAmount AS Excl_VAT, InvoiceTaxAmount AS VAT, NULL AS WO_Status
+FROM   SalInvoice
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  InvoiceDate >= '2026-11-25' AND InvoiceDate < '2026-11-26'
+UNION ALL
+SELECT 'Return', ReturnNumber, ReturnDate,
+       -ReturnTotalAmount, -ReturnBeforeTaxAmount, -ReturnTaxAmount, NULL
+FROM   SalReturn
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  ReturnDate >= '2026-11-25' AND ReturnDate < '2026-11-26'
+UNION ALL
+SELECT 'Work Order', WO.WorkOrderNumber, WO.WorkOrderDate,
+       WO.WorkOrderTotalAmount, NULL, NULL, Status.DocumentStatusName
+FROM   SalWorkOrder AS WO
+JOIN   GenLkpDocumentStatus AS Status ON Status.ID = WO.DocumentStatusID
+WHERE  WO.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  WO.WorkOrderDate >= '2026-11-23'
+ORDER BY Kind, Doc_Date;
+
+-- Test case: Post-QA happy path, Inventory tab and Overview inventory card of 25/11
+-- Purpose  : L2: Same rules as H42 (Section I), run again on 25/11 after Bug 2286 was closed. Each stock category as distinct items and item x store rows, all branch stores and per store.
+-- Expected : UI 25/11 10:41: All 367, In Stock 355, Low Stock 1, Out of Stock 11, Negative 0, Stock Value 86,674.00.
+-- Status   : Written, Executed, Verified 25/11. MISMATCH: DB 363 items / 390 rows (In 357, Low 1, Out 11, Negative 21, all 21 in Branch - 2); UI 367 (355, 1, 11, Negative 0). UI store filter lists Branch - 2 with 4 items, DB has 27 pairs
+WITH BranchStores AS (
+    SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+),
+Items AS (
+    SELECT Item.ID AS ItemID
+    FROM   InvItem AS Item
+    WHERE  Item.DocumentStatusID = 2
+      AND  Item.ItemTypeID IN (1, 3)
+      AND (Item.IsApplyToAllBranch = 1
+           OR EXISTS (SELECT 1 FROM InvItemBranch AS IB WHERE IB.ItemID = Item.ID AND IB.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'))
+),
+Pairs AS (
+    SELECT Trx.ItemID, Trx.StoreID
+    FROM   InvStoreTransaction AS Trx
+    WHERE  Trx.StoreID IN (SELECT StoreID FROM BranchStores) AND Trx.ItemID IN (SELECT ItemID FROM Items)
+    UNION
+    SELECT Setup.ItemID, Setup.StoreID
+    FROM   InvStoreItem AS Setup
+    WHERE  Setup.StoreID IN (SELECT StoreID FROM BranchStores) AND Setup.ItemID IN (SELECT ItemID FROM Items)
+),
+Rows AS (
+    SELECT Items.ItemID, Pairs.StoreID,
+           ISNULL((SELECT SUM(Trx.BaseItemQuantity) FROM InvStoreTransaction AS Trx
+                   WHERE Trx.ItemID = Items.ItemID AND Trx.StoreID = Pairs.StoreID), 0) AS Quantity,
+           ISNULL((SELECT MAX(Setup.ItemMinQuantity) FROM InvStoreItem AS Setup
+                   WHERE Setup.ItemID = Items.ItemID AND Setup.StoreID = Pairs.StoreID), 0) AS Min_Quantity
+    FROM   Items
+    LEFT JOIN Pairs ON Pairs.ItemID = Items.ItemID
+),
+Classified AS (
+    SELECT Rows.ItemID, ISNULL(Store.StoreName, '(no store)') AS Store_Name,
+           CASE WHEN Quantity < 0 THEN '4 Negative'
+                WHEN Quantity = 0 THEN '3 Out of Stock'
+                WHEN Min_Quantity > 0 AND Quantity <= Min_Quantity THEN '2 Low Stock'
+                ELSE '1 In Stock' END AS Category
+    FROM   Rows
+    LEFT JOIN InvStore AS Store ON Store.ID = Rows.StoreID
+)
+SELECT 'All stores' AS Scope, Category, COUNT(DISTINCT ItemID) AS Items, COUNT(*) AS Item_Store_Rows
+FROM   Classified GROUP BY Category
+UNION ALL
+SELECT 'All stores', '0 All', COUNT(DISTINCT ItemID), COUNT(*) FROM Classified
+UNION ALL
+SELECT Store_Name, Category, COUNT(DISTINCT ItemID), COUNT(*)
+FROM   Classified GROUP BY Store_Name, Category
+UNION ALL
+SELECT Store_Name, '0 All', COUNT(DISTINCT ItemID), COUNT(*)
+FROM   Classified GROUP BY Store_Name
+ORDER BY Scope, Category;
+
+-- Test case: Bug 2294 retest, completing a Work Order from an earlier day keeps its creation date
+-- Purpose  : L3: WO-TO_11000197 (created 23/11, completed 25/11 10:45 with Cash 25.00): its WorkOrderDate and status, and the invoice its completion created (through SalWorkOrderInvoice) with the invoice date.
+-- Expected : WorkOrderDate stays 2026-11-23 08:56:23 (value in L1 before completion); status Submitted; one invoice of 25.00 dated 25/11.
+-- Status   : Written, Executed, Verified 25/11. Passed: WO_Date 2026-11-23 08:56:23 unchanged, Submitted, invoice INV - TO_11000151 25.00 dated 2026-11-25 10:44:50
+SELECT WO.WorkOrderNumber      AS WO_No,
+       WO.WorkOrderDate        AS WO_Date,
+       Status.DocumentStatusName AS WO_Status,
+       WO.WorkOrderTotalAmount AS WO_Total,
+       Inv.InvoiceNumber       AS Invoice_No,
+       Inv.InvoiceDate         AS Invoice_Date,
+       Inv.InvoiceTotalAmount  AS Invoice_Total
+FROM   SalWorkOrder AS WO
+JOIN   GenLkpDocumentStatus AS Status ON Status.ID = WO.DocumentStatusID
+LEFT JOIN SalWorkOrderInvoice AS Link ON Link.WorkOrderID = WO.ID
+LEFT JOIN SalInvoice AS Inv ON Inv.ID = Link.InvoiceID
+WHERE  WO.WorkOrderNumber = 'WO - TO_11000197';
+
+-- Test case: Post-QA Inventory, rows missing from the UI per branch store
+-- Purpose  : L4: For each branch store, item rows that have stock movements (InvStoreTransaction) split by whether the item is still set up in the store (InvStoreItem), with their stock category. Checks if the UI shows only items set up in the store.
+-- Expected : UI 25/11: Branch Store 363 items, Branch - 2 4 items.
+-- Status   : Written, Executed 25/11: error Msg 144 (subquery in GROUP BY). Replaced by L4b
+WITH Moved AS (
+    SELECT Trx.StoreID, Trx.ItemID, SUM(Trx.BaseItemQuantity) AS Quantity
+    FROM   InvStoreTransaction AS Trx
+    WHERE  Trx.StoreID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817')
+    GROUP BY Trx.StoreID, Trx.ItemID
+)
+SELECT Store.StoreName AS Store_Name,
+       CASE WHEN EXISTS (SELECT 1 FROM InvStoreItem AS Setup WHERE Setup.StoreID = Moved.StoreID AND Setup.ItemID = Moved.ItemID)
+            THEN 'Set up in store' ELSE 'NOT set up in store' END AS Store_Setup,
+       CASE WHEN Quantity < 0 THEN 'Negative' WHEN Quantity = 0 THEN 'Zero' ELSE 'Positive' END AS Quantity_Sign,
+       COUNT(*) AS Item_Rows
+FROM   Moved
+JOIN   InvStore AS Store ON Store.ID = Moved.StoreID
+GROUP BY Store.StoreName,
+         CASE WHEN EXISTS (SELECT 1 FROM InvStoreItem AS Setup WHERE Setup.StoreID = Moved.StoreID AND Setup.ItemID = Moved.ItemID)
+              THEN 'Set up in store' ELSE 'NOT set up in store' END,
+         CASE WHEN Quantity < 0 THEN 'Negative' WHEN Quantity = 0 THEN 'Zero' ELSE 'Positive' END
+ORDER BY Store_Name, Store_Setup, Quantity_Sign;
+
+-- Test case: Post-QA Inventory, rows missing from the UI per branch store (corrected)
+-- Purpose  : L4b: Same as L4 with the setup flag computed in a CTE first. Per branch store: item rows with stock movements, split by store setup (InvStoreItem) and quantity sign.
+-- Expected : UI 25/11: Branch Store 363 items, Branch - 2 4 items.
+-- Status   : Written, Executed, Verified 25/11. Branch Store: 360 moved rows, none set up in InvStoreItem, yet shown in UI. Branch - 2: 33 moved rows = 22 Negative and 8 Positive NOT set up (hidden in UI) and 3 Positive set up (shown). UI shows Branch - 2 rows only when set up in the store
+WITH Moved AS (
+    SELECT Trx.StoreID, Trx.ItemID, SUM(Trx.BaseItemQuantity) AS Quantity
+    FROM   InvStoreTransaction AS Trx
+    WHERE  Trx.StoreID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817')
+    GROUP BY Trx.StoreID, Trx.ItemID
+),
+Flagged AS (
+    SELECT Moved.StoreID,
+           CASE WHEN EXISTS (SELECT 1 FROM InvStoreItem AS Setup WHERE Setup.StoreID = Moved.StoreID AND Setup.ItemID = Moved.ItemID)
+                THEN 'Set up in store' ELSE 'NOT set up in store' END AS Store_Setup,
+           CASE WHEN Quantity < 0 THEN 'Negative' WHEN Quantity = 0 THEN 'Zero' ELSE 'Positive' END AS Quantity_Sign
+    FROM   Moved
+)
+SELECT Store.StoreName AS Store_Name, Flagged.Store_Setup, Flagged.Quantity_Sign, COUNT(*) AS Item_Rows
+FROM   Flagged
+JOIN   InvStore AS Store ON Store.ID = Flagged.StoreID
+GROUP BY Store.StoreName, Flagged.Store_Setup, Flagged.Quantity_Sign
+ORDER BY Store_Name, Store_Setup, Quantity_Sign;
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+-- ============================================================================
+-- Section J: Executive Summary, the tables behind each line | 2026-11-24
+-- Company : QA - Company (pick its database in SSMS, no prefix in the queries)
+-- Branch  : Alshellah  = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+-- Day     : 24/11/2026 (change the two dates to check another day)
+-- Each table is queried on its own. Run one query at a time (select it, F5).
+-- Status  : Written 24/11
+-- ============================================================================
+
+
+-- ----------------------------------------------------------------------------
+-- J1. GenBranch: the branch itself
+-- Used by : every line (all figures are for this branch only)
+-- Returns : one row, the branch name and ID that SalInvoice.BranchID and SalReturn.BranchID point to.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   GenBranch
+WHERE  ID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817';
+
+
+-- ----------------------------------------------------------------------------
+-- J2. SalWorkingDay: the working days of the branch
+-- Used by : every daily figure (an invoice belongs to one working day through SalInvoice.WorkingDayID)
+-- Returns : the days opened on or after 23/11, with open and close time and opening cash.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   SalWorkingDay
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  OpenDate >= '2026-11-23'
+ORDER BY OpenDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J3. SalInvoice: sales invoices of the day
+-- Used by : Daily Sales (InvoiceTotalAmount), Daily Net Sales (InvoiceBeforeTaxAmount),
+--           Output VAT (InvoiceTaxAmount), and the Net Sales part of Gross Profit and Gross Margin
+-- Returns : one row per invoice of the branch on that day.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   SalInvoice
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'
+ORDER BY InvoiceDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J4. SalReturn: sales returns of the day
+-- Used by : subtracted from Daily Sales (ReturnTotalAmount), Daily Net Sales (ReturnBeforeTaxAmount)
+--           and Output VAT (ReturnTaxAmount)
+-- Returns : one row per return of the branch on that day. InvoiceID is the original invoice
+--           (logical link, no FK).
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   SalReturn
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  ReturnDate >= '2026-11-24' AND ReturnDate < '2026-11-25'
+ORDER BY ReturnDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J5. GenLkpDocumentType: the document types
+-- Used by : Gross Profit (to know which store movements are sales and which are returns)
+-- Returns : every document type with its ID, to read InvStoreTransaction.DocumentTypeID.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   GenLkpDocumentType;
+
+
+-- ----------------------------------------------------------------------------
+-- J6. InvStoreTransaction: stock movements of the day
+-- Used by : Gross Profit, the COGS part = BaseItemQuantity x ItemCost of sale and return movements
+-- Returns : one row per item per document that moved stock on that day (sales, returns, purchases,
+--           adjustments). DocumentID points to the document, DocumentTypeID to J5.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStoreTransaction
+WHERE  DocumentDate >= '2026-11-24' AND DocumentDate < '2026-11-25'
+and StoreID in ('621D731D-A397-43A7-AA4D-6DC8BE591DB7','F833CAAB-DC19-43E6-8C0E-F36B80763596')
+ORDER BY DocumentDate;
+
+select * from InvStore
+
+-- ----------------------------------------------------------------------------
+-- J7. InvStoreBranch: which stores belong to the branch
+-- Used by : Inventory Value (only these stores are counted, KB item 14)
+-- Returns : one row per store linked to the branch.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStoreBranch
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817';
+
+
+-- ----------------------------------------------------------------------------
+-- J8. InvStore: the stores
+-- Used by : Inventory Value (store names behind J7)
+-- Returns : the stores of the branch, with name and settings such as IsApplyToAllBranch.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStore
+WHERE  ID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817');
+
+
+-- ----------------------------------------------------------------------------
+-- J9. InvItem: the items
+-- Used by : Inventory Value (which items are stock items: ItemTypeID 1 Product, 3 Product Package;
+--           services have no stock)
+-- Returns : every submitted item (DocumentStatusID = 2) with its type.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvItem
+WHERE  DocumentStatusID = 2
+ORDER BY ItemName;
+
+
+-- ----------------------------------------------------------------------------
+-- J10. InvStoreTransaction: all stock movements of the branch stores
+-- Used by : Inventory Value. Current quantity = SUM(BaseItemQuantity) per item and store,
+--           cost = ItemCost. The exact formula is still unknown (KB item 6), so compare with care.
+-- Returns : every movement ever made in the branch stores (large result).
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   InvStoreTransaction
+WHERE  StoreID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817')
+ORDER BY ItemID, StoreID, DocumentDate;
+
+
+-- ----------------------------------------------------------------------------
+-- J11. ProInvoice: purchase invoices
+-- Used by : Input VAT (tax of purchase invoices)
+-- Returns : the purchase invoices. The date and tax column names are not verified yet, so the
+--           query lists all rows; read the columns and filter by the day afterwards.
+-- ----------------------------------------------------------------------------
+SELECT *
+FROM   ProInvoice;
+
+
+-- ----------------------------------------------------------------------------
+-- J12. Purchase return table: name not verified yet
+-- Used by : Input VAT (tax of purchase returns, subtracted)
+-- Returns : the tables whose name looks like a purchase return, to find the right one.
+--           This is a lookup only; the table is not confirmed.
+-- ----------------------------------------------------------------------------
+SELECT name AS Table_Name
+FROM   sys.tables
+WHERE  name LIKE 'Pro%Return%'
+ORDER BY name;
+
+
+-- ============================================================================
+-- Section K: Executive Summary, one query per calculation | 2026-11-24
+-- Company : QA - Company   Branch: Alshellah   Day: 24/11/2026
+-- To check another day, change the dates '2026-11-24' and '2026-11-25' in each query.
+-- Run one query at a time (select it, F5).
+-- Status  : Written 24/11
+-- ============================================================================
+
+
+-- ----------------------------------------------------------------------------
+-- K1. Daily Sales, Daily Net Sales, Output VAT: invoice by invoice
+-- Shows   : every invoice and every return of the day with its three amounts.
+--           Returns are shown negative so the column totals in K2 are simple sums.
+-- ----------------------------------------------------------------------------
+SELECT 'Invoice'                  AS Document_Kind,
+       InvoiceNumber              AS Document_No,
+       InvoiceDate                AS Document_Date,
+       InvoiceTotalAmount         AS Incl_VAT,
+       InvoiceBeforeTaxAmount     AS Excl_VAT,
+       InvoiceTaxAmount           AS VAT
+FROM   SalInvoice
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'
+UNION ALL
+SELECT 'Return',
+       ReturnNumber,
+       ReturnDate,
+       -ReturnTotalAmount,
+       -ReturnBeforeTaxAmount,
+       -ReturnTaxAmount
+FROM   SalReturn
+WHERE  BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  ReturnDate >= '2026-11-24' AND ReturnDate < '2026-11-25'
+ORDER BY Document_Date;
+
+
+-- ----------------------------------------------------------------------------
+-- K2. Daily Sales, Daily Net Sales, Output VAT: totals
+-- Formula : Daily Sales     = invoices Incl. VAT  - returns Incl. VAT
+--           Daily Net Sales = invoices Excl. VAT  - returns Excl. VAT
+--           Output VAT      = invoices VAT        - returns VAT
+-- Compare : Daily Sales (Incl. VAT), Daily Net Sales (Excl. VAT), Output VAT on the screen.
+-- ----------------------------------------------------------------------------
+SELECT ISNULL((SELECT SUM(InvoiceTotalAmount)     FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+     - ISNULL((SELECT SUM(ReturnTotalAmount)      FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Daily_Sales_Incl_VAT,
+       ISNULL((SELECT SUM(InvoiceBeforeTaxAmount) FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+     - ISNULL((SELECT SUM(ReturnBeforeTaxAmount)  FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Daily_Net_Sales_Excl_VAT,
+       ISNULL((SELECT SUM(InvoiceTaxAmount)       FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+     - ISNULL((SELECT SUM(ReturnTaxAmount)        FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Output_VAT;
+
+
+-- ----------------------------------------------------------------------------
+-- K3. COGS: line by line
+-- Shows   : every stock movement of today's invoices, with its document type, item, store,
+--           base quantity, unit cost and line cost (base quantity x cost).
+--           Return movements also carry the original invoice ID (KB section 5 item 3),
+--           so they appear here with their own document type.
+--           Service items have no stock movement, so they add no cost.
+-- ----------------------------------------------------------------------------
+SELECT Inv.InvoiceNumber                     AS Invoice_No,
+       DocType.DocumentTypeName              AS Movement_Type,
+       Item.ItemName                         AS Item_Name,
+       Store.StoreName                       AS Store_Name,
+       Trx.BaseItemQuantity                  AS Base_Qty,
+       Trx.ItemCost                          AS Unit_Cost,
+       Trx.BaseItemQuantity * Trx.ItemCost   AS Line_Cost
+FROM   InvStoreTransaction AS Trx
+JOIN   SalInvoice          AS Inv     ON Inv.ID     = Trx.DocumentID
+JOIN   InvItem             AS Item    ON Item.ID    = Trx.ItemID
+JOIN   InvStore            AS Store   ON Store.ID   = Trx.StoreID
+JOIN   GenLkpDocumentType  AS DocType ON DocType.ID = Trx.DocumentTypeID
+WHERE  Inv.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+  AND  Inv.InvoiceDate >= '2026-11-24' AND Inv.InvoiceDate < '2026-11-25'
+ORDER BY Inv.InvoiceNumber, Item.ItemName;
+
+
+-- ----------------------------------------------------------------------------
+-- K4. Gross Profit and Gross Margin
+-- Formula : COGS          = SUM(base quantity x unit cost) of K3   (same rule as H4, verified 22/11)
+--           Gross Profit  = Daily Net Sales (K2) - COGS
+--           Gross Margin  = Gross Profit / Daily Net Sales x 100   (0 when Net Sales is 0)
+-- Compare : screen on 24/11: Net Sales 434.78, Gross Profit 379.78, Gross Margin 87.35% (so COGS 55.00).
+-- ----------------------------------------------------------------------------
+WITH NetSales AS (
+    SELECT ISNULL((SELECT SUM(InvoiceBeforeTaxAmount) FROM SalInvoice WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND InvoiceDate >= '2026-11-24' AND InvoiceDate < '2026-11-25'), 0)
+         - ISNULL((SELECT SUM(ReturnBeforeTaxAmount)  FROM SalReturn  WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND ReturnDate  >= '2026-11-24' AND ReturnDate  < '2026-11-25'), 0) AS Amount
+),
+Cogs AS (
+    SELECT ISNULL(SUM(Trx.BaseItemQuantity * Trx.ItemCost), 0) AS Amount
+    FROM   InvStoreTransaction AS Trx
+    JOIN   SalInvoice          AS Inv ON Inv.ID = Trx.DocumentID
+    WHERE  Inv.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+      AND  Inv.InvoiceDate >= '2026-11-24' AND Inv.InvoiceDate < '2026-11-25'
+)
+SELECT NetSales.Amount                                   AS Daily_Net_Sales,
+       Cogs.Amount                                       AS COGS,
+       NetSales.Amount - Cogs.Amount                     AS Gross_Profit,
+       CASE WHEN NetSales.Amount = 0 THEN 0
+            ELSE ROUND((NetSales.Amount - Cogs.Amount) * 100.0 / NetSales.Amount, 2) END AS Gross_Margin_Pct
+FROM   NetSales, Cogs;
+
+
+-- ----------------------------------------------------------------------------
+-- K5. Input VAT: columns of the purchase tables first
+-- Formula : Input VAT = VAT of purchase invoices - VAT of purchase returns (story rule).
+-- Shows   : the column names of every Pro... table, so the date and tax columns can be chosen.
+--           The final Input VAT query is written after these names are read (no guessed names).
+-- ----------------------------------------------------------------------------
+SELECT TABLE_NAME  AS Table_Name,
+       COLUMN_NAME AS Column_Name,
+       DATA_TYPE   AS Data_Type
+FROM   INFORMATION_SCHEMA.COLUMNS
+WHERE  TABLE_NAME LIKE 'Pro%'
+  AND (COLUMN_NAME LIKE '%Date%' OR COLUMN_NAME LIKE '%Tax%' OR COLUMN_NAME LIKE '%Branch%' OR COLUMN_NAME LIKE '%Number%')
+ORDER BY TABLE_NAME, COLUMN_NAME;
+
+
+-- ----------------------------------------------------------------------------
+-- K6. Net VAT Payable
+-- Formula : Output VAT (K2) - Input VAT (K5).
+--           Today Input VAT is 0.00 on the screen, so Net VAT Payable = Output VAT.
+--           Not repeated as its own query until the Input VAT query exists.
+-- ----------------------------------------------------------------------------
+
+
+-- ----------------------------------------------------------------------------
+-- K7. Inventory Value: candidate formula, NOT confirmed
+-- Formula : SUM over branch stores of (current base quantity x item cost of its latest movement).
+--           The real formula is unknown (KB section 5 item 6). Use this to compare only; a
+--           mismatch is expected until development gives the rule.
+-- Compare : screen on 24/11: 95,410.00.
+-- ----------------------------------------------------------------------------
+WITH Balance AS (
+    SELECT Trx.ItemID, Trx.StoreID, SUM(Trx.BaseItemQuantity) AS Qty
+    FROM   InvStoreTransaction AS Trx
+    WHERE  Trx.StoreID IN (SELECT StoreID FROM InvStoreBranch WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817')
+    GROUP BY Trx.ItemID, Trx.StoreID
+),
+LastCost AS (
+    SELECT Balance.ItemID, Balance.StoreID, Balance.Qty,
+           (SELECT TOP 1 Trx.ItemCost FROM InvStoreTransaction AS Trx
+            WHERE  Trx.ItemID = Balance.ItemID AND Trx.StoreID = Balance.StoreID
+            ORDER BY Trx.DocumentDate DESC) AS Unit_Cost
+    FROM   Balance
+)
+SELECT SUM(Qty * Unit_Cost)                              AS Value_All_Rows,
+       SUM(CASE WHEN Qty > 0 THEN Qty * Unit_Cost END)   AS Value_Positive_Qty_Only
+FROM   LastCost;

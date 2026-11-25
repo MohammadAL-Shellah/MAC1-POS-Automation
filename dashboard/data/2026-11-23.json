@@ -39,7 +39,7 @@
       "source": "claude",
       "type": "bug_draft",
       "title": "MAC1 - Dashboard | Top Selling Today deducts returned quantities",
-      "notes": "Build 1.2.498, QA - Company, Alshellah, 23/11. Car Wash sold twice today (INV-TO_11000145, INV-TO_11000146): Top Selling showed Car Wash Qty 2, 200.00 at 08:46. After the full return RTN-TO_11000022 of INV-145 (08:48) it showed Qty 1, 100.00. Business answer 23/11 (e-20261115-159): returns are not deducted from Top Selling. Evidence TC-073_ui_02_case_a_three_items, TC-069_ui_01_overview_fully_refunded_2, H34.",
+      "notes": "Closed as not needed by the tester on 25/11/2026 (Story 214 closure)",
       "bug": {
         "issueType": "Incorrect Functionality",
         "qaBugType": "Happy Scenario",
@@ -51,7 +51,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-23T10:05:48+03:00",
       "url": null,
-      "status": "draft",
+      "status": "not needed",
       "id": "e-20261123-003"
     },
     {
@@ -76,14 +76,14 @@
       "devopsId": 214,
       "storyId": 214,
       "title": "myShop POS - Company Dashboard",
-      "status": "Active",
+      "status": "Resolved",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-23T12:15:12+03:00",
       "notes": "Test cases or bugs logged under it",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
       "id": "e-20261123-005",
-      "assignedTo": "Haitham Tarakhan",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -154,9 +154,14 @@
           "state": "Active",
           "at": "2026-11-24T11:17:58.93Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "bug_closed",
@@ -223,7 +228,7 @@
       "devopsId": 2286,
       "storyId": 214,
       "title": "MAC1 - POS Dashboard | Add a Store filter to the Inventory tab and the Overview inventory card",
-      "status": "Active",
+      "status": "Closed",
       "owner": "Mohammad Alshellah",
       "source": "claude",
       "notes": "Agreed with the business 23/11. Counts and Stock Value today cover all branch stores (InvStoreBranch) together and count an item once per category, so an item can show in two categories and the stores behind a figure are not visible. All-branch stores (IsApplyToAllBranch) are not included, which differs from the developer rule. Request: Store filter, default All branch stores. Evidence G-T10, G-T12 (General-Queries).",
@@ -237,7 +242,7 @@
         "severity": "3 - Medium",
         "screen": "POS Dashboard - Inventory"
       },
-      "assignedTo": "Haitham Tarakhan",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -258,11 +263,21 @@
           "state": "Active",
           "at": "2026-11-24T12:40:43.84Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:21.86Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Closed",
+          "at": "2026-11-25T06:42:46.807Z",
+          "by": "Mohammad Al Shellah"
         }
       ],
       "reopened": false,
-      "closedNow": false,
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "closedNow": true,
+      "refreshedAt": "2026-11-25T09:45:20+03:00"
     },
     {
       "type": "bug_opened",
@@ -298,7 +313,7 @@
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "story",
@@ -370,7 +385,7 @@
           "by": "Saif Aladwan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "type": "bug_opened",
@@ -428,9 +443,9 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-23T15:51:20+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Active",
+      "status": "Resolved",
       "id": "e-20261123-012",
-      "assignedTo": "Haitham Tarakhan",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -501,9 +516,14 @@
           "state": "Active",
           "at": "2026-11-24T11:17:58.93Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "source": "claude",
@@ -515,9 +535,9 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-23T16:08:30+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Active",
+      "status": "Resolved",
       "id": "e-20261123-013",
-      "assignedTo": "Haitham Tarakhan",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -588,9 +608,14 @@
           "state": "Active",
           "at": "2026-11-24T11:17:58.93Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     },
     {
       "source": "claude",
@@ -602,9 +627,9 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-23T16:12:52+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Active",
+      "status": "Resolved",
       "id": "e-20261123-014",
-      "assignedTo": "Haitham Tarakhan",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -675,9 +700,14 @@
           "state": "Active",
           "at": "2026-11-24T11:17:58.93Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-24T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T16:45:19+03:00"
     }
   ],
   "team": [
