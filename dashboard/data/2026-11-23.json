@@ -76,7 +76,7 @@
       "devopsId": 214,
       "storyId": 214,
       "title": "myShop POS - Company Dashboard",
-      "status": "Resolved",
+      "status": "Closed",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-23T12:15:12+03:00",
@@ -161,7 +161,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     },
     {
       "type": "bug_closed",
@@ -313,7 +313,7 @@
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "story",
@@ -385,7 +385,7 @@
           "by": "Saif Aladwan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "bug_opened",
@@ -443,7 +443,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-23T15:51:20+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Resolved",
+      "status": "Closed",
       "id": "e-20261123-012",
       "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
@@ -523,7 +523,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     },
     {
       "source": "claude",
@@ -535,7 +535,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-23T16:08:30+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Resolved",
+      "status": "Closed",
       "id": "e-20261123-013",
       "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
@@ -615,7 +615,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     },
     {
       "source": "claude",
@@ -627,7 +627,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-23T16:12:52+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Resolved",
+      "status": "Closed",
       "id": "e-20261123-014",
       "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
@@ -707,7 +707,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     }
   ],
   "team": [

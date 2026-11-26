@@ -107,6 +107,18 @@ Database: `MacOne_255b989cce714d828b70d1f9e4367412` on `qadb.minerets.com,55009`
 | 99 | L2: Post-QA Quick Validation, inventory categories per branch store (H42 rules) after Bug 2286 closed | InvStoreBranch, InvItem, InvItemBranch, InvStoreTransaction, InvStoreItem, InvStore | SELECT | Post-QA happy path | W E V (mismatch) | 2026-11-25 |
 | 100 | L3: Bug 2294 retest, WO-TO_11000197 date and its invoice after completion | SalWorkOrder, GenLkpDocumentStatus, SalWorkOrderInvoice, SalInvoice | SELECT | Bug 2294 | W E V | 2026-11-25 |
 | 101 | L4, L4b: per branch store, item rows with stock movements split by store setup (InvStoreItem) and quantity sign (L4 failed Msg 144, L4b corrected) | InvStoreTransaction, InvStoreBranch, InvStoreItem, InvStore | SELECT | Post-QA Inventory | W E V (L4b) | 2026-11-25 |
+| 102 | L5, L5b: Expected Cash Balance 16,737.80 on day TO_11000037 (opening 500, no sales): branch cash totals and cash in and out per working day | SalWorkingDay, SalInvoiceReceipt, SalInvoiceReceiptPayment, SalReturnReceipt, SalReturnReceiptPayment, GenLkpPaymentMethod, SalBankDepositWorkingDay | SELECT | Expected Cash check | W E | 2026-11-26 |
+
+## US-1718 Vehicle Advisory (VIS) in Work Order ([file](Database-Queries/US-1718-Vehicle-Advisory-VIS.sql))
+
+| # | Query purpose | Tables | Operation | Verifies | Status | Added |
+|---|---|---|---|---|---|---|
+| A1 | Find VIS, fitment, compatibility, OEM, usage, interval objects | INFORMATION_SCHEMA.TABLES, COLUMNS | SELECT | Mapping | W | 2026-11-26 |
+| A2 | Vehicle table columns (VIN, Make, Model, Year) | INFORMATION_SCHEMA.COLUMNS (Aut%) | SELECT | Mapping | W | 2026-11-26 |
+| A3 | FKs of vehicle and Work Order tables | sys.foreign_keys, sys.foreign_key_columns | SELECT | Mapping | W | 2026-11-26 |
+| A4 | Item and service columns for matching and intervals | INFORMATION_SCHEMA.COLUMNS (InvItem, InvItemService, InvLkpItemType) | SELECT | Mapping | W | 2026-11-26 |
+| B1 | My QA vehicles 5281DRB, 5282GZT | AutVehicle | SELECT | Test data | W | 2026-11-26 |
+| B2 | Work Order history of my QA vehicles | SalWorkOrder, AutVehicle | SELECT | History tab baseline | W | 2026-11-26 |
 
 ## General: MAC1 local Sync storage, SQLite copy ([file](Database-Queries/General-Queries.sql))
 
@@ -148,3 +160,4 @@ Database: `MacOne_255b989cce714d828b70d1f9e4367412` on `qadb.minerets.com,55009`
 | ProInvoice, SalPriceListItem, GenLkpDocumentType, InvLkpItemType | 214 |
 | SalBankDeposit, SalBankDepositWorkingDay, SalWorkingDay (close, deposit, open), SalWorkOrder (WorkingDayID, ShiftedFromWorkingDayID) | 214 |
 | SyncUpload, SyncDelete, SalWorkOrder (local SQLite) | General |
+| AutVehicle, SalWorkOrder, InvItem, InvItemService (VIS mapping) | 1718 |

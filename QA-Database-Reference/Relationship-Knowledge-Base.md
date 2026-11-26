@@ -53,6 +53,11 @@ Reusable project knowledge of how MacOne (MAC1) and portal screens, UI fields, b
 | 13 | SalReturnReceiptReturn(ID, ReturnID, ReturnReceiptID) links a Sales Return to its refund receipt; refund path SalReturn to SalReturnReceiptReturn to SalReturnReceipt to SalReturnReceiptPayment | Partially Verified | Records used in the run 80 return checks (US-214 section H, 23/11). FK metadata not checked | FK metadata and a return matched line by line to the Payments refunded figure | 214 | 2026-11-24 |
 | 14 | Dashboard inventory figures (counts, Stock Value) include only stores linked to the branch in InvStoreBranch; stores with IsApplyToAllBranch are left out | Partially Verified | Query results matched the UI (General-Queries G-T10, G-T12); differs from the developer rule given to QA. Feature request drafted. Open business question on IsApplyToAllBranch | Answer from the business or development on which stores must count | 214 | 2026-11-24 |
 | 15 | A store set to apply to all items (Mohammad store - Branch Store) has no InvStoreItem rows; the dashboard Inventory tab shows all its items. A store without it (Mohammad Store Branch - 2) shows only items set up in InvStoreItem, so items with movements but no setup (30 rows, 22 negative) are hidden | Partially Verified | User statement 25/11 and query L4b (US-214, 25/11, build 1.2.508). The setting column on InvStore not read yet |
+| 16 | Expected Cash Balance on the POS Dashboard = cash of the current day plus the cash of all earlier working days not closed with Close Day (SalWorkingDay.IsClosed = 0). Opening a new day while the previous one is open is allowed by a setting. 26/11: opening 500, no sales, Expected Cash 16,737.80 with 16 unclosed days | Partially Verified | Tester statement 26/11 and queries L5, L5b (US-214). Exact formula not reproduced to the cent; the setting name not read yet |
+| 17 | VIS compatible items match customer items by exact Item Code (InvItem code column) | Assumed | Story text BR-07 only | Q7 answer and a VIS result compared with InvItem | 1718 | 2026-11-26 |
+| 18 | VIN flow saves VIN and Make/Model/Year on AutVehicle | Unknown | Story text only | Q4 answer, query B1 before and after | 1718 | 2026-11-26 |
+| 19 | History and Maintenance tabs read from SalWorkOrder and its lines for the vehicle (SalWorkOrder.VehicleID) | Assumed | KB row 10 verifies the FK only | Compare tab with query B2 | 1718 | 2026-11-26 |
+| 20 | VIS usage counter storage (table or service) | Unknown | Story BR-1.2; license out of scope per Development field | Q1 answer, query A1 | 1718 | 2026-11-26 |
 
 ## 6. Diagrams
 Simple data flow diagrams (Mermaid) for verified flows only, one per flow, numbered to match section 4.
@@ -78,3 +83,4 @@ flowchart LR
 | 2026-11-22 | n/a | Added unconfirmed item 11: local Sync payload format. |
 | 2026-11-22 | n/a | Item 11 updated after the live capture: partial payload on a note-only edit. |
 | 2026-11-24 | 214 | Run 80 closed. Added unconfirmed items 12 (SalWorkOrderInvoice), 13 (SalReturnReceiptReturn) and 14 (branch store rule). Kept in section 5 because FK metadata or a business answer is still missing. |
+| 2026-11-26 | 1718 | Story started. Added unconfirmed items 17 to 20 (VIS item match, VIN flow storage, History source, usage counter). |

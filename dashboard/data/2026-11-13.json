@@ -6,7 +6,7 @@
       "devopsId": 214,
       "storyId": 214,
       "title": "myShop POS - Company Dashboard",
-      "status": "Resolved",
+      "status": "Closed",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-15T22:32:46+03:00",
@@ -91,7 +91,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     },
     {
       "type": "testcase",

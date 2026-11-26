@@ -2889,3 +2889,61 @@ LastCost AS (
 SELECT SUM(Qty * Unit_Cost)                              AS Value_All_Rows,
        SUM(CASE WHEN Qty > 0 THEN Qty * Unit_Cost END)   AS Value_Positive_Qty_Only
 FROM   LastCost;
+
+-- Test case: Expected Cash Balance check 26/11 (user question)
+-- Purpose  : L5: where 16,737.80 comes from. Day TO_11000037 opened 26/11 09:02 with 500.00 and no sales; compare with branch totals of all days.
+-- Expected : Expected Cash = Opening 500.00 + today's cash sales - today's cash refunds = 500.00.
+-- Status   : Executed 26/11 09:15 (42 rows: all-days cash received 39,491.93, cash refunded 16,255.90, openings 6,121.00, deposits 2,707.80; no simple sum gives 16,737.80, see L5b).
+SELECT '1 Day ' + CONVERT(varchar(16), WorkDay.OpenDate, 120) AS Check_Name, WorkDay.OpenBalanceCashAmount AS Amount,
+       WorkDay.CloseSystemCashAmount AS Close_System, WorkDay.CloseLeftCashAmount AS Close_Left
+FROM   SalWorkingDay AS WorkDay WHERE WorkDay.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+UNION ALL
+SELECT '2 All days: cash received', SUM(Pay.PaymentAmount), NULL, NULL
+FROM   SalInvoiceReceiptPayment AS Pay
+JOIN   SalInvoiceReceipt AS Receipt ON Receipt.ID = Pay.InvoiceReceiptID
+JOIN   GenLkpPaymentMethod AS Method ON Method.ID = Pay.PaymentMethodID
+WHERE  Receipt.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND Method.PaymentMethodName = 'Cash'
+UNION ALL
+SELECT '3 All days: cash refunded', SUM(Pay.PaymentAmount), NULL, NULL
+FROM   SalReturnReceiptPayment AS Pay
+JOIN   SalReturnReceipt AS Receipt ON Receipt.ID = Pay.ReturnReceiptID
+JOIN   GenLkpPaymentMethod AS Method ON Method.ID = Pay.PaymentMethodID
+WHERE  Receipt.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND Method.PaymentMethodName = 'Cash'
+UNION ALL
+SELECT '4 All days: opening balances', SUM(OpenBalanceCashAmount), SUM(CloseSystemCashAmount), SUM(CloseLeftCashAmount)
+FROM   SalWorkingDay WHERE BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+UNION ALL
+SELECT '5 All days: cash deposits', SUM(DayLink.DepositAmount), NULL, NULL
+FROM   SalBankDepositWorkingDay AS DayLink
+JOIN   SalWorkingDay AS WorkDay ON WorkDay.ID = DayLink.WorkingDayID
+WHERE  WorkDay.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+ORDER BY Check_Name;
+
+-- Test case: Expected Cash Balance check 26/11 (user question)
+-- Purpose  : L5b: cash in and out per working day of the branch (by document date between day openings), with a running total from the newest day back, to find which days make 16,737.80.
+-- Expected : Only today's day (500.00 opening, no cash movement) should count.
+-- Status   : Executed 26/11 09:20 (38 days; no window of days gives 16,737.80; day 25/11 TO_11000036 still IsClosed = 0 while 26/11 is open; 14 earlier days never closed). Local app DB has the same totals.
+WITH Days AS (
+    SELECT WorkDay.OpenDate, WorkDay.OpenBalanceCashAmount AS Opening, WorkDay.IsClosed,
+           LEAD(WorkDay.OpenDate, 1, '2100-01-01') OVER (ORDER BY WorkDay.OpenDate) AS Next_Open
+    FROM   SalWorkingDay AS WorkDay WHERE WorkDay.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817'
+),
+Flow AS (
+    SELECT Days.OpenDate, Days.Opening, Days.IsClosed,
+           ISNULL((SELECT SUM(Pay.PaymentAmount) FROM SalInvoiceReceiptPayment AS Pay
+                   JOIN SalInvoiceReceipt AS Receipt ON Receipt.ID = Pay.InvoiceReceiptID
+                   JOIN GenLkpPaymentMethod AS Method ON Method.ID = Pay.PaymentMethodID
+                   WHERE Receipt.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND Method.PaymentMethodName = 'Cash'
+                     AND Receipt.InvoiceReceiptDate >= Days.OpenDate AND Receipt.InvoiceReceiptDate < Days.Next_Open), 0) AS Cash_In,
+           ISNULL((SELECT SUM(Pay.PaymentAmount) FROM SalReturnReceiptPayment AS Pay
+                   JOIN SalReturnReceipt AS Receipt ON Receipt.ID = Pay.ReturnReceiptID
+                   JOIN GenLkpPaymentMethod AS Method ON Method.ID = Pay.PaymentMethodID
+                   WHERE Receipt.BranchID = 'ff31fb19-e1c3-4f75-834b-7341cfe74817' AND Method.PaymentMethodName = 'Cash'
+                     AND Receipt.ReturnReceiptDate >= Days.OpenDate AND Receipt.ReturnReceiptDate < Days.Next_Open), 0) AS Cash_Out
+    FROM   Days
+)
+SELECT CONVERT(varchar(16), OpenDate, 120) AS Day_Opened, IsClosed AS Is_Closed, Opening, Cash_In, Cash_Out,
+       Cash_In - Cash_Out AS Net_Cash,
+       SUM(Cash_In - Cash_Out) OVER (ORDER BY OpenDate DESC ROWS UNBOUNDED PRECEDING) AS Net_From_Newest
+FROM   Flow
+ORDER BY OpenDate DESC;

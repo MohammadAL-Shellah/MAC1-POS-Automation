@@ -6,7 +6,7 @@
       "devopsId": 214,
       "storyId": 214,
       "title": "myShop POS - Company Dashboard",
-      "status": "Resolved",
+      "status": "Closed",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-25T09:00:13+03:00",
@@ -91,7 +91,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     },
     {
       "type": "bug_closed",
@@ -146,7 +146,7 @@
       ],
       "reopened": false,
       "closedNow": true,
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T23:45:20+03:00"
     },
     {
       "type": "bug_closed",
@@ -196,7 +196,7 @@
       ],
       "reopened": false,
       "closedNow": true,
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T23:45:20+03:00"
     },
     {
       "source": "claude",
@@ -268,14 +268,14 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "bug_opened",
       "devopsId": 2300,
       "storyId": null,
       "title": "MAC1 - Portal - Store Form | The system should prevent the user from delete any item from the store if the item have a transaction",
-      "status": "New",
+      "status": "Resolved",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-25T11:36:10+03:00",
@@ -294,11 +294,21 @@
           "state": "New",
           "at": "2026-11-25T08:36:10.607Z",
           "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-26T09:38:51.523Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-26T13:30:24.507Z",
+          "by": "Mohammad Zaini"
         }
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "bug_closed",
@@ -338,7 +348,7 @@
       ],
       "reopened": false,
       "closedNow": true,
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-25T23:45:20+03:00"
     },
     {
       "source": "claude",
@@ -366,6 +376,14 @@
       "name": "Rahaf Abdullah",
       "stories": [
         {
+          "id": 435,
+          "title": "myShop POS - WO - Service Package Selection",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/435"
+        },
+        {
           "id": 1041,
           "title": "myShop POS -  Share option Configurations & document assignment ",
           "state": "Resolved",
@@ -380,14 +398,23 @@
     },
     {
       "name": "Ahmad Hayajneh",
-      "stories": [],
+      "stories": [
+        {
+          "id": 180,
+          "title": "myShop POS - Purchase Invoice",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/180"
+        }
+      ],
       "testcases": [],
       "bugsOpened": [],
       "bugsClosed": []
     }
   ],
-  "teamSyncedAt": "2026-11-25T16:45:19+03:00",
-  "mySyncedAt": "2026-11-25T16:45:19+03:00",
+  "teamSyncedAt": "2026-11-25T23:45:20+03:00",
+  "mySyncedAt": "2026-11-25T23:45:20+03:00",
   "storyRefs": {
     "180": {
       "title": "myShop POS - Purchase Invoice",
@@ -451,7 +478,7 @@
     },
     "1618": {
       "title": "myShop POS - Enhancements on Reports",
-      "state": "Resolved"
+      "state": "Active"
     },
     "1718": {
       "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",

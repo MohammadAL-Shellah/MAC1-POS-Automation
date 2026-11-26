@@ -444,3 +444,23 @@ SELECT '0 All', COUNT(DISTINCT ItemID), COUNT(*) FROM Classified
 ORDER BY Category;
 
 
+
+
+-- =============================================================================
+-- G-ITEM-QTY  Quantity of one item per store (2026-11-26)
+-- Item ID  : 79d096de-5880-4414-b445-c61ef7f10e48
+-- Purpose  : current quantity per store from InvStoreTransaction, compare with
+--            CURRENT Qty on the POS Dashboard Inventory tab
+-- Status   : Written
+-- =============================================================================
+SELECT  Trx.StoreID,
+        Store.StoreName                               AS Store_Name,
+        SUM(Trx.BaseItemQuantity)                     AS Current_Quantity,
+        SUM(CASE WHEN Trx.BaseItemQuantity > 0 THEN Trx.BaseItemQuantity ELSE 0 END) AS Total_In,
+        SUM(CASE WHEN Trx.BaseItemQuantity < 0 THEN -Trx.BaseItemQuantity ELSE 0 END) AS Total_Out,
+        COUNT(*)                                      AS Movements
+FROM    InvStoreTransaction AS Trx
+LEFT JOIN InvStore         AS Store ON Store.ID = Trx.StoreID
+WHERE   Trx.ItemID = '79d096de-5880-4414-b445-c61ef7f10e48'
+GROUP BY Trx.StoreID, Store.StoreName
+ORDER BY Store_Name;

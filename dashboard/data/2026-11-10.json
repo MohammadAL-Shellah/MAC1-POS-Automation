@@ -14,7 +14,7 @@
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/928",
       "id": "e-20261110-003",
       "assignedTo": "Ehab Younes",
-      "refreshedAt": "2026-11-25T16:45:19+03:00",
+      "refreshedAt": "2026-11-26T16:45:21+03:00",
       "statusLog": [
         {
           "state": "New",
@@ -61,7 +61,7 @@
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "bug_opened",

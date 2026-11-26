@@ -65,6 +65,7 @@ The regression plan is `docs/regression/Regression_Plan.md` (Workorder detail in
 Every story or bug tested gets UI plus SQL Server verification. All queries go to `QA-Database-Reference/Database-Queries/US-<ID>-<Name>.sql` (one file per story, created when a new story starts; for a retest of an old story, extend its existing file; queries are never deleted). Lookups that belong to no story go to `QA-Database-Reference/Database-Queries/General-Queries.sql`. Write each query into the file first, then run it from that file in SSMS. Queries are added at once to `ALL-QUERIES-INDEX.md` and `Story-Index.md`. Only real screenshots, in `QA-Database-Reference/Screenshots/US-<ID>-<Name>/`. See its README.md.
 
 After each test case is executed, attach its real UI and SSMS screenshots to its Test Result in the Azure DevOps Test Run (standing approval from the user, 2026-11-20). Name them `TC-xxx_ui_*.png` and `TC-xxx_db_Qn.png`.
+Every screenshot attached to a Test Case, Test Result, QA Task or Bug (including screenshots prepared for bug drafts) must explain itself (added 2026-11-26): add a caption band on the image (outside the captured area, never covering or changing it) with the case ID, what the image shows and what to check, the date, the build and the environment. Highlight the field or value being checked with a box or arrow. Keep the original unedited screenshot next to it as raw evidence.
 Also attach the same screenshots to the Test Case work item, only on its first run with evidence, as a fixed reference. If the test case already has attachments, do not add or replace them on later runs. Only exception: the case failed because of a bug, the bug was fixed, and the retest passed. Then replace the reference images with the passing ones, and name the bug ID and build in the attachment comment.
 
 ## Permanent QA standards (every Story, Bug, Enhancement, testing task)
@@ -80,6 +81,22 @@ Also attach the same screenshots to the Test Case work item, only on its first r
    - Failed (Defect): a confirmed difference between Actual and Expected Result.
    - Blocked: the test could not be completed because of environment, permissions, data or a dependency.
    - Needs Investigation (Unverified): a difference or an unclear result that needs investigation before a verdict. In the DevOps Test Run it is recorded as Inconclusive with the reason; it becomes Passed or Failed once investigated.
+
+## Executive Summary check (every invoice, WO, return or stock adjustment, added 2026-11-26)
+
+After every invoice, Work Order, return (invoice or WO return) or stock adjustment in MAC1, check the POS Dashboard "Executive Summary" card: Inventory Value, Daily Sales (Incl. VAT), Daily Net Sales (Excl. VAT), Gross Profit (Excl. VAT), Gross Margin, Output VAT, Input VAT, Net VAT Payable.
+1. Capture the values before and after the transaction, with screenshots of both.
+2. Compare the change with the transaction totals (net, VAT, item cost) and confirm with the database.
+3. Do it together with the stock chain check.
+4. When the expected value is unclear (for example which date or store a WO counts under), raise a business question; do not assume.
+
+## Stock quantity check (every stock transaction, added 2026-11-26)
+
+After every transaction that moves stock (invoice, WO, invoice return, stock adjustment or any other inventory change):
+1. Query the store transaction table (InvStoreTransaction) for each affected item and store: the new rows, their in and out quantities, and the running total that gives the current quantity.
+2. Calculate the expected quantity: quantity before plus in minus out.
+3. Compare it with CURRENT Qty on the POS Dashboard Inventory tab for the same item and store, and check that the Status (In Stock, Low Stock, Out of Stock, Negative) and the top counters (Stock Value, In Stock, Low, Out of Stock, Negative) changed accordingly.
+4. Capture annotated UI and SSMS screenshots, before and after. Any mismatch is a bug draft.
 
 ## New story workflow (agreed 2026-11-21)
 

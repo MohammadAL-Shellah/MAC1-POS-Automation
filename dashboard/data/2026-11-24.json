@@ -28,7 +28,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-24T09:31:29+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Resolved",
+      "status": "Closed",
       "id": "e-20261124-002",
       "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
@@ -108,7 +108,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     },
     {
       "type": "story",
@@ -140,7 +140,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "bug_opened",
@@ -187,14 +187,14 @@
       "devopsId": 1299,
       "storyId": 1299,
       "title": "myShop POS - Pemission Screen",
-      "status": "Active",
+      "status": "Resolved",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-24T12:11:40+03:00",
       "notes": "Test cases or bugs logged under it",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1299",
       "id": "e-20261124-005",
-      "assignedTo": "Alaa Ashour",
+      "assignedTo": "Ahmad Hayajneh",
       "statusLog": [
         {
           "state": "New",
@@ -265,16 +265,21 @@
           "state": "Active",
           "at": "2026-11-24T07:40:10.507Z",
           "by": "Ahmad Hayajneh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-26T08:45:32.493Z",
+          "by": "Alaa Ashour"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "bug_opened",
       "devopsId": 2295,
       "storyId": 1299,
       "title": "MAC1 - Permission screen | The System Allows Users to Print Work Orders from the Voucher List Screen Despite Having Printing Permission Disabled",
-      "status": "Active",
+      "status": "Resolved",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-24T12:05:46+03:00",
@@ -287,7 +292,7 @@
         "screen": "Permission"
       },
       "id": "e-20261124-006",
-      "assignedTo": "Alaa Ashour",
+      "assignedTo": "Ahmad Hayajneh",
       "statusLog": [
         {
           "state": "New",
@@ -298,11 +303,16 @@
           "state": "Active",
           "at": "2026-11-25T06:03:01.137Z",
           "by": "Alaa Ashour"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-26T08:46:28.777Z",
+          "by": "Alaa Ashour"
         }
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
     },
     {
       "type": "bug_closed",

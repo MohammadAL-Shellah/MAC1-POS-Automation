@@ -1,0 +1,564 @@
+{
+  "date": "2026-11-26",
+  "entries": [
+    {
+      "source": "claude",
+      "type": "bug_draft",
+      "storyId": 214,
+      "title": "POS Dashboard: Expected Cash Balance adds the cash of all working days that were never closed (26/11: opening 500, no sales, shows 16,737.80)",
+      "notes": "Not a bug (tester, 26/11): by design Expected Cash Balance carries the cash of all earlier days that were not closed with Close Day. Opening a day without closing the previous one is allowed by a setting. Queries L5, L5b.",
+      "bug": {
+        "issueType": "Incorrect Functionality",
+        "qaBugType": "Other",
+        "severity": "",
+        "screen": "POS Dashboard - Cash Register"
+      },
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T09:26:32+03:00",
+      "url": null,
+      "status": "not needed",
+      "id": "e-20261126-001"
+    },
+    {
+      "type": "story",
+      "devopsId": 1718,
+      "storyId": 1718,
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-26T09:45:15+03:00",
+      "notes": "Started: story reviewed; Development field: license not supported now; 13 business questions raised; preparing test environment",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1718",
+      "id": "e-20261126-002",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-10-21T08:06:19.227Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-17T05:13:59.49Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-22T06:02:56.073Z",
+          "by": "Alaa Ashour"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T05:17:39.97Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-25T13:33:05.84Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
+    },
+    {
+      "type": "story",
+      "devopsId": 214,
+      "storyId": 214,
+      "title": "myShop POS - Company Dashboard",
+      "status": "Closed",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-26T10:45:15+03:00",
+      "notes": "Assigned to me",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
+      "id": "e-20261126-003",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2025-10-22T19:43:04.047Z",
+          "by": "Banan H. Al Rahamneh"
+        },
+        {
+          "state": "Active",
+          "at": "2026-08-23T11:44:45.39Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-01T13:24:33.293Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-24T14:00:52.25Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-09-27T14:40:14.887Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-09-30T14:26:30.873Z",
+          "by": "Motasem Al Fasatleh"
+        },
+        {
+          "state": "New",
+          "at": "2026-10-18T12:12:35.347Z",
+          "by": "Saif Aladwan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-10T08:03:42.84Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "New",
+          "at": "2026-11-12T13:08:35.82Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-16T05:21:25.953Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-16T12:57:59.197Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-23T10:53:22.207Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-23T13:46:23.243Z",
+          "by": "Haitham Tarakhan"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-24T11:17:58.93Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-24T14:01:28.553Z",
+          "by": "Haitham Tarakhan"
+        }
+      ],
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
+    },
+    {
+      "type": "bug_opened",
+      "devopsId": 2302,
+      "storyId": null,
+      "title": "MyShop - Portal | Missing Icon for the Browser Tab",
+      "status": "Resolved",
+      "owner": "Mohammad Alshellah",
+      "source": "devops-sync",
+      "timestamp": "2026-11-26T10:56:56+03:00",
+      "notes": "",
+      "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/2302",
+      "bug": {
+        "issueType": "Feature Request",
+        "qaBugType": "",
+        "severity": "3 - Medium",
+        "screen": "General"
+      },
+      "id": "e-20261126-004",
+      "assignedTo": "Mohammad Al Shellah",
+      "statusLog": [
+        {
+          "state": "New",
+          "at": "2026-11-26T07:56:56.79Z",
+          "by": "Mohammad Al Shellah"
+        },
+        {
+          "state": "Active",
+          "at": "2026-11-26T09:11:46.31Z",
+          "by": "Mohammad Zaini"
+        },
+        {
+          "state": "Resolved",
+          "at": "2026-11-26T09:24:31.493Z",
+          "by": "Mohammad Zaini"
+        }
+      ],
+      "reopened": false,
+      "closedNow": false,
+      "refreshedAt": "2026-11-26T16:45:21+03:00"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "License: Development says license is not supported now. Is the VIS Usage Counter (BR-1.2, AC-12) also out of scope, and are the VIS button and Compatibility filter open to every user with no license check?",
+      "notes": "Decides if AC-01 (license part), AC-02, AC-12 and the License/Usage-limit messages are tested or marked N/A.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:47+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-006"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Fitment Database in QA: which provider/environment does the QA build call, and which vehicles or VINs return known results we can compare against (for example 5281DRB Sportage, 5282GZT Tahoe)?",
+      "notes": "Without a known expected list, compatible-item results cannot be verified.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:47+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-007"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Vehicle details: which fields are the minimum for a fitment lookup (Make + Model + Year, or VIN required)? What exactly happens when one is missing?",
+      "notes": "Needed for the 'Vehicle details incomplete' negative cases.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:48+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-008"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "VIN flow: when vehicle tracking is off or the vehicle has no details, the user must enter a VIN. Is the VIN and the returned Make/Model/Year saved on the vehicle (AutVehicle) or on the Work Order, or only used for the lookup?",
+      "notes": "Defines the expected database change.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:48+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-009"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "History tab: how many last visits (N) are shown, is N configurable, which Work Order statuses count as a visit, and which WO Total (incl. or excl. VAT)?",
+      "notes": "Needed for History expected results.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:48+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-010"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Maintenance tab: where do Next Due Date and Next Due Mileage come from (item/service setup, VIS provider, or a rule)? What status is shown when a service has no interval configured?",
+      "notes": "Needed for Overdue / Up to Date / Added to Current WO expected results.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:48+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-011"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Item matching: is the VIS-to-customer item match an exact Item Code match? Are case, spaces, dashes, barcodes or alternative codes considered?",
+      "notes": "BR-07 says match by Item Code only; boundary cases depend on this.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:48+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-012"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "OEM tag: how is an item identified as OEM (flag from the provider, or a field on the customer item)?",
+      "notes": "Needed to verify the OEM tag in VIS results.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:49+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-013"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Compatibility filter scope: on which screens exactly does it appear (Service, Package, Item lists in WO; Quick Sales too)? BR-05 mentions Quick Sales for vehicle change.",
+      "notes": "Defines integration and regression coverage.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:49+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-014"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Caching: are compatibility results cached per vehicle? For how long, and when are they refreshed (vehicle change, reopening the WO, new day)?",
+      "notes": "Workflow B says 'valid cached results'; affects repeated-request cases.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:49+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-015"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "AC numbering jumps from AC-08 to AC-10. Is AC-09 missing or intentionally removed? If missing, what is it?",
+      "notes": "Coverage matrix must map every AC.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:49+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-016"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Screen layout: the story repeats BR-1 and BR-2. What are the final tabs of the Vehicle Advisory screen (Compatible Items, Oil Recommendation, Last Visit, History, Maintenance) and which are delivered in this build?",
+      "notes": "Needed to write UI test cases per tab.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:50+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-017"
+    },
+    {
+      "source": "claude",
+      "type": "question",
+      "storyId": 1718,
+      "title": "Fitment service failure (AC-11): how can QA simulate the Fitment Database being unavailable or failing (test switch, disconnect network, wrong config)? Is Retry expected to resend the request?",
+      "notes": "Needed to execute the failure and recovery cases.",
+      "devopsId": null,
+      "owner": "Mohammad Alshellah",
+      "timestamp": "2026-11-26T11:51:50+03:00",
+      "url": null,
+      "status": "open",
+      "question": {
+        "answer": "",
+        "answeredOn": null
+      },
+      "id": "e-20261126-018"
+    }
+  ],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [
+        {
+          "id": 1299,
+          "title": "myShop POS - Pemission Screen",
+          "state": "Resolved",
+          "storyId": null,
+          "reason": "assigned",
+          "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/1299"
+        }
+      ],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-26T16:45:21+03:00",
+  "mySyncedAt": "2026-11-26T16:45:21+03:00",
+  "storyRefs": {
+    "180": {
+      "title": "myShop POS - Purchase Invoice",
+      "state": "Resolved"
+    },
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Closed"
+    },
+    "219": {
+      "title": "myShop POS - Add a new Vehicle",
+      "state": "Closed"
+    },
+    "408": {
+      "title": "myShop POS - WO - Oil Service",
+      "state": "New"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "Active"
+    },
+    "435": {
+      "title": "myShop POS - WO - Service Package Selection",
+      "state": "Resolved"
+    },
+    "493": {
+      "title": "myShop POS - WO - Discount Screen",
+      "state": "New"
+    },
+    "497": {
+      "title": "myShop POS - WO - Item Details (Normal)",
+      "state": "New"
+    },
+    "673": {
+      "title": "myShop POS - Bay Monitoring Dashboard KPI",
+      "state": "New"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test App",
+      "state": "Active"
+    },
+    "1482": {
+      "title": "myShop - Opening Day Permission",
+      "state": "Removed"
+    },
+    "1582": {
+      "title": "myShop POS - Service Package Pricing, Discount Distribution & Display Configuration",
+      "state": "New"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Resolved"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Resolved"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Active"
+    },
+    "2169": {
+      "title": "myShop POS - Detected vehicles in check-in screen ",
+      "state": "New"
+    },
+    "2170": {
+      "title": "Master - Product Form",
+      "state": "Resolved"
+    },
+    "2176": {
+      "title": "myShop Portal - Schedule ",
+      "state": "Active"
+    },
+    "2259": {
+      "title": "myShop POS - Request developments",
+      "state": "New"
+    },
+    "2260": {
+      "title": "myShop POS - Report an Issue",
+      "state": "New"
+    },
+    "2261": {
+      "title": "myShop POS - Multi terminals feature",
+      "state": "New"
+    },
+    "2262": {
+      "title": "myShop POS - Assign technician(s) to WO ",
+      "state": "New"
+    },
+    "2273": {
+      "title": "myShop - Support Remote control to POS (Hub)",
+      "state": "Active"
+    },
+    "2282": {
+      "title": "myShop Portal - Enhancement on terminal (Remote Popup)",
+      "state": "New"
+    },
+    "2298": {
+      "title": "myShop POS - Add permission on system & documnet levels",
+      "state": "New"
+    },
+    "2299": {
+      "title": "myShop Portal - Support System & document permission ",
+      "state": "New"
+    }
+  }
+}

@@ -218,7 +218,7 @@
       "devopsId": 214,
       "storyId": 214,
       "title": "myShop POS - Company Dashboard",
-      "status": "Resolved",
+      "status": "Closed",
       "owner": "Mohammad Alshellah",
       "source": "devops-sync",
       "timestamp": "2026-11-19T14:47:12+03:00",
@@ -303,7 +303,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     },
     {
       "type": "bug_closed",
@@ -560,7 +560,7 @@
       "owner": "Mohammad Alshellah",
       "timestamp": "2026-11-19T17:06:33+03:00",
       "url": "https://devops2.minerets.com/DefaultCollection/Shop/_workitems/edit/214",
-      "status": "Resolved",
+      "status": "Closed",
       "id": "e-20261119-012",
       "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
@@ -640,7 +640,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-25T16:45:19+03:00"
+      "refreshedAt": "2026-11-26T10:45:19+03:00"
     }
   ],
   "team": [
