@@ -60,7 +60,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-26T16:45:21+03:00"
+      "refreshedAt": "2026-11-27T16:45:22+03:00"
     },
     {
       "type": "story",
@@ -152,7 +152,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-26T16:45:21+03:00"
+      "refreshedAt": "2026-11-26T23:45:20+03:00"
     },
     {
       "type": "bug_opened",
@@ -192,7 +192,7 @@
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-26T16:45:21+03:00"
+      "refreshedAt": "2026-11-27T16:45:22+03:00"
     },
     {
       "source": "claude",
@@ -441,8 +441,8 @@
       "bugsClosed": []
     }
   ],
-  "teamSyncedAt": "2026-11-26T16:45:21+03:00",
-  "mySyncedAt": "2026-11-26T16:45:21+03:00",
+  "teamSyncedAt": "2026-11-26T23:45:20+03:00",
+  "mySyncedAt": "2026-11-26T23:45:20+03:00",
   "storyRefs": {
     "180": {
       "title": "myShop POS - Purchase Invoice",
@@ -499,6 +499,10 @@
     "1482": {
       "title": "myShop - Opening Day Permission",
       "state": "Removed"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "New"
     },
     "1582": {
       "title": "myShop POS - Service Package Pricing, Discount Distribution & Display Configuration",

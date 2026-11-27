@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-27",
+  "entries": [],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-27T16:45:22+03:00",
+  "mySyncedAt": "2026-11-27T16:45:22+03:00",
+  "storyRefs": {
+    "214": {
+      "title": "myShop POS - Company Dashboard",
+      "state": "Closed"
+    },
+    "432": {
+      "title": "myShop POS - Closing Day",
+      "state": "Active"
+    },
+    "758": {
+      "title": "myShop POS - WO integrated with Camera System",
+      "state": "New"
+    },
+    "1041": {
+      "title": "myShop POS -  Share option Configurations & document assignment ",
+      "state": "Resolved"
+    },
+    "1299": {
+      "title": "myShop POS - Pemission Screen",
+      "state": "Resolved"
+    },
+    "1306": {
+      "title": "myShop POS - Company Version Management for Production and Test App",
+      "state": "Active"
+    },
+    "1482": {
+      "title": "myShop - Opening Day Permission",
+      "state": "Removed"
+    },
+    "1581": {
+      "title": "myShop POS - Database Reset & Cleanup Management",
+      "state": "New"
+    },
+    "1618": {
+      "title": "myShop POS - Enhancements on Reports",
+      "state": "Resolved"
+    },
+    "1718": {
+      "title": "myShop POS - Vehicle Advisory (VIS) in Work Order",
+      "state": "Resolved"
+    },
+    "1726": {
+      "title": "myShop POS - Document Sharing Options in POS",
+      "state": "Active"
+    },
+    "2169": {
+      "title": "myShop POS - Detected vehicles in check-in screen ",
+      "state": "New"
+    },
+    "2170": {
+      "title": "Master - Product Form",
+      "state": "Resolved"
+    },
+    "2176": {
+      "title": "myShop Portal - Schedule ",
+      "state": "Active"
+    },
+    "2259": {
+      "title": "myShop POS - Request developments",
+      "state": "New"
+    },
+    "2273": {
+      "title": "myShop - Support Remote control to POS (Hub)",
+      "state": "Active"
+    }
+  }
+}

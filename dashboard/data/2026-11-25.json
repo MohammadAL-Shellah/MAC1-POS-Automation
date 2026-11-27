@@ -268,7 +268,7 @@
           "by": "Haitham Tarakhan"
         }
       ],
-      "refreshedAt": "2026-11-26T16:45:21+03:00"
+      "refreshedAt": "2026-11-27T16:45:22+03:00"
     },
     {
       "type": "bug_opened",
@@ -288,7 +288,7 @@
         "screen": "Store"
       },
       "id": "e-20261125-007",
-      "assignedTo": "Mohammad Zaini",
+      "assignedTo": "Mohammad Al Shellah",
       "statusLog": [
         {
           "state": "New",
@@ -308,7 +308,7 @@
       ],
       "reopened": false,
       "closedNow": false,
-      "refreshedAt": "2026-11-26T16:45:21+03:00"
+      "refreshedAt": "2026-11-27T16:45:22+03:00"
     },
     {
       "type": "bug_closed",
