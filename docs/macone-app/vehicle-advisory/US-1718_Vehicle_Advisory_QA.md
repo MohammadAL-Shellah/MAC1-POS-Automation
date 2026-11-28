@@ -24,23 +24,23 @@
 | 8 | License validation | BR-1.1 | Out (Development field) |
 | 9 | Usage counter | BR-1.2 | Pending Q1 |
 
-## 3. Acceptance Criteria coverage matrix (filled when test cases are written)
+## 3. Acceptance Criteria coverage matrix (test cases in [US-1718_Vehicle_Advisory_Test_Cases.md](US-1718_Vehicle_Advisory_Test_Cases.md))
 | AC | Scenario | Scope | Test cases | Coverage status |
 |---|---|---|---|---|
-| AC-01 | Vehicle selected, VIS enabled | In, vehicle part only | | Not Tested |
+| AC-01 | Vehicle selected, VIS enabled | In, vehicle part only | TC-VIS-003, 010 | Not Tested |
 | AC-02 | No valid license | N/A, license not supported | | Not Applicable |
-| AC-03 | Compatible products retrieved | In | | Not Tested |
-| AC-04 | External products cannot be added | In | | Not Tested |
-| AC-05 | Customer products can be added | In | | Not Tested |
-| AC-06 | Filter enabled | In | | Not Tested |
-| AC-07 | Filter disabled | In | | Not Tested |
-| AC-08 | Compatibility indicator | In | | Not Tested |
+| AC-03 | Compatible products retrieved | In | TC-VIS-011 | Not Tested |
+| AC-04 | External products cannot be added | In | TC-VIS-013, 020 | Not Tested |
+| AC-05 | Customer products can be added | In | TC-VIS-012, 014 | Not Tested |
+| AC-06 | Filter enabled | In | TC-VIS-030 | Not Tested |
+| AC-07 | Filter disabled | In | TC-VIS-031 | Not Tested |
+| AC-08 | Compatibility indicator | In | TC-VIS-036, 037, 038 | Not Tested |
 | AC-09 | Missing in story | Q11 | | Needs Clarification |
-| AC-10 | Vehicle changes | In | | Not Tested |
-| AC-11 | Fitment request fails | In, method Q13 | | Not Tested |
-| AC-12 | Usage recorded | Q1 | | Needs Clarification |
-| AC-13 | WO eligibility rules still apply | In | | Not Tested |
-| AC-14 | Filter combined with other filters | In | | Not Tested |
+| AC-10 | Vehicle changes | In | TC-VIS-039, 040 | Not Tested |
+| AC-11 | Fitment request fails | In, method Q13 | TC-VIS-024 to 027 | Not Tested |
+| AC-12 | Usage recorded | Q1 | TC-VIS-051 | Needs Clarification |
+| AC-13 | WO eligibility rules still apply | In | TC-VIS-018 | Not Tested |
+| AC-14 | Filter combined with other filters | In | TC-VIS-032 | Not Tested |
 
 ## 4. Screen to database mapping (to be verified, see KB section 5 items 17 to 20)
 | # | Screen and action | Expected tables | Status |

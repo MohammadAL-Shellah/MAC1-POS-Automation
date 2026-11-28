@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-28",
+  "entries": [],
+  "team": [
+    {
+      "name": "Rahaf Abdullah",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    },
+    {
+      "name": "Ahmad Hayajneh",
+      "stories": [],
+      "testcases": [],
+      "bugsOpened": [],
+      "bugsClosed": []
+    }
+  ],
+  "teamSyncedAt": "2026-11-28T16:45:22+03:00",
+  "mySyncedAt": "2026-11-28T16:45:22+03:00",
+  "storyRefs": {
+    "2259": {
+      "title": "myShop POS - Request developments",
+      "state": "New"
+    },
+    "2306": {
+      "title": "Ticketing - Manage Customer Feature Requests",
+      "state": "New"
+    }
+  }
+}

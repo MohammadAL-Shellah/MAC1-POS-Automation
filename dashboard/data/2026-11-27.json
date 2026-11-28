@@ -17,8 +17,8 @@
       "bugsClosed": []
     }
   ],
-  "teamSyncedAt": "2026-11-27T16:45:22+03:00",
-  "mySyncedAt": "2026-11-27T16:45:22+03:00",
+  "teamSyncedAt": "2026-11-27T23:45:22+03:00",
+  "mySyncedAt": "2026-11-27T23:45:22+03:00",
   "storyRefs": {
     "214": {
       "title": "myShop POS - Company Dashboard",
@@ -83,6 +83,10 @@
     "2273": {
       "title": "myShop - Support Remote control to POS (Hub)",
       "state": "Active"
+    },
+    "2306": {
+      "title": "Ticketing - Manage Customer Feature Requests",
+      "state": "New"
     }
   }
 }
